@@ -1,0 +1,36 @@
+package epidemiccraft.proxy;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import epidemiccraft.mobs.GiardiaCowModel;
+import epidemiccraft.mobs.GiardiaCowRender;
+import epidemiccraft.mobs.EbolaBatModel;
+import epidemiccraft.mobs.EbolaBatRender;
+import epidemiccraft.mobs.EntityGiardiaCowMob;
+import epidemiccraft.mobs.EntityEbolaBatMob;
+
+public class ClientProxy  extends CommonProxy{
+
+	@Override
+	public void preInit(){
+		RenderingRegistry.addNewArmourRendererPrefix("5");
+	}
+	
+	public void init(){
+		this.registerRenders();
+	}
+	
+	
+	public void registerRenders(){
+		RenderingRegistry.registerEntityRenderingHandler(EntityGiardiaCowMob.class, new GiardiaCowRender(new GiardiaCowModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEbolaBatMob.class, new EbolaBatRender(new EbolaBatModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEbolaBatMob.class, new EbolaBatRender(new EbolaBatModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEbolaBatMob.class, new EbolaBatRender(new EbolaBatModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEbolaBatMob.class, new EbolaBatRender(new EbolaBatModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEbolaBatMob.class, new EbolaBatRender(new EbolaBatModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEbolaBatMob.class, new EbolaBatRender(new EbolaBatModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEbolaBatMob.class, new EbolaBatRender(new EbolaBatModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEbolaBatMob.class, new EbolaBatRender(new EbolaBatModel(), 0));
+
+	}
+	
+}

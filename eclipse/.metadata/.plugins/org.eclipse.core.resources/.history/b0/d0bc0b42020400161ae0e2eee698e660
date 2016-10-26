@@ -1,0 +1,29 @@
+package epidemiccraft.com;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+import net.minecraft.item.ItemStack;
+
+public class AutoclaveRecipes {
+
+	private static final AutoclaveRecipes SMELTING_BASE = new AutoclaveRecipes();
+	private Map smeltingList = new HashMap();
+	
+	public static AutoclaveRecipes smelting(){
+		return SMELTING_BASE;
+	}
+	
+	public ItemStack getSmeltingResult(ItemStack itemstack){
+		Iterator iterator = this.smeltingList.entrySet().iterator();
+		Entry entry;
+		do{
+			if(!iterator.hasNext()){
+				return null;
+			}
+			entry = (Entry) iterator.next();
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+package epidemiccraft.tileentity;
+
+public class TileEntityIncubator {
+
+}

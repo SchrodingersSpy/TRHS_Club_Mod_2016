@@ -1,0 +1,11 @@
+package epidemiccraft.c;
+
+import net.minecraft.item.ItemArmor;
+
+public class BioSuitArmor extends ItemArmor{
+	private String [] armourTypes = new String [] {"helmetBioSuit", "chestplateBioSuit", "legBioSuit", "bootsBioSuit"};
+
+	public BioSuitArmor(ArmorMaterial armorMaterial, int renderIndex, int armourType){
+		super(armorMaterial)
+	}
+}

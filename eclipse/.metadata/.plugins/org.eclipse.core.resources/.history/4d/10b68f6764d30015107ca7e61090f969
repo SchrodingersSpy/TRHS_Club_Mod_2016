@@ -1,0 +1,8 @@
+package epidemiccraft.blocks.tileentity;
+
+import net.minecraft.inventory.IInventory;
+import net.minecraft.tileentity.TileEntity;
+
+public class AutoclaveTileEntity extends TileEntity implements IInventory{
+	
+}

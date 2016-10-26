@@ -1,0 +1,253 @@
+
+package epidemiccraft.blocks;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+
+public class ModelIncubator extends ModelBase
+{
+  //fields
+    ModelRenderer Base;
+    ModelRenderer Corner1;
+    ModelRenderer Corner11;
+    ModelRenderer Corner12;
+    ModelRenderer Corner2;
+    ModelRenderer Corner21;
+    ModelRenderer Corner22;
+    ModelRenderer Corner3;
+    ModelRenderer Corner31;
+    ModelRenderer Corner32;
+    ModelRenderer Corner4;
+    ModelRenderer Corner41;
+    ModelRenderer Corner42;
+    ModelRenderer Brace1;
+    ModelRenderer Brace2;
+    ModelRenderer Brace3;
+    ModelRenderer Brace4;
+    ModelRenderer Top;
+    ModelRenderer Grill1;
+    ModelRenderer Grill2;
+    ModelRenderer Grill3;
+    ModelRenderer Grill4;
+    ModelRenderer Grill5;
+    ModelRenderer Grill6;
+    ModelRenderer Grill7;
+    ModelRenderer Grill8;
+    ModelRenderer Grill9;
+  
+  public ModelIncubator()
+  {
+    textureWidth = 140;
+    textureHeight = 70;
+    
+      Base = new ModelRenderer(this, 0, 0);
+      Base.addBox(0F, 0F, 0F, 16, 4, 16);
+      Base.setRotationPoint(-8F, 20F, -8F);
+      Base.setTextureSize(140, 70);
+      Base.mirror = true;
+      setRotation(Base, 0F, 0F, 0F);
+      Corner1 = new ModelRenderer(this, 0, 20);
+      Corner1.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner1.setRotationPoint(-8F, 8F, -8F);
+      Corner1.setTextureSize(140, 70);
+      Corner1.mirror = true;
+      setRotation(Corner1, 0F, 0F, 0F);
+      Corner11 = new ModelRenderer(this, 8, 20);
+      Corner11.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner11.setRotationPoint(-8F, 8F, -7F);
+      Corner11.setTextureSize(140, 70);
+      Corner11.mirror = true;
+      setRotation(Corner11, 0F, 0F, 0F);
+      Corner12 = new ModelRenderer(this, 4, 20);
+      Corner12.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner12.setRotationPoint(-7F, 8F, -8F);
+      Corner12.setTextureSize(140, 70);
+      Corner12.mirror = true;
+      setRotation(Corner12, 0F, 0F, 0F);
+      Corner2 = new ModelRenderer(this, 0, 33);
+      Corner2.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner2.setRotationPoint(7F, 8F, -8F);
+      Corner2.setTextureSize(140, 70);
+      Corner2.mirror = true;
+      setRotation(Corner2, 0F, 0F, 0F);
+      Corner21 = new ModelRenderer(this, 8, 33);
+      Corner21.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner21.setRotationPoint(7F, 8F, -7F);
+      Corner21.setTextureSize(140, 70);
+      Corner21.mirror = true;
+      setRotation(Corner21, 0F, 0F, 0F);
+      Corner22 = new ModelRenderer(this, 4, 33);
+      Corner22.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner22.setRotationPoint(6F, 8F, -8F);
+      Corner22.setTextureSize(140, 70);
+      Corner22.mirror = true;
+      setRotation(Corner22, 0F, 0F, 0F);
+      Corner3 = new ModelRenderer(this, 0, 46);
+      Corner3.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner3.setRotationPoint(7F, 8F, 7F);
+      Corner3.setTextureSize(140, 70);
+      Corner3.mirror = true;
+      setRotation(Corner3, 0F, 0F, 0F);
+      Corner31 = new ModelRenderer(this, 8, 46);
+      Corner31.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner31.setRotationPoint(6F, 8F, 7F);
+      Corner31.setTextureSize(140, 70);
+      Corner31.mirror = true;
+      setRotation(Corner31, 0F, 0F, 0F);
+      Corner32 = new ModelRenderer(this, 4, 46);
+      Corner32.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner32.setRotationPoint(7F, 8F, 6F);
+      Corner32.setTextureSize(140, 70);
+      Corner32.mirror = true;
+      setRotation(Corner32, 0F, 0F, 0F);
+      Corner4 = new ModelRenderer(this, 12, 20);
+      Corner4.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner4.setRotationPoint(-8F, 8F, 7F);
+      Corner4.setTextureSize(140, 70);
+      Corner4.mirror = true;
+      setRotation(Corner4, 0F, 0F, 0F);
+      Corner41 = new ModelRenderer(this, 12, 33);
+      Corner41.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner41.setRotationPoint(-7F, 8F, 7F);
+      Corner41.setTextureSize(140, 70);
+      Corner41.mirror = true;
+      setRotation(Corner41, 0F, 0F, 0F);
+      Corner42 = new ModelRenderer(this, 12, 46);
+      Corner42.addBox(0F, 0F, 0F, 1, 12, 1);
+      Corner42.setRotationPoint(-8F, 8F, 6F);
+      Corner42.setTextureSize(140, 70);
+      Corner42.mirror = true;
+      setRotation(Corner42, 0F, 0F, 0F);
+      Brace1 = new ModelRenderer(this, 16, 20);
+      Brace1.addBox(0F, 0F, 0F, 1, 2, 12);
+      Brace1.setRotationPoint(-8F, 8F, -6F);
+      Brace1.setTextureSize(140, 70);
+      Brace1.mirror = true;
+      setRotation(Brace1, 0F, 0F, 0F);
+      Brace2 = new ModelRenderer(this, 16, 34);
+      Brace2.addBox(0F, 0F, 0F, 12, 2, 1);
+      Brace2.setRotationPoint(-6F, 8F, -8F);
+      Brace2.setTextureSize(140, 70);
+      Brace2.mirror = true;
+      setRotation(Brace2, 0F, 0F, 0F);
+      Brace3 = new ModelRenderer(this, 16, 37);
+      Brace3.addBox(0F, 0F, 0F, 1, 2, 12);
+      Brace3.setRotationPoint(7F, 8F, -6F);
+      Brace3.setTextureSize(140, 70);
+      Brace3.mirror = true;
+      setRotation(Brace3, 0F, 0F, 0F);
+      Brace4 = new ModelRenderer(this, 16, 51);
+      Brace4.addBox(0F, 0F, 0F, 12, 2, 1);
+      Brace4.setRotationPoint(-6F, 8F, 7F);
+      Brace4.setTextureSize(140, 70);
+      Brace4.mirror = true;
+      setRotation(Brace4, 0F, 0F, 0F);
+      Top = new ModelRenderer(this, 64, 0);
+      Top.addBox(0F, 0F, 0F, 14, 1, 14);
+      Top.setRotationPoint(-7F, 8F, -7F);
+      Top.setTextureSize(140, 70);
+      Top.mirror = true;
+      setRotation(Top, 0F, 0F, 0F);
+      Grill1 = new ModelRenderer(this, 64, 15);
+      Grill1.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill1.setRotationPoint(-7F, 14F, 6F);
+      Grill1.setTextureSize(140, 70);
+      Grill1.mirror = true;
+      setRotation(Grill1, 0F, 0F, 0F);
+      Grill2 = new ModelRenderer(this, 64, 15);
+      Grill2.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill2.setRotationPoint(-7F, 14F, 4F);
+      Grill2.setTextureSize(140, 70);
+      Grill2.mirror = true;
+      setRotation(Grill2, 0F, 0F, 0F);
+      Grill3 = new ModelRenderer(this, 64, 15);
+      Grill3.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill3.setRotationPoint(-7F, 14F, 2F);
+      Grill3.setTextureSize(140, 70);
+      Grill3.mirror = true;
+      setRotation(Grill3, 0F, 0F, 0F);
+      Grill4 = new ModelRenderer(this, 64, 15);
+      Grill4.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill4.setRotationPoint(-7F, 14F, 0F);
+      Grill4.setTextureSize(140, 70);
+      Grill4.mirror = true;
+      setRotation(Grill4, 0F, 0F, 0F);
+      Grill5 = new ModelRenderer(this, 64, 15);
+      Grill5.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill5.setRotationPoint(-7F, 14F, -2F);
+      Grill5.setTextureSize(140, 70);
+      Grill5.mirror = true;
+      setRotation(Grill5, 0F, 0F, 0F);
+      Grill6 = new ModelRenderer(this, 64, 15);
+      Grill6.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill6.setRotationPoint(-7F, 14F, -4F);
+      Grill6.setTextureSize(140, 70);
+      Grill6.mirror = true;
+      setRotation(Grill6, 0F, 0F, 0F);
+      Grill7 = new ModelRenderer(this, 64, 15);
+      Grill7.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill7.setRotationPoint(-7F, 14F, -6F);
+      Grill7.setTextureSize(140, 70);
+      Grill7.mirror = true;
+      setRotation(Grill7, 0F, 0F, 0F);
+      Grill8 = new ModelRenderer(this, 64, 15);
+      Grill8.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill8.setRotationPoint(-7F, 14F, 7F);
+      Grill8.setTextureSize(140, 70);
+      Grill8.mirror = true;
+      setRotation(Grill8, 0F, 1.570796F, 0F);
+      Grill9 = new ModelRenderer(this, 64, 15);
+      Grill9.addBox(0F, 0F, 0F, 14, 1, 1);
+      Grill9.setRotationPoint(6F, 14F, 7F);
+      Grill9.setTextureSize(140, 70);
+      Grill9.mirror = true;
+      setRotation(Grill9, 0F, 1.570796F, 0F);
+  }
+  
+  public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
+  {
+    super.render(entity, f, f1, f2, f3, f4, f5);
+    setRotationAngles(f, f1, f2, f3, f4, f5);
+    Base.render(f5);
+    Corner1.render(f5);
+    Corner11.render(f5);
+    Corner12.render(f5);
+    Corner2.render(f5);
+    Corner21.render(f5);
+    Corner22.render(f5);
+    Corner3.render(f5);
+    Corner31.render(f5);
+    Corner32.render(f5);
+    Corner4.render(f5);
+    Corner41.render(f5);
+    Corner42.render(f5);
+    Brace1.render(f5);
+    Brace2.render(f5);
+    Brace3.render(f5);
+    Brace4.render(f5);
+    Top.render(f5);
+    Grill1.render(f5);
+    Grill2.render(f5);
+    Grill3.render(f5);
+    Grill4.render(f5);
+    Grill5.render(f5);
+    Grill6.render(f5);
+    Grill7.render(f5);
+    Grill8.render(f5);
+    Grill9.render(f5);
+  }
+  
+  private void setRotation(ModelRenderer model, float x, float y, float z)
+  {
+    model.rotateAngleX = x;
+    model.rotateAngleY = y;
+    model.rotateAngleZ = z;
+  }
+  
+  public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity)
+  {
+    super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+  }
+
+}

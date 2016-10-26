@@ -1,0 +1,14 @@
+package epidemiccraft.blocks;
+
+import net.minecraft.block.Block;
+
+public class AutoclaveActive {
+
+	public AutoclaveActive(boolean b) {
+	}
+
+	public Block setBlockName(String string) {
+		return null;
+	}
+
+}

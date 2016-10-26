@@ -1,0 +1,188 @@
+package epidemiccraft.c;
+
+import ibxm.Player;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.player.PlayerUseItemEvent;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
+import epidemiccraft.b.ModBlocks;
+import epidemiccraft.g.GuiHandler;
+import epidemiccraft.items.ModItems;
+import epidemiccraft.lib.Constants;
+import epidemiccraft.proxy.CommonProxy;
+import epidemiccraft.c.EpidemicCraftTab;
+//Written by Lord_Voldemort7 from early 2014 to ...
+
+//If you decompiled this to try to figure out what I was doing, it should be easy
+//as my code is littered with (ridiculous) comments.
+//If you're here to update this because I stopped working on it, have fun. The
+//wiki'll need updating too. Hopefully you find development easier than I did.
+
+//Good Luck.
+
+@Mod(modid = "epidemiccraft", name = "EpidemicCraft", version = "Alpha 1.0.0")
+
+
+
+public class EpidemicCraft {
+	
+//CREATIVE TAB//		
+public static CreativeTabs EpidemicCraftTab = new EpidemicCraftTab(CreativeTabs.getNextID(), "EpidemicCraftTab");	
+//NO MORE CREATIVE TAB//
+
+//NO MORE AFTER HERE//
+
+	@Mod.Instance(Constants.MODID)
+	public static EpidemicCraft instance;
+
+
+	@SidedProxy(clientSide = Constants.CLIENT_PROXY_CLASS, serverSide = Constants.SERVER_PROXY_CLASS)
+	public static CommonProxy proxy;
+
+	public static Potion potionAnthraxEffect;
+	public static Potion potionBubPlagueEffect;
+	public static Potion potionCholEffect;
+	
+	@Mod.EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+		ModBlocks.init();
+		ModItems.init();
+		
+		Potion[] potionTypes = null;
+
+		for (Field f : Potion.class.getDeclaredFields())
+		{
+		f.setAccessible(true);
+		try
+		{
+		if (f.getName().equals("potionTypes") || f.getName().equals("field_76425_a"))
+		{
+		Field modfield = Field.class.getDeclaredField("modifiers");
+		modfield.setAccessible(true);
+		modfield.setInt(f, f.getModifiers() & ~Modifier.FINAL);
+
+		potionTypes = (Potion[])f.get(null);
+		final Potion[] newPotionTypes = new Potion[256];
+		System.arraycopy(potionTypes, 0, newPotionTypes, 0, potionTypes.length);
+		f.set(null, newPotionTypes);
+		}
+		}
+		catch (Exception e)
+		{
+		System.err.println("Severe error, please report this to the mod author:");
+		System.err.println(e);
+		}
+		}
+		
+
+		
+		MinecraftForge.EVENT_BUS.register(new EpidemicCraftEventHooks());
+		MinecraftForge.EVENT_BUS.register(new EventMilk());
+		
+	    
+		
+    }
+	
+ //YOU CAN DO MORE AFTER HERE WITHOUT MESSING UP PROXIES OR BASE FILES//
+	
+
+	@Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+    	//SHAPELESS RECIPES
+    	GameRegistry.addShapelessRecipe (new ItemStack(ModItems.Agar, 8), Items.beef, Items.reeds, Items.slime_ball);
+    	
+    	//END OF SHAPELESS RECIPES
+    	//SHAPED RECIPES
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggCPox, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.TissueCPox, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggEbola, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.TissueEbola, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggFlu, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.TissueFlu, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggPolio, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.TissuePolio, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggRabies, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.TissueRabies, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.ThinGlass, 8), new Object [] {"   ", "XXX", "   ", 'X', Blocks.glass});
+    	
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishUsed ,1), new Object [] {"   ", "YXY", "YYY", 'X', ModItems.Agar, 'Y', ModItems.ThinGlass});
+    	
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishFoodPois, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', Items.beef});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishFoodPois, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', Items.porkchop});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishFoodPois, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', Items.chicken});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishFoodPois, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', Items.fish});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishBubPlague ,1), new Object [] {"Y  ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueBubPlague});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishBubPlague ,1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueBubPlague});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishBubPlague ,1), new Object [] {"  Y", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueBubPlague});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishChol ,1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', Items.water_bucket});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishEColi ,1), new Object [] {"Y  ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueEColi});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishEColi ,1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueEColi});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishEColi ,1), new Object [] {"  Y", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueEColi});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishAnthrax ,1), new Object [] {"Y  ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueAnthrax});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishAnthrax ,1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueAnthrax});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishAnthrax ,1), new Object [] {"  Y", " X ", "   ", 'X', ModItems.PetriDish, 'Y', ModItems.TissueAnthrax});
+    	
+    	GameRegistry.addRecipe (new ItemStack(ModItems.VaccineJarUsed, 1), new Object [] {"XXX", "Y Y", "YYY", 'X', Items.iron_ingot, 'Y', ModItems.ThinGlass});
+    	
+    	GameRegistry.addRecipe (new ItemStack(ModItems.UsedNeedle, 2), new Object [] {"  X", " X ", "   ", 'X',Items.iron_ingot });
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeTubeUsed, 1), new Object [] {"XYX", "X X", "X X", 'X', ModItems.ThinGlass, 'Y', ModItems.SyringePlungerUsed});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringePlungerUsed, 1), new Object [] {" X ", " X ", " Y ", 'X', ModItems.IronRodUsed, 'Y', ModItems.Rubber});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeUsed, 1), new Object [] {"  X", " Y ", "Z  ", 'X', Items.iron_ingot, 'Y', ModItems.SyringeTube, 'Z', ModItems.Needle});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeFlu, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarFlu, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeEbola, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarEbola, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeCPox, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarCPox, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringePolio, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarPolio, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeRabies, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarRabies, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeFoodPois, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarFoodPois, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeBubPlague, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarBubPlague, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeChol, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarChol, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeEColi, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarEColi, 'Y', ModItems.Syringe});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.SyringeAnthrax, 1), new Object [] {" Y ", " X ", "   ", 'X', ModItems.VaccineJarAnthrax, 'Y', ModItems.Syringe});
+    
+    	//END OF SHAPED RECIPES
+    	//FURNACE RECIPES 
+    	GameRegistry.addSmelting(ModItems.VaccineJarUsed, new ItemStack(ModItems.VaccineJar), 0F);
+    	GameRegistry.addSmelting(ModItems.TissueFlu, new ItemStack(Items.rotten_flesh), 0F);
+    	GameRegistry.addSmelting(ModItems.TissueEbola, new ItemStack(Items.rotten_flesh), 0F);
+    	GameRegistry.addSmelting(ModItems.TissueCPox, new ItemStack(Items.rotten_flesh), 0F);
+    	GameRegistry.addSmelting(ModItems.TissuePolio, new ItemStack(Items.rotten_flesh), 0F);
+    	GameRegistry.addSmelting(ModItems.TissueRabies, new ItemStack(Items.rotten_flesh), 0F);
+    	GameRegistry.addSmelting(ModItems.TissueBubPlague, new ItemStack(Items.rotten_flesh), 0F);
+    	GameRegistry.addSmelting(ModItems.TissueEColi, new ItemStack(Items.rotten_flesh), 0F);
+    	GameRegistry.addSmelting(ModItems.TissueAnthrax, new ItemStack(Items.rotten_flesh), 0F);
+    	GameRegistry.addSmelting(Blocks.yellow_flower, new ItemStack(ModItems.Rubber), 0F);
+    	GameRegistry.addSmelting(ModItems.SyringeTubeUsed, new ItemStack(ModItems.SyringeTube), 0F);
+    	//END OF FURNACE RECIPES
+    	//TILE ENTITIES
+    	proxy.registerTileEntities();
+    	//END OF TILE ENTITES
+    	//GUI
+    	NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+    	//END OF GUI
+    	//POTION REGISTRY
+    	potionAnthraxEffect = (new PotionAnthraxEffect(50, false, 0)).setIconIndex(0, 0).setPotionName("potion.AnthraxEffect");
+    	potionBubPlagueEffect = (new PotionBubPlagueEffect(51, false, 0)).setIconIndex(0, 0).setPotionName("potion.BubPlagueEffect");
+    	//END OF POTION REGISTRY
+    }
+ 
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent event) {
+ 
+    }
+    
+    
+
+}

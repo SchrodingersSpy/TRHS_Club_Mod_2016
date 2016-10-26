@@ -1,0 +1,35 @@
+package epidemiccraft.inventory;
+
+import epidemiccraft.tileentity.TileEntityAutoclave;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.Slot;
+import net.minecraft.inventory.SlotFurnace;
+
+public class ContainerAutoclave extends Container{
+
+	private TileEntityAutoclave tileAutoclave;
+	private int lastCookTime;
+	private int lastBurnTime;
+	private int lastItemBurnTime;
+	
+	public ContainerAutoclave(InventoryPlayer player, TileEntityAutoclave tileEntityAutoclave){
+		this.tileAutoclave = tileEntityAutoclave;
+		this.addSlotToContainer(new Slot(tileEntityAutoclave, 0, 56, 17));
+		this.addSlotToContainer(new Slot(tileEntityAutoclave, 0, 56, 53));
+		this.addSlotToContainer(new SlotFurnace(player.player, tileEntityAutoclave, 2, 116, 35));
+		int i;
+		
+		for(i = 0; i < 3; ++i){
+			for(int j = 0;)
+		}
+		
+	}
+	
+	@Override
+	public boolean canInteractWith(EntityPlayer p_75145_1_) {
+		return false;
+	}
+//4;21 gui vid
+}

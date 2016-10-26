@@ -1,0 +1,21 @@
+package epidemiccraft.blocks.gui.container;
+
+import epidemiccraft.blocks.tileentity.AutoclaveTileEntity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+
+public class AutoclaveContainer extends Container{
+
+	private AutoclaveTileEntity AutoclaveTileEntity;
+	
+	public AutoclaveContainer(InventoryPlayer invPlayer, AutoclaveTileEntity entity){
+		
+	}
+	
+	@Override
+	public boolean canInteractWith(EntityPlayer p_75145_1_) {
+		return false;
+	}
+
+}

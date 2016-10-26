@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;epidemiccraft.c.potionCholEffect.java&apos; to &apos;PotionCholEffect.java&apos;&#x0D;&#x0A;- Original project: &apos;Minecraft&apos;&#x0D;&#x0A;- Original element: &apos;epidemiccraft.c.potionCholEffect.java&apos;&#x0D;&#x0A;- Renamed element: &apos;epidemiccraft.c.PotionCholEffect.java&apos;" description="Rename compilation unit &apos;potionCholEffect.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;epidemiccraft.c{potionCholEffect.java" name="PotionCholEffect.java" references="false" stamp="1432909030912" version="1.0"/>
+</session>

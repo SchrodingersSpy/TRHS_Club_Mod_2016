@@ -1,0 +1,22 @@
+package epidemiccraft.blocks;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import epidemiccraft.com.EpidemicCraft;
+import epidemiccraft.lib.Constants;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public final class ModBlocks {
+	
+	public static Block Autoclave;
+	public static Block AutoclaveActive;
+	
+	public static void init(){
+		
+		Autoclave = new Autoclave(false).setBlockName("Autoclave").setCreativeTab(EpidemicCraft.EpidemicCraftTab);
+		GameRegistry.registerBlock(Autoclave, Autoclave.getUnlocalizedName());
+		AutoclaveActive = new AutoclaveActive(false).setBlockName("AutoclaveActive").setCreativeTab(EpidemicCraft.EpidemicCraftTab);
+		GameRegistry.registerBlock(AutoclaveActive, Autoclave.getUnlocalizedName());
+	}
+
+}

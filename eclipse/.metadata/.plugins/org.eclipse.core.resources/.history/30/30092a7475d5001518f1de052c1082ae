@@ -1,0 +1,18 @@
+package epidemiccraft.blocks;
+
+import epidemiccraft.com.EpidemicCraft;
+import epidemiccraft.lib.Constants;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public final class ModBlocks {
+	
+	public static Block Autoclave;
+	
+	public static void init(){
+		
+		
+		
+	}
+
+}

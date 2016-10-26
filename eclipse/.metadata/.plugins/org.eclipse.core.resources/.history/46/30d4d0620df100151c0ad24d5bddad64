@@ -1,0 +1,11 @@
+package epidemiccraft.com;
+
+public class AutoclaveRecipes {
+
+	
+	
+	public static AutoclaveRecipes smelting(){
+		return smeltingBase;
+	}
+
+}

@@ -1,0 +1,11 @@
+package epidemiccraft.blocks;
+
+import net.minecraft.block.Block;
+
+public final class ModBlocks {
+	
+	public static void init(){
+		
+	}
+
+}

@@ -1,0 +1,134 @@
+
+
+//Creative Tab
+itemGroup.EpidemicCraftTab=EpidemicCraft
+
+//Items
+item.epidemiccraft_ThinGlass.name=Thin Glass Plate
+item.epidemiccraft_PetriDish.name=Sterile Petri Dish
+item.epidemiccraft_Agar.name=Agar
+item.epidemiccraft_PetriDishChol.name=Cholera Dish
+item.epidemiccraft_PetriDishGiardia.name=Giardia Dish
+item.epidemiccraft_PetriDishBubPlague.name=Bubonic Plague Dish
+item.epidemiccraft_PetriDishFoodPois.name=Salmonella Dish
+item.epidemiccraft_PetriDishUsed.name=Unclean Petri Dish
+item.epidemiccraft_PetriDishEColi.name=E-Coli Dish
+item.epidemiccraft_PetriDishMeningitis.name=Meningitis Dish
+item.epidemiccraft_EggFlu.name= Influenza Egg
+item.epidemiccraft_EggCPox.name=Chicken Pox Egg
+item.epidemiccraft_EggPolio.name=Polio Egg
+item.epidemiccraft_EggRabies.name=Rabies Egg
+
+item.epidemiccraft_VaccineJar.name=Sterile Vaccine Jar
+item.epidemiccraft_VaccineJarUsed.name=Unclean Vaccine Jar
+item.epidemiccraft_VaccineJarFlu.name=Influenza Sample
+item.epidemiccraft_VaccineJarMeningitis.name=Meningitis Sample
+item.epidemiccraft_VaccineJarCPox.name=Chicken Pox Sample
+item.epidemiccraft_VaccineJarPolio.name=Polio Sample
+item.epidemiccraft_VaccineJarRabies.name=Rabies Sample
+item.epidemiccraft_VaccineJarFoodPois.name=Salmonella Sample
+item.epidemiccraft_VaccineJarBubPlague.name=Bubonic Plague Sample
+item.epidemiccraft_VaccineJarChol.name=Cholera Sample
+item.epidemiccraft_VaccineJarEColi.name=E-Coli Sample
+item.epidemiccraft_VaccineJarGiardia.name=Giardia Sample
+item.epidemiccraft_VaccineJarRuined.name=Ruined Vaccine
+
+item.epidemiccraft_TestTube.name=Sterile Test Tube
+item.epidemiccraft_TestTubeUsed.name=Unclean Test Tube
+item.epidemiccraft_TestTubeFlu.name=Influenza Test Tube
+item.epidemiccraft_TestTubeMeningitis.name=Meningitis Test Tube
+item.epidemiccraft_TestTubeCPox.name=Chicken Pox Test Tube
+item.epidemiccraft_TestTubePolio.name=Polio Test Tube
+item.epidemiccraft_TestTubeRabies.name=Rabies Test Tube
+item.epidemiccraft_TestTubeFoodPois.name=Salmonella Test Tube
+item.epidemiccraft_TestTubeBubPlague.name=Bubonic Plague Test Tube
+item.epidemiccraft_TestTubeChol.name=Cholera Test Tube
+item.epidemiccraft_TestTubeEColi.name=E-Coli Test Tube
+item.epidemiccraft_TestTubeGiardia.name=Giardia Test Tube
+item.epidemiccraft_TestTubeRuined.name=Ruined Test Tube
+
+item.epidemiccraft_TissueFlu.name=Infected Avian Tissue
+item.epidemiccraft_TissueCPox.name=Infected Villager Tissue
+item.epidemiccraft_TissuePolio.name=Infected Villager Tissue
+item.epidemiccraft_TissueRabies.name=Infected Wolf Tissue
+item.epidemiccraft_TissueEColi.name=Infected Villager Tissue
+item.epidemiccraft_TissueGiardia.name=Infected Cattle Tissue
+
+item.epidemiccraft_FluFluid.name=Influenza Fluid
+item.epidemiccraft_FluidCSF.name=Spinal Fluid
+item.epidemiccraft_CPoxFluid.name=Chicken Pox Fluid
+item.epidemiccraft_PolioFluid.name=Polio Fluid
+item.epidemiccraft_RabiesFluid.name=Rabies Fluid
+item.epidemiccraft_FoodPoisBacteria.name=Salmonella Bacteria
+item.epidemiccraft_BubPlagueFluid.name=Bubonic Plague Fluid
+item.epidemiccraft_CholFluid.name=Cholera Fluid
+item.epidemiccraft_EColiFluid.name=E-Coli Fluid
+item.epidemiccraft_GiardiaSpore.name=Giardia Spores
+
+item.epidemiccraft_UsedNeedle.name=Unclean Needle
+item.epidemiccraft_UsedNeedleLong.name=Unclean Long Needle
+item.epidemiccraft_SyringeTube.name=Sterile Syringe Chamber
+item.epidemiccraft_SyringeTubeUsed.name=Unclean Syringe Chamber
+item.epidemiccraft_SyringePlunger.name=Sterile Syringe Plunger
+item.epidemiccraft_SyringePlungerUsed.name=Unclean Syringe Plunger
+item.epidemiccraft_IronRod.name=Sterile Iron Rod
+item.epidemiccraft_IronRodUsed.name=Unclean Iron Rod
+item.epidemiccraft_Syringe.name=Sterile Syringe
+item.epidemiccraft_SyringeUsed.name=Unclean Syringe
+item.epidemiccraft_SpinalTapSyringe.name=Spinal Tap Syringe
+item.epidemiccraft_SpinalTapSyringeUsed.name=Unclean Spinal Tap Syringe
+item.epidemiccraft_SpinalTapSyringeFull.name=Full Spinal Tap Syringe
+item.epidemiccraft_SyringeFlu.name=Influenza Vaccine
+item.epidemiccraft_SyringeMeningitis.name=Meningitis Vaccine
+item.epidemiccraft_SyringeCPox.name=Chicken Pox Vaccine
+item.epidemiccraft_SyringePolio.name=Polio Vaccine
+item.epidemiccraft_SyringeRabies.name=Rabies Vaccine
+item.epidemiccraft_SyringeFoodPois.name=Salmonella Vaccine
+item.epidemiccraft_SyringeBubPlague.name=Bubonic Plague Vaccine
+item.epidemiccraft_SyringeChol.name=Cholera Vaccine
+item.epidemiccraft_SyringeEColi.name=E-Coli Vaccine
+item.epidemiccraft_SyringeGiardia.name=Giardia Vaccine
+item.epidemiccraft_SyringeSampleCPox.name=Chicken Pox Fluid Sample
+item.epidemiccraft_SyringeSampleMeningitis.name=Meningitis Fluid Sample
+item.epidemiccraft_SyringeSampleFlu.name=Influenza Fluid Sample
+item.epidemiccraft_SyringeSamplePolio.name=Polio Fluid Sample
+item.epidemiccraft_SyringeSampleRabies.name=Rabies Fluid Sample
+item.epidemiccraft_SyringeSampleEColi.name=E-Coli Fluid Sample
+
+item.epidemiccraft_Adjuvant.name=Adjuvant
+item.epidemiccraft_Purifier.name=Purifier
+item.epidemiccraft_Preservative.name=Preservative
+item.epidemiccraft_Rubber.name=Rubber
+item.epidemiccraft_Mercury.name=Medical Grade Mercury
+item.epidemiccraft_Scalpel.name=Surgical Grade Scalpel
+
+item.helmetBioSuit.name=Biohazard Helmet
+item.chestplateBioSuit.name=Biohazard Chestplate
+item.legsBioSuit.name=Biohazard Pants
+item.bootsBioSuit.name=Biohazard Shoes
+
+//Blocks
+tile.Autoclave.name=Autoclave
+
+//Potion Effects
+EpidemicCraft.potionBiosuit=Biohazard Suit
+EpidemicCraft.potionFlu=Influenza
+EpidemicCraft.potionMeningitis=Meningitis
+EpidemicCraft.potionCPox=Chicken Pox
+EpidemicCraft.potionPolio=Polio
+EpidemicCraft.potionRabies=Rabies
+EpidemicCraft.potionFoodPois=Salmonella
+EpidemicCraft.potionBubPlague=Bubonic Plague
+EpidemicCraft.potionChol=Cholera
+EpidemicCraft.potionEColi=E-Coli
+EpidemicCraft.potionGiardia=Giardia
+
+//Entities
+entity.EntityFluVillager.name=Influenza Villager
+entity.EntityCPoxVillager.name=Chicken Pox Villager
+entity.EntityPolioVillager.name=Polio Villager
+entity.EntityRabiesWolf.name=Rabies Wolf
+entity.EntityBubPlagueRat.name=Bubonic Plague Rat
+entity.EntityCholSquid.name=Cholera Squid
+entity.EntityEColiVillager.name=EColi Villager
+entity.EntityGiardiaCow.name=Giardia Cow

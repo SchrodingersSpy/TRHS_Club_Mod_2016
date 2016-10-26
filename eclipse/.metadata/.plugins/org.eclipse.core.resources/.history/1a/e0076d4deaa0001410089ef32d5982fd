@@ -1,0 +1,75 @@
+package epidemiccraft.c;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
+import epidemiccraft.b.ModBlocks;
+import epidemiccraft.g.GuiHandler;
+import epidemiccraft.items.ModItems;
+import epidemiccraft.lib.Constants;
+import epidemiccraft.proxy.CommonProxy;
+import epidemiccraft.c.EpidemicCraftTab;
+
+@Mod(modid = "epidemiccraft", name = "EpidemicCraft", version = "Alpha 1.0.0")
+
+
+
+public class EpidemicCraft {
+	
+//Creative Tab//		
+public static CreativeTabs EpidemicCraftTab = new EpidemicCraftTab(CreativeTabs.getNextID(), "EpidemicCraftTab");	
+
+//NO MORE AFTER HERE//
+
+	@Mod.Instance(Constants.MODID)
+	public static EpidemicCraft instance;
+
+
+	@SidedProxy(clientSide = Constants.CLIENT_PROXY_CLASS, serverSide = Constants.SERVER_PROXY_CLASS)
+	public static CommonProxy proxy;
+	
+	@Mod.EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+		ModBlocks.init();
+		ModItems.init();
+		
+    }
+ 
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+    	//SHAPELESS RECIPES
+    	GameRegistry.addShapelessRecipe (new ItemStack(ModItems.Agar, 8), 
+    			Items.beef, Items.reeds, Items.slime_ball);
+    	//END OF SHAPELESS RECIPES
+    	//SHAPED RECIPES
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggCPox, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.SwabCPox, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggEbola, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.SwabEbola, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggFlu, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.SwabFlu, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggPolio, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.SwabPolio, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.EggRabies, 1), new Object [] {"  X", " Y ", "   ", 'X', ModItems.SwabRabies, 'Y', Items.egg});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.PetriDishUsed ,1), new Object [] {"   ", "YXY", "YYY", 'X', ModItems.Agar});
+    	GameRegistry.addRecipe (new ItemStack(ModItems.ThinGlass, 8), new Object [] {"   ", "XXX", "   ", 'X', Blocks.glass});
+    	
+    	//END OF SHAPED RECIPES
+    	//TILE ENTITIES
+    	proxy.registerTileEntities();
+    	
+    	//GUI
+    	NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+    	
+    }
+ 
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent event) {
+ 
+    }
+
+}

@@ -1,0 +1,41 @@
+package epidemiccraft.proxy;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import epidemiccraft.com.EpidemicCraft;
+import epidemiccraft.gui.EpidemicCraftGuiHandler;
+import epidemiccraft.lib.Constants;
+import epidemiccraft.mobs.ModelGiardiaCow;
+import epidemiccraft.mobs.RenderGiardiaCow;
+import epidemiccraft.mobs.EntityGiardiaCowMob;
+import epidemiccraft.tileentity.TileEntityAutoclave;
+
+
+public class CommonProxy {
+	
+	public void preInit(){
+		
+	}
+	
+	public void init(){
+		
+	}
+	
+	public void postInit(){
+		
+	}
+
+	public void registerRenders(){
+		
+	}
+	
+	public void registerTileEntities(){
+		GameRegistry.registerTileEntity(TileEntityAutoclave.class, "EpidemicCraft:TileEntityAutoclave");
+	}
+	
+	public void registerNetworkStuff(){
+		NetworkRegistry.INSTANCE.registerGuiHandler(EpidemicCraft.instance, new EpidemicCraftGuiHandler());
+	}
+}

@@ -1,0 +1,7 @@
+package epidemiccraft.inventory;
+
+import net.minecraft.inventory.Container;
+
+public class ContainerAutoclave extends Container{
+//4;21 gui vid
+}

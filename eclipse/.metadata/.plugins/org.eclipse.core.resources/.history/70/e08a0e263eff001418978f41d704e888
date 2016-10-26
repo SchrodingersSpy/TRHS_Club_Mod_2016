@@ -1,0 +1,10 @@
+package epidemiccraft.c;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class CreativeSorter extends CreativeTabs{
+
+	@Override{
+		displayAllRelevantItems
+	}
+}

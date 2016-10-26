@@ -1,0 +1,45 @@
+import net.minecraft.entity.player.EntityPlayer;
+import cpw.mods.fml.common.network.IGuiHandler;
+
+
+public class GuiHandler implements IGuiHandler {
+	@Override
+    public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+		//System.out.println("This occurrs (client)" + id);
+		if(id == 0) {
+			TileEntity tileEntity = world.getTileEntity(x, y, z);
+			if(tileEntity instanceof TileEntityAutoclave){
+				return new ContainerAutoclave(player.inventory, (TileEntityAutoclave) tileEntity);
+			}
+		}
+		else if(id == 1) {
+			TileEntity tileEntity = world.getTileEntity(x, y, z);
+			if(tileEntity instanceof TileEntityIncubator){
+				System.out.println("Returning new Container");
+				return new ContainerIncubator(player.inventory, (TileEntityIncubator) tileEntity);
+			}
+		}
+		return null;
+    }
+
+    //returns an instance of the Gui you made earlier
+    @Override
+    public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+		//System.out.println("This occurrs (server)" + id);
+    	if(id == 0) {
+			TileEntity tileEntity = world.getTileEntity(x, y, z);
+			if(tileEntity instanceof TileEntityAutoclave){
+				return new GuiContainerAutoclave(player.inventory, (TileEntityAutoclave) tileEntity);
+			}
+    	}
+    	else if(id == 1) {
+			TileEntity tileEntity = world.getTileEntity(x, y, z);
+			if(tileEntity instanceof TileEntityIncubator){
+				System.out.println("Returning new GUIcontainer");
+				return new GuiContainerIncubator(player.inventory, (TileEntityIncubator) tileEntity);
+			}
+    	}
+		return null;
+    }
+
+}

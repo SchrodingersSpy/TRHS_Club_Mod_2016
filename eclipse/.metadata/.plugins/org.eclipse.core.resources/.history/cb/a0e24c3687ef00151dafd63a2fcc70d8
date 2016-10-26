@@ -1,0 +1,24 @@
+package epidemiccraft.inventory;
+
+import epidemiccraft.tileentity.TileEntityAutoclave;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+
+public class ContainerAutoclave extends Container{
+
+	private TileEntityAutoclave tileAutoclavve;
+	private int lastCookTime;
+	private int lastBurnTime;
+	private int lastItemBurnTime;
+	
+	public ContainerAutoclave(InventoryPlayer player, TileEntityAutoclave tileEntityAutoclave){
+		
+	}
+	
+	@Override
+	public boolean canInteractWith(EntityPlayer p_75145_1_) {
+		return false;
+	}
+//4;21 gui vid
+}

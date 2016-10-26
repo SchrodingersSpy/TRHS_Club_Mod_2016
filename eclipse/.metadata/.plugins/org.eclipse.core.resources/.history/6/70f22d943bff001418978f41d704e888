@@ -1,0 +1,46 @@
+package epidemiccraft.c;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import akka.japi.Function;
+
+import com.google.common.collect.Ordering;
+
+import epidemiccraft.items.ModItems;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+public class creativesorter extends CreativeTabs{
+
+    static Comparator<ItemStack> tabSorter;
+
+    private static final CreativeTabs creativeTab = new CreativeTabs(Syringe) {
+
+
+        public void displayAllReleventItems(List items) {
+            super.displayAllReleventItems(items);
+            Collections.sort(items, tabSorter);
+        }
+
+		@Override
+		public Item getTabIconItem() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+    };
+    void preInit() {
+        // create items, blocks, etc.
+        List<Item> order = Arrays.asList(ModItems.Adjuvant, ModItems.Agar);
+        tabSorter = Ordering.explicit(order).onResultOf(new Function<ItemStack, Item>() {
+            @Override
+            public Item apply(ItemStack input) {
+                return input.getItem();
+            }
+        });
+    }
+}

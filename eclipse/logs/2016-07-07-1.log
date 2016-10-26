@@ -1,0 +1,30 @@
+[15:27:52] [main/INFO]: Setting user: Player250
+[15:27:56] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:28:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:EpidemicCraft
+[15:28:11] [Sound Library Loader/INFO]: Sound engine started
+[15:28:17] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:28:18] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:28:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:EpidemicCraft
+[15:28:19] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[15:28:20] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:28:21] [Sound Library Loader/INFO]: Sound engine started
+[15:28:36] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:28:36] [Server thread/INFO]: Generating keypair
+[15:28:37] [Server thread/INFO]: Preparing start region for level 0
+[15:28:38] [Server thread/INFO]: Preparing spawn area: 2%
+[15:28:39] [Server thread/INFO]: Preparing spawn area: 34%
+[15:28:41] [Server thread/WARN]: Invalid statistic in .\saves\New World\stats\c98187a9-e17b-3f48-8a33-882e62d18d19.json: Don't know what stat.killEntity.EntityEbolaBat is
+[15:28:41] [Server thread/INFO]: Changing view distance to 5, from 10
+[15:28:42] [Server thread/INFO]: Player250[local:E:8ce6b927] logged in with entity id 334 at (70.74774636767975, 68.0, 29.83568484091628)
+[15:28:42] [Server thread/INFO]: Player250 joined the game
+[15:28:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2133ms behind, skipping 42 tick(s)
+[15:28:48] [Server thread/INFO]: Saving and pausing game...
+[15:28:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:28:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:28:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:28:54] [Server thread/INFO]: Stopping server
+[15:28:54] [Server thread/INFO]: Saving players
+[15:28:54] [Server thread/INFO]: Saving worlds
+[15:28:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:28:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:28:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End

@@ -1,0 +1,10 @@
+package epidemiccraft.com;
+
+public class AutoclaveRecipes {
+
+	public static Object smelting() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

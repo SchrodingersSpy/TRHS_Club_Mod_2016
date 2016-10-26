@@ -1,0 +1,72 @@
+package epidemiccraft.c;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.logging.Logger;
+
+import epidemiccraft.items.ModItems;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+
+public class EpidemicCraftTab extends CreativeTabs {
+
+	public EpidemicCraftTab(int p_i1853_1_, String p_i1853_2_) {
+		super(p_i1853_1_, p_i1853_2_);
+	}
+
+	@Override
+	public Item getTabIconItem() {
+		return ModItems.Syringe;
+	}
+
+	private ItemSorter itemSorter = new ItemSorter();
+	 
+	public EpidemicCraftTab() {
+		super("EpidemicCraft");
+	}
+ 
+	public Item getTabIconItem1() {
+		return ItemRegistry.snowballNoGrav;
+	}
+ 
+	@Override
+	public void displayAllReleventItems(List items) {
+		super.displayAllReleventItems(items);
+ 
+		// Sort the item list using the ItemSorter instance
+		Collections.sort(items, itemSorter);
+	}
+ 
+	// Sorts items in alphabetical order using their display names
+	private static class ItemSorter implements Comparator<ItemStack> {
+ 
+		@Override
+		public int compare(ItemStack o1, ItemStack o2) {
+			Item item1 = o1.getItem();
+			Item item2 = o2.getItem();
+ 
+			// If item1 is a block and item2 isn't, sort item1 before item2
+			if (((item1 instanceof ItemBlock)) && (!(item2 instanceof ItemBlock))) {
+				return -1;
+			}
+ 
+			// If item2 is a block and item1 isn't, sort item1 after item2
+			if (((item2 instanceof ItemBlock)) && (!(item1 instanceof ItemBlock))) {
+				return 1;
+			}
+ 
+			String displayName1 = o1.getDisplayName();
+			String displayName2 = o2.getDisplayName();
+ 
+			int result = displayName1.compareToIgnoreCase(displayName2);
+			Logger.debug("sorter: \"%s\" \"%s\" - %d", displayName1, displayName2, result);
+			return result;
+		}
+	}
+
+	
+}

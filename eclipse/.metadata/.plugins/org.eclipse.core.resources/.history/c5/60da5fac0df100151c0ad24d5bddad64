@@ -1,0 +1,17 @@
+package epidemiccraft.com;
+
+import net.minecraft.item.ItemStack;
+
+public class AutoclaveRecipes {
+
+	private static final AutoclaveRecipes SMELTING_BASE = new AutoclaveRecipes();
+	
+	public static AutoclaveRecipes smelting(){
+		return SMELTING_BASE;
+	}
+	
+	public ItemStack getSmeltingResult(ItemStack itemstack){
+		
+	}
+
+}

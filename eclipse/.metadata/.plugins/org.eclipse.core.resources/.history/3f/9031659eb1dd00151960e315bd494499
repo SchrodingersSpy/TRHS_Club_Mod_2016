@@ -1,0 +1,120 @@
+package epidemiccraft.blocks.tileentity;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityAutoclave extends TileEntity implements ISidedInventory{
+
+	private static final int[] slotsTop = new int[]{0};
+	private static final int[] slotsBottom = new int[]{2, 1};
+	private static final int[] slotsSides = new int[]{1};
+	
+	private ItemStack[] furnaceItemStacks = new ItemStack[3];
+	
+	public int furnaceBurnTime;
+	public int currentBurnTime;
+	public int furnaceCookTime;
+	
+	private String furnaceName;
+	
+	@Override
+	public int getSizeInventory() {
+		return this.furnaceItemStacks.length;
+	}
+
+	@Override
+	public ItemStack getStackInSlot(int par1) {
+		return this.furnaceItemStacks[par1];
+	}
+
+	@Override
+	public ItemStack decrStackSize(int par1, int par2) {
+		if(this.furnaceItemStacks[par1] != null){
+			ItemStack itemstack;
+			if(this.furnaceItemStacks[par1].stackSize <= par2){
+				itemstack = this.furnaceItemStacks[par1];
+				this.furnaceItemStacks[par1] = null;
+				return itemstack;
+			} else{
+				itemstack = this.furnaceItemStacks[par1].splitStack(par2);
+			}
+		}
+	}
+
+	@Override
+	public ItemStack getStackInSlotOnClosing(int p_70304_1_) {
+
+		return null;
+	}
+
+	@Override
+	public void setInventorySlotContents(int p_70299_1_, ItemStack p_70299_2_) {
+
+		
+	}
+
+	@Override
+	public String getInventoryName() {
+
+		return null;
+	}
+
+	@Override
+	public boolean hasCustomInventoryName() {
+
+		return false;
+	}
+
+	@Override
+	public int getInventoryStackLimit() {
+
+		return 0;
+	}
+
+	@Override
+	public boolean isUseableByPlayer(EntityPlayer p_70300_1_) {
+
+		return false;
+	}
+
+	@Override
+	public void openInventory() {
+
+		
+	}
+
+	@Override
+	public void closeInventory() {
+
+		
+	}
+
+	@Override
+	public boolean isItemValidForSlot(int p_94041_1_, ItemStack p_94041_2_) {
+
+		return false;
+	}
+
+	@Override
+	public int[] getAccessibleSlotsFromSide(int p_94128_1_) {
+
+		return null;
+	}
+
+	@Override
+	public boolean canInsertItem(int p_102007_1_, ItemStack p_102007_2_,
+			int p_102007_3_) {
+
+		return false;
+	}
+
+	@Override
+	public boolean canExtractItem(int p_102008_1_, ItemStack p_102008_2_,
+			int p_102008_3_) {
+
+		return false;
+	}
+
+}
