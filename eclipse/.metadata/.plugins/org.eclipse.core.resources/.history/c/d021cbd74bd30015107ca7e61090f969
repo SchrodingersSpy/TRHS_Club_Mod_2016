@@ -1,0 +1,17 @@
+package epidemiccraft.blocks;
+
+import epidemiccraft.lib.Constants;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public final class ModBlocks {
+	
+	public static Block Autoclave;
+	
+	public static void init(){
+		
+		Autoclave = new Autoclave(Material.iron).setBlockName("Autoclave").setBlockTextureName(Constants.MODID + ":" + name);
+		
+	}
+
+}

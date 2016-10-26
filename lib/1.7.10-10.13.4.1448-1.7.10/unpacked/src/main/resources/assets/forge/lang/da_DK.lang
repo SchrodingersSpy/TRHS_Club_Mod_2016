@@ -1,0 +1,59 @@
+#X-Generator: crowdin.com
+commands.forge.usage=Use /forge <subcommand>. Subcommands are tps, track
+commands.forge.usage.tracking=Use /forge track <type> <duration>. Valid types are te (Tile Entities). Duration is < 60. 
+commands.forge.tps.summary=%s \: Gennemsnitlig tick tid\: %d ms. Gennemsnitlig TPS\: %d
+
+commands.forge.tracking.te.enabled=Tile Entity tracking enabled for %d seconds.
+forge.texture.preload.warning=Advarsel\: Tekstur %s ikke forudindlæst, dette vil foresage grafiske fejl\!
+forge.client.shutdown.internal=Lukker intern server...
+forge.update.newversion=Ny Forge version tilgængelig\: %s
+forge.update.beta.1=%sADVARSEL\: %sForge Beta
+forge.update.beta.2=Store problemer kan finde sted, tjek før du rapporterer.
+
+forge.configgui.forgeConfigTitle=Minecraft Forge Konfiguration
+forge.configgui.ctgy.forgeGeneralConfig.tooltip=Her kan du redigere de indstillinger, der findes i forge.cfg.
+forge.configgui.ctgy.forgeGeneralConfig=Generelle indstillinger
+forge.configgui.ctgy.forgeChunkLoadingConfig.tooltip=Her kan du redigere de indstillinger, der findes i forgeChunkLoading.cfg.
+forge.configgui.ctgy.forgeChunkLoadingConfig=Forge Chunk Loader Default Settings
+forge.configgui.ctgy.forgeChunkLoadingModConfig.tooltip=This is where you can define mod-specific override settings that will be used instead of the defaults.
+forge.configgui.ctgy.forgeChunkLoadingModConfig=Mod Overrides
+forge.configgui.ctgy.forgeChunkLoadingAddModConfig.tooltip=Allows you to define mod-specific settings that will override the defaults. A value of zero in either entry effectively disables any chunkloading capabilities for that mod.
+forge.configgui.ctgy.forgeChunkLoadingAddModConfig=+ Add New Mod Override
+
+forge.configgui.biomeSkyBlendRange.tooltip=Kontroller rækkevidden af himmel blanding for farvede himle i biomer.
+forge.configgui.biomeSkyBlendRange=Biome Himmelblandings Rækkevidde
+forge.configgui.clumpingThreshold.tooltip=Controls the number threshold at which Packet51 is preferred over Packet52.
+forge.configgui.clumpingThreshold=Pakkesammenklumpningstærskel
+forge.configgui.disableVersionCheck.tooltip=Set til sand for at deaktivere Forge's verions tjeknings mekanik. Forge henter en lille json fil fra vores server for versionsinformation. For flere detaljer se ForgeVersion klassen på vores github.
+forge.configgui.disableVersionCheck=Deaktiver Forge Versionstjek
+forge.configgui.enableGlobalConfig=Aktiver Global Konfiguration
+forge.configgui.forceDuplicateFluidBlockCrash.tooltip=Set dette til sand for at fremtvinge et crash hvis mere end en block førsoger at koble tilbage til den samme væske.
+forge.configgui.forceDuplicateFluidBlockCrash=Tving Duplikat Væske Block Crash
+forge.configgui.fullBoundingBoxLadders.tooltip=Set this to true to check the entire entity's collision bounding box for ladders instead of just the block they are in. Causes noticeable differences in mechanics so default is vanilla behavior.
+forge.configgui.fullBoundingBoxLadders=Full Bounding Box Ladders
+forge.configgui.removeErroringEntities.tooltip=Set this to true to remove any Entity that throws an error in its update method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
+forge.configgui.removeErroringEntities=Remove Erroring Entities
+forge.configgui.removeErroringTileEntities.tooltip=Set this to true to remove any TileEntity that throws an error in its update method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
+forge.configgui.removeErroringTileEntities=Remove Erroring Tile Entities
+forge.configgui.sortRecipies.tooltip=Set to true to enable the post initialization sorting of crafting recipes using Forge's sorter. May cause desyncing on conflicting recipies. MUST RESTART MINECRAFT IF CHANGED FROM THE CONFIG GUI.
+forge.configgui.sortRecipies=Sorter Opskrifter
+forge.configgui.zombieBabyChance.tooltip=Chancen hvorpå en zombie (eller underklasse) er en baby. Tillader ændringen af zombie spawn mekanikken.
+forge.configgui.zombieBabyChance=Zombie Baby Chance
+forge.configgui.zombieBaseSummonChance.tooltip=Grundlæggende zombie fremmanings spawn chance. Tillader ændringen af bonus zombie fremmaningsmekanikken.
+forge.configgui.zombieBaseSummonChance=Zombie Fremmanings Chance
+forge.configgui.stencilbits=Aktiver GL Stencil Bits
+forge.configgui.spawnfuzz=Genoplivningsvariations Diameter
+
+forge.configgui.modID.tooltip=Mod ID'en du ønsker at overskrive indstillinger for.
+forge.configgui.modID=Mod ID
+forge.configgui.dormantChunkCacheSize.tooltip=Unloaded chunks can first be kept in a dormant cache for quicker loading times. Specify the size (in chunks) of that cache here.
+forge.configgui.dormantChunkCacheSize=Dormant Chunk Cache Size
+forge.configgui.enableModOverrides.tooltip=Aktiver den indstilling for at tillade definitionen af brugerdefinerede pr. mod indstillinger.
+forge.configgui.enableModOverrides=Aktiver Mod Overskrivning
+forge.configgui.maximumChunksPerTicket.tooltip=This is the maximum number of chunks a single ticket can force.
+forge.configgui.maximumChunksPerTicket=Chunks Per Ticket Limit
+forge.configgui.maximumTicketCount.tooltip=This is the number of chunk loading requests a mod is allowed to make.
+forge.configgui.maximumTicketCount=Mod Billet Begrænsning
+forge.configgui.playerTicketCount.tooltip=Mængden af billeter en spiller kan tildeles i stedet for et mod. Dette er delt over alle mods, og det er op til mods'ene at bruge det.
+forge.configgui.playerTicketCount=Player Ticket Limit
+

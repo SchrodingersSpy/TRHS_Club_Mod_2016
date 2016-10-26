@@ -1,0 +1,31 @@
+package epidemiccraft.c;
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.DamageSource;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class EpidemicCraftEventHooks {
+
+	public class DiseaseHooks
+	{
+	@SubscribeEvent
+	public void onEntityUpdate(LivingUpdateEvent event){
+	
+	if(event.entityLiving.isPotionActive(EpidemicCraft.potionAnthraxEffect.id))
+	{	
+		event.entityLiving.addPotionEffect(new PotionEffect(Potion.blindness.id, 200, 1, false));
+	}
+	}
+
+
+	
+	
+
+
+		
+	
+

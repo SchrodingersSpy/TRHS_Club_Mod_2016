@@ -1,0 +1,44 @@
+package epidemiccraft.proxy;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import epidemiccraft.mobs.EntityBubPlagueRatMob;
+import epidemiccraft.mobs.EntityCPoxVillagerMob;
+import epidemiccraft.mobs.EntityCholSquidMob;
+import epidemiccraft.mobs.EntityEColiVillagerMob;
+import epidemiccraft.mobs.EntityFluVillagerMob;
+import epidemiccraft.mobs.EntityPolioVillagerMob;
+import epidemiccraft.mobs.EntityRabiesWolfMob;
+import epidemiccraft.mobs.GiardiaCowModel;
+import epidemiccraft.mobs.GiardiaCowRender;
+import epidemiccraft.mobs.EbolaBatModel;
+import epidemiccraft.mobs.EbolaBatRender;
+import epidemiccraft.mobs.EntityGiardiaCowMob;
+import epidemiccraft.mobs.EntityEbolaBatMob;
+
+public class ClientProxy  extends CommonProxy{
+
+	@SideOnly(Side.CLIENT)
+	public void preInit(){
+		RenderingRegistry.addNewArmourRendererPrefix("5");
+	}
+	
+	public void init(){
+		this.registerRenders();
+	}
+	
+	
+	public void registerRenders(){
+		RenderingRegistry.registerEntityRenderingHandler(EntityGiardiaCowMob.class, new GiardiaCowRender(new GiardiaCowModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityBubPlagueRatMob.class, new BubPlagueRatRender(new BubPlagueRatModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityCholSquidMob.class, new CholSquidRender(new CholSquidModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityCPoxVillagerMob.class, new CPoxVillagerRender(new CPoxVillagerModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEColiVillagerMob.class, new EColiVillagerRender(new EColiVillagerModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityFluVillagerMob.class, new FluVillagerRender(new FluVillagerModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityPolioVillagerMob.class, new PolioVillagerRender(new PolioVillagerModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityRabiesWolfMob.class, new RabiesWolfRender(new RabiesWolfModel(), 0));
+
+	}
+	
+}

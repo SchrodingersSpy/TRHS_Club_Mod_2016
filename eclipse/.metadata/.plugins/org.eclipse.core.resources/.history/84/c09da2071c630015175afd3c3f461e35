@@ -1,0 +1,44 @@
+package epidemiccraft.m;
+
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityList;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.world.biome.BiomeGenBase;
+import cpw.mods.fml.common.registry.EntityRegistry;
+import epidemiccraft.c.EpidemicCraft;
+import epidemiccraft.lib.Constants;
+
+public class ModEntities {
+	
+	public static void preInit(){
+				
+		EntityRegistry.registerGlobalEntityID(EntityFluVillager.class, "EntityFluVillager", EntityRegistry.findGlobalUniqueEntityId(), 0x180C00 , 0x660000);
+		EntityRegistry.addSpawn(EntityFluVillagerMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.plains, BiomeGenBase.desert);
+
+		EntityRegistry.registerGlobalEntityID(EntityEbolaBatMob.class, "EntityEbolaBat", EntityRegistry.findGlobalUniqueEntityId(), 0x180C00 , 0x660000);
+		EntityRegistry.addSpawn(EntityEbolaBatMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.birchForestHills, BiomeGenBase.forestHills);
+
+		EntityRegistry.registerGlobalEntityID(EntityCPoxVillagerMob.class, "EntityCPoxVillager", EntityRegistry.findGlobalUniqueEntityId(), 0x180C00 , 0x660000);
+		EntityRegistry.addSpawn(EntityCPoxVillagerMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.plains, BiomeGenBase.desert);
+
+		EntityRegistry.registerGlobalEntityID(EntityPolioVillagerMob.class, "EntityPolioVillager", EntityRegistry.findGlobalUniqueEntityId(), 0x180C00 , 0x660000);
+		EntityRegistry.addSpawn(EntityPolioVillagerMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.plains, BiomeGenBase.desert);
+
+		EntityRegistry.registerGlobalEntityID(EntityRabiesWolfMob.class, "EntityRabiesWolf", EntityRegistry.findGlobalUniqueEntityId(), 0x180C00 , 0x660000);
+		EntityRegistry.addSpawn(EntityRabiesWolfMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.birchForestHills, BiomeGenBase.forestHills);
+
+		EntityRegistry.registerGlobalEntityID(EntityBubPlagueRatMob.class, "EntityBubPlagueRat", EntityRegistry.findGlobalUniqueEntityId(), 0x180C00 , 0x660000);
+		EntityRegistry.addSpawn(EntityBubPlagueRatMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.birchForestHills, BiomeGenBase.forestHills);
+
+		EntityRegistry.registerGlobalEntityID(EntityCholSquidMob.class, "EntityCholSquid", EntityRegistry.findGlobalUniqueEntityId(), 0x180C00 , 0x660000);
+		EntityRegistry.addSpawn(EntityCholSquidMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.birchForestHills, BiomeGenBase.forestHills);
+
+		EntityRegistry.registerGlobalEntityID(EntityEColiVillagerMob.class, "EntityEColiVillager", EntityRegistry.findGlobalUniqueEntityId(), 0x180C00 , 0x660000);
+		EntityRegistry.addSpawn(EntityEColiVillagerMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.birchForestHills, BiomeGenBase.forestHills);
+
+		EntityRegistry.registerGlobalEntityID(EntityAnthraxCowMob.class, "EntityAnthraxCow", EntityRegistry.findGlobalUniqueEntityId(), 0x3D1F00, 0x660000);
+		EntityRegistry.addSpawn(EntityAnthraxCowMob.class, 15, 4, 5, EnumCreatureType.monster, BiomeGenBase.birchForest, BiomeGenBase.birchForestHills, BiomeGenBase.forest, BiomeGenBase.savanna, BiomeGenBase.extremeHillsEdge);
+
+	}
+	
+}

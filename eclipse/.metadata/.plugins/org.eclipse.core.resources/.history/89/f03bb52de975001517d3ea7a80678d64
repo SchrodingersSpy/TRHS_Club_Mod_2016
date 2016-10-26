@@ -1,0 +1,21 @@
+package epidemiccraft.items;
+
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.GameRegistry;
+import epidemiccraft.c.EpidemicCraft;
+import epidemiccraft.lib.Constants;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class TissueChol extends Item {
+
+	private String name = "TissueChol";
+	
+	public TissueChol(){
+		
+		setUnlocalizedName(Constants.MODID + "_" + name);
+		setTextureName(Constants.MODID + ":" + name);
+		GameRegistry.registerItem(this, name);
+		setCreativeTab(EpidemicCraft.EpidemicCraftTab);
+	}
+	
+}

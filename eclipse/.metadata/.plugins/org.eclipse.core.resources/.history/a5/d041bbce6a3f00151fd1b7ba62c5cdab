@@ -1,0 +1,5 @@
+package epidemiccraft.c;
+
+public class BioSuitArmor extends ItemArmor{
+	private String [] armourTypes = new String [] {"", "", "", ""};
+}

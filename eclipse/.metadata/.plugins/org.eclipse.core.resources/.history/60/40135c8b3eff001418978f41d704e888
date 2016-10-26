@@ -1,0 +1,21 @@
+package epidemiccraft.c;
+
+import java.util.Collections;
+import java.util.Comparator;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
+
+public class CreativeSorter extends CreativeTabs{
+
+	static Comparator <ItemStack> tabsorter;
+	
+	private static final CreativeTabs creativeTab = new CreativeTabs(){
+		@Override
+			public void displayAllReleventItems(List Items) {
+				super.displayAllReleventItems(items);
+				Collections.sort(items, tabSorter);
+		
+		}
+		
+	}

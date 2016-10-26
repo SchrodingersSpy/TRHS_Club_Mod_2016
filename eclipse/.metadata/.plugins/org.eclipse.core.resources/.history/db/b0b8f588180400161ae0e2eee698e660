@@ -1,0 +1,27 @@
+package epidemiccraft.blocks;
+
+import epidemiccraft.tileentity.TileEntityAutoclave;
+import net.minecraft.block.Block;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.MathHelper;
+import net.minecraft.world.World;
+
+public class AutoclaveActive {
+
+	public AutoclaveActive(boolean b) {
+	}
+
+	public Block setBlockName(String string) {
+		return null;
+	}
+	
+	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entityplayer, ItemStack itemstack){
+		if(entityplayer == null){
+			return;
+		}
+		TileEntityAutoclave tile = (TileEntityAutoclave)world.getTileEntity(x, y, z);
+		tile.direction = MathHelper.floor_double((double)(entityplayer.rotationYaw * 4.0F / 360) + 0.5D) & 3;
+	}
+
+}

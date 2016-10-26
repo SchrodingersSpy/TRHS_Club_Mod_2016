@@ -1,0 +1,26 @@
+package epidemiccraft.gui;
+
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import epidemiccraft.inventory.ContainerAutoclave;
+import epidemiccraft.tileentity.TileEntityAutoclave;
+
+@SideOnly(Side.CLIENT)
+public class guiAutoclave extends GuiContainer{
+
+	private static final ResourceLocation autoclaveGuiTextures = new ResourceLocation("textures/gui/autoclave.png")
+	
+	public guiAutoclave(InventoryPlayer invPlayer, TileEntityAutoclave tile) {
+		super(new ContainerAutoclave(invPlayer, tile));
+	}
+
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float p_146976_1_,
+			int p_146976_2_, int p_146976_3_) {
+		
+	}
+
+}

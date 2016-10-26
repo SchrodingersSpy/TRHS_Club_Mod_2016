@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="269" key="DIALOG_WIDTH"/>
+		<item value="177" key="DIALOG_Y_ORIGIN"/>
+		<item value="394" key="DIALOG_HEIGHT"/>
+		<item value="157" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="FoodPoisVaccine" key="selection"/>
+		<list key="findhistory">
+			<item value="Giardia"/>
+			<item value="p_77849_3_"/>
+			<item value="onEaten"/>
+			<item value="p_77849_2_"/>
+			<item value="p_77849_1_"/>
+			<item value="Plastic"/>
+			<item value="SyringeMeningitis"/>
+			<item value="200"/>
+		</list>
+		<list key="replacehistory">
+			<item value="FoodPoisVaccine"/>
+			<item value="RabiesVaccine"/>
+			<item value="PolioVaccine"/>
+			<item value="MeningitisVaccine"/>
+			<item value="FluVaccine"/>
+			<item value="CPoxVaccine"/>
+			<item value="EColiVaccine"/>
+			<item value="GiradiaVaccine"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,7 @@
+package epidemiccraft.mobs;
+
+import net.minecraft.client.model.ModelBase;
+
+public class BubPlagueRatModel extends ModelBase{
+
+}

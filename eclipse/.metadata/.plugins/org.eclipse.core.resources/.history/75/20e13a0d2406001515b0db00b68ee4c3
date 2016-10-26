@@ -1,0 +1,55 @@
+package epidemiccraft.c;
+
+import cpw.mods.fml.common.Mod.EventHandler;
+import ibxm.Player;
+import epidemiccraft.items.ModItems;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.ITextureObject;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ResourceLocation;
+
+public class PotionAnthraxEffect extends Potion {
+	
+	public PotionAnthraxEffect(int par1, boolean par2, int par3){
+	
+		super(par1, par2, par3);
+	}
+	
+	@Override
+	public boolean isBadEffect()
+	{
+	return true;
+	}
+	
+	public Potion setIconIndex(int par1, int par2)
+	{
+	super.setIconIndex(par1,par2);
+	return (Potion)this;
+	}
+
+	@Override
+	public int getStatusIconIndex()
+	{
+	ResourceLocation r = new ResourceLocation("epidemiccraft","textures/gui/inventory.png");
+
+	ITextureObject texture = Minecraft.getMinecraft().renderEngine.getTexture(r);
+	Minecraft.getMinecraft().renderEngine.bindTexture(r);
+
+	//EpidemicCraft.potionAnthraxEffect.addCurativeItem(new ItemStack(ModItems.SyringeAnthrax));
+	
+	return super.getStatusIconIndex();
+	}
+	
+    PotionMeta poMeta = po.getItemMeta();
+    poMeta.addCustomEffect(PotionEffectType.SPEED, false);
+    po.setItemMeta(poMeta);
+    inv.addItem(po);
+	
+	
+
+	
+}

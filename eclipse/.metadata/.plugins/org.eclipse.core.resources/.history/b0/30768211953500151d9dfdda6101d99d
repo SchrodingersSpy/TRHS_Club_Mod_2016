@@ -1,0 +1,179 @@
+package epidemiccraft.items;
+
+import net.minecraft.item.Item;
+
+public final class ModItems {
+
+	public static Item Agar;
+	public static Item ThinGlass;
+	
+	public static Item PetriDish;
+	public static Item PetriDishUsed;
+	public static Item PetriDishFoodPois;
+	public static Item PetriDishBubPlague;
+	public static Item PetriDishChol;
+	public static Item PetriDishEColi;
+	public static Item PetriDishAnthrax;
+	public static Item EggFlu;
+	public static Item EggEbola;
+	public static Item EggCPox;
+	public static Item EggPolio;
+	public static Item EggRabies;
+	
+	public static Item VaccineJar;
+	public static Item VaccineJarUsed;
+	public static Item VaccineJarRuined;
+	public static Item VaccineJarFlu;
+	public static Item VaccineJarEbola;
+	public static Item VaccineJarCPox;
+	public static Item VaccineJarPolio;
+	public static Item VaccineJarRabies;
+	public static Item VaccineJarFoodPois;
+	public static Item VaccineJarBubPlague;
+	public static Item VaccineJarChol;
+	public static Item VaccineJarEColi;
+	public static Item VaccineJarAnthrax;
+	
+	public static Item TestTube;
+	public static Item TestTubeUsed;
+	public static Item TestTubeFlu;
+	public static Item TestTubeEbola;
+	public static Item TestTubeCPox;
+	public static Item TestTubePolio;
+	public static Item TestTubeRabies;
+	public static Item TestTubeFoodPois;
+	public static Item TestTubeBubPlague;
+	public static Item TestTubeChol;
+	public static Item TestTubeEColi;
+	public static Item TestTubeAnthrax;
+	
+	public static Item TissueFlu;
+	public static Item TissueEbola;
+	public static Item TissueCPox;
+	public static Item TissuePolio;
+	public static Item TissueRabies;
+	public static Item TissueFoodPois;
+	public static Item TissueBubPlague;
+	public static Item TissueChol;
+	public static Item TissueEColi;
+	public static Item TissueAnthrax;
+	
+	public static Item Needle;
+	public static Item UsedNeedle;
+	public static Item SyringeTube;
+	public static Item SyringeTubeUsed;
+	public static Item SyringePlunger;
+	public static Item SyringePlungerUsed;
+	public static Item IronRod;
+	public static Item IronRodUsed;
+	public static Item Syringe;
+	public static Item SyringeUsed; 
+	public static Item SyringeFlu;
+	public static Item SyringeEbola;
+	public static Item SyringeCPox;
+	public static Item SyringePolio;
+	public static Item SyringeRabies;
+	public static Item SyringeFoodPois;
+	public static Item SyringeBubPlague;
+	public static Item SyringeChol;
+	public static Item SyringeEColi;
+	public static Item SyringeAnthrax;
+	public static Item SyringeSampleEColi;
+	public static Item SyringeSampleEbola;
+	public static Item SyringeSampleFlu;
+	public static Item SyringeSamplePolio;
+	public static Item SyringeSampleRabies;
+
+	public static Item Purifier;
+	public static Item Preservative;
+	public static Item Adjuvant;
+	
+	public static Item Rubber;
+	public static Item Mercury;
+	
+	
+	public static void init(){
+		
+
+		Agar = new Agar();
+		ThinGlass = new ThinGlass();
+		PetriDish = new PetriDish();
+		PetriDishUsed = new PetriDishUsed();
+		PetriDishFoodPois = new PetriDishFoodPois();
+		PetriDishBubPlague = new PetriDishBubPlague();
+		PetriDishChol = new PetriDishChol();
+		PetriDishEColi = new PetriDishEColi();
+		PetriDishAnthrax = new PetriDishAnthrax();
+		EggFlu = new EggFlu();
+		EggEbola = new EggEbola();
+		EggCPox = new EggCPox();
+		EggPolio = new EggPolio();
+		EggRabies = new EggRabies();
+		
+		VaccineJar = new VaccineJar();
+		VaccineJarUsed = new VaccineJarUsed();
+		VaccineJarRuined = new VaccineJarRuined();
+		VaccineJarFlu = new VaccineJarFlu();
+		VaccineJarEbola = new VaccineJarEbola();
+		VaccineJarCPox = new VaccineJarCPox();
+		VaccineJarPolio = new VaccineJarPolio();
+		VaccineJarRabies = new VaccineJarRabies();
+		VaccineJarFoodPois = new VaccineJarFoodPois();
+		VaccineJarBubPlague = new VaccineJarBubPlague();
+		VaccineJarChol = new VaccineJarChol();
+		VaccineJarEColi = new VaccineJarEColi();
+		VaccineJarAnthrax = new VaccineJarAnthrax();
+		
+		TestTube = new TestTube();
+		TestTubeUsed = new TestTubeUsed();
+		TestTubeFlu = new TestTubeFlu();
+		TestTubeEbola = new TestTubeEbola();
+		TestTubeCPox = new TestTubeCPox();
+		TestTubePolio = new TestTubePolio();
+		TestTubeRabies = new TestTubeRabies();
+		TestTubeFoodPois = new TestTubeFoodPois();
+		TestTubeBubPlague = new TestTubeBubPlague();
+		TestTubeChol = new TestTubeChol();
+		TestTubeEColi = new TestTubeEColi();
+		TestTubeAnthrax = new TestTubeAnthrax();
+		
+		TissueFlu = new TissueFlu();
+		TissueEbola = new TissueEbola();
+		TissueCPox = new TissueCPox();
+		TissuePolio = new TissuePolio();
+		TissueRabies = new TissueRabies();
+		TissueBubPlague = new TissueBubPlague();
+		TissueChol = new TissueChol();
+		TissueEColi = new TissueEColi();
+		TissueAnthrax = new TissueAnthrax();
+		
+		Needle = new Needle();
+		UsedNeedle = new UsedNeedle();
+		SyringeTube = new SyringeTube();
+		SyringeTubeUsed = new SyringeTubeUsed();
+		SyringePlungerUsed = new SyringePlungerUsed();
+		IronRodUsed = new IronRodUsed();
+		Syringe = new Syringe();
+		SyringeUsed = new SyringeUsed(0, 0f, false).setAlwaysEdible();
+		SyringeFlu = new SyringeFlu(0, 0f, false).setAlwaysEdible();
+		SyringeEbola = new SyringeEbola(0, 0f, false).setAlwaysEdible();
+		SyringeCPox = new SyringeCPox(0, 0f, false).setAlwaysEdible();
+		SyringePolio = new SyringePolio(0, 0f, false).setAlwaysEdible();
+		SyringeRabies = new SyringeRabies(0, 0f, false).setAlwaysEdible();
+		SyringeFoodPois = new SyringeFoodPois(0, 0f, false).setAlwaysEdible();
+		SyringeBubPlague = new SyringeBubPlague(0, 0f, false).setAlwaysEdible();
+		SyringeChol = new SyringeChol(0, 0f, false).setAlwaysEdible();
+		SyringeEColi = new SyringeEColi(0, 0f, false).setAlwaysEdible();
+		SyringeAnthrax = new SyringeAnthrax(0, 0f, false).setAlwaysEdible();
+		SyringeSampleEColi = new SyringeSampleEColi();
+		
+
+		Purifier = new Purifier();
+		Preservative = new Preservative();
+		Adjuvant = new Adjuvant();
+		
+		Rubber = new Rubber();
+		Mercury = new Mercury();
+	}
+	
+}

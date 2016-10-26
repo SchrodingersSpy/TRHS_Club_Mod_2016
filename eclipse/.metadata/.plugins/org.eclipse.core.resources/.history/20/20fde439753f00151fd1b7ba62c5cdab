@@ -1,0 +1,26 @@
+package epidemiccraft.c;
+
+import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+
+public class BioSuitArmor extends ItemArmor{
+	private String [] armourTypes = new String [] {"helmetBioSuit", "chestplateBioSuit", "legBioSuit", "bootsBioSuit"};
+
+	public BioSuitArmor(ArmorMaterial armorMaterial, int renderIndex, int armourType){
+		super(armorMaterial, renderIndex, armourType);
+	}
+	
+	@Override
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String layer){
+		if(stack.getItem().equals(EpidemicCraft.helmetBioSuit)|| stack.getItem().equals(EpidemicCraft.chestplateBioSuit)|| stack.getItem().equals(EpidemicCraft.legsBiosuit)|| stack.getItem().equals(EpidemicCraft.bootsBioSuit)){
+			return "EpidemicCraft:textures/armor/BioSuitTexture.png";
+		}
+		
+		if(stack.equals(EpidemicCraft.legsBioSuit)){
+			
+		}
+		else return null;
+	}
+	
+}

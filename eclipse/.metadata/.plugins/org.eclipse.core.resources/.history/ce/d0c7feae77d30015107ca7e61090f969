@@ -1,0 +1,5 @@
+package epidemiccraft.blocks.gui;
+
+public class AutoclaveTileEntityGUI extends GuiContainer{
+
+}

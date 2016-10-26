@@ -1,0 +1,27 @@
+package epidemiccraft.blocks;
+
+import org.lwjgl.opengl.GL11;
+
+import epidemiccraft.lib.Constants;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
+
+public class RenderAutoclave extends TileEntitySpecialRenderer{
+
+	ResourceLocation texture = new ResourceLocation(Constants.MODID + ":" + "textures/blocks/Autoclave.png");
+	
+	private ModelAutoclave model;
+	
+	public RenderAutoclave(){
+		this.model = new ModelAutoclave();
+	}
+	
+	@Override
+	public void renderTileEntityAt(TileEntity p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_) {
+		GL11.glPushMatrix();
+		GL11.glTranslatef(x + 0.5, y + 1.5, z + 0.5)
+		GL11.glRotatef(angle, x, y, z)
+	}
+
+}
