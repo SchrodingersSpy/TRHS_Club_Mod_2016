@@ -1,0 +1,18 @@
+
+Make Github Account, find repo, set up a branch for yourself.
+
+In terminal,
+
+git init
+
+git clone <URL> --branch <BranchName>
+
+Work on your code, do whatever you want to it. When completed, put the folder somewhere. Keep it backed up. Once satisfied with changes,
+
+cd <Directory>
+
+git add .
+
+git commit -m “CommitName”
+
+git push origin <BranchName>
