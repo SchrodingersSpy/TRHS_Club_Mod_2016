@@ -1,0 +1,94 @@
+package epidemiccraft.items;
+
+import net.minecraft.item.Item;
+
+public final class ModItems {
+
+	public static Item Agar;
+	
+	public static Item PetriDish;
+	public static Item PetriDishUsed;
+	public static Item PetriDishFoodPois;
+	public static Item PetriDishBubPlague;
+	public static Item PetriDishChol;
+	public static Item PetriDishEColi;
+	public static Item PetriDishAnthrax;
+	public static Item TestEgg;
+	public static Item EggFlu;
+	public static Item EggEbola;
+	public static Item EggCPox;
+	public static Item EggPolio;
+	public static Item EggRabies;
+	
+	public static Item VaccineJar;
+	public static Item VaccineJarUsed;
+	public static Item VaccineJarFlu;
+	public static Item VaccineJarEbola;
+	public static Item VaccineJarCPox;
+	public static Item VaccineJarPolio;
+	public static Item VaccineJarRabies;
+	public static Item VaccineJarFoodPois;
+	public static Item VaccineJarBubPlague;
+	public static Item VaccineJarChol;
+	public static Item VaccineJarEColi;
+	public static Item VaccineJarAnthrax;
+	
+	public static Item TestTube;
+	public static Item TestTubeUsed;
+	public static Item TestTubeFlu;
+	public static Item TestTubeEbola;
+	public static Item TestTubeCPox;
+	public static Item TestTubePolio;
+	public static Item TestTubeRabies;
+	public static Item TestTubeFoodPois;
+	public static Item TestTubeBubPlague;
+	public static Item TestTubeChol;
+	public static Item TestTubeEColi;
+	public static Item TestTubeAnthrax;
+	
+	public static Item Swab;
+	public static Item SwabUsed;
+	public static Item SwabFlu;
+	public static Item SwabEbola;
+	public static Item SwabCPox;
+	public static Item SwabPolio;
+	public static Item SwabRabies;
+	public static Item SwabFoodPois;
+	public static Item SwabBubPlague;
+	public static Item SwabChol;
+	public static Item SwabEColi;
+	public static Item SwabAnthrax;
+	
+	public static Item Syringe;
+	public static Item SyringeUsed; 
+	public static Item SyringeFlu;
+	public static Item SyringeEbola;
+	public static Item SyringeCPox;
+	public static Item SyringePolio;
+	public static Item SyringeRabies;
+	public static Item SyringeFoodPois;
+	public static Item SyringeBubPlague;
+	public static Item SyringeChol;
+	public static Item SyringeEColi;
+	public static Item SyringeAnthrax;
+
+	
+	
+	
+	public static void init(){
+		
+		Agar = new Agar();
+		PetriDish = new PetriDish();
+		PetriDishUsed = new PetriDishUsed();
+		PetriDishFoodPois = new PetriDishFoodPois();
+		PetriDishBubPlague = new PetriDishBubPlague();
+		PetriDishChol = new PetriDishChol();
+		PetriDishEColi = new PetriDishEColi();
+		PetriDishAnthrax = new PetriDishAnthrax();
+		
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,7 @@
+package epidemiccraft.items;
+
+import net.minecraft.item.Item;
+
+public class EbolaFluid extends Item {
+
+}

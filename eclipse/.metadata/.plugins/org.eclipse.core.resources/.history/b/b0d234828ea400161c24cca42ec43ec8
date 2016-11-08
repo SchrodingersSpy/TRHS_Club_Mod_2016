@@ -1,0 +1,222 @@
+package epidemiccraft.com;
+
+import java.util.Iterator;
+import java.util.List;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class EventTransmission {
+
+	@SubscribeEvent
+	public void giveFlu(LivingUpdateEvent event){
+		
+		if(event.entityLiving instanceof EntityPlayer){
+			
+			EntityPlayer player1 = (EntityPlayer)event.entityLiving;				
+			if(player1.getActivePotionEffect(EpidemicCraft.potionFlu)  != null){
+				
+				List<EntityPlayer> list = player1.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox(player1.posX - 2, player1.posY - 2, player1.posZ - 2, player1.posX + 2, player1.posY + 2, player1.posZ + 2));						
+				if(list != null){
+					
+					Iterator<EntityPlayer> iterator = list.listIterator();
+					while(iterator.hasNext()){
+						
+						EntityPlayer nextPlayer = iterator.next();
+							if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionFluVaccine) != null){
+								return;
+							}else{
+								if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionBiosuit) != null){
+									return;
+								}else{
+									nextPlayer.addPotionEffect(new PotionEffect(EpidemicCraft.potionFlu.id, player1.getActivePotionEffect(EpidemicCraft.potionFlu).getDuration(), 0));
+									nextPlayer.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, player1.getActivePotionEffect(EpidemicCraft.potionFlu).getDuration(), 0));
+									nextPlayer.addPotionEffect(new PotionEffect(Potion.confusion.id, player1.getActivePotionEffect(EpidemicCraft.potionFlu).getDuration(), 0));
+									nextPlayer.addPotionEffect(new PotionEffect(Potion.digSlowdown.id, player1.getActivePotionEffect(EpidemicCraft.potionFlu).getDuration(), 0));
+								
+								}
+							}
+					}
+				}
+			}
+		}
+	}
+						
+	@SubscribeEvent
+	public void giveMeningitis(LivingUpdateEvent event){
+		
+		if(event.entityLiving instanceof EntityPlayer){
+			
+			EntityPlayer player1 = (EntityPlayer)event.entityLiving;				
+			if(player1.getActivePotionEffect(EpidemicCraft.potionMeningitis)  != null){
+				
+				List<EntityPlayer> list = player1.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox(player1.posX - 2, player1.posY - 2, player1.posZ - 2, player1.posX + 2, player1.posY + 2, player1.posZ + 2));						
+				if(list != null){
+					
+					Iterator<EntityPlayer> iterator = list.listIterator();
+					while(iterator.hasNext()){
+						
+						EntityPlayer nextPlayer = iterator.next();
+							if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionBiosuit) != null){
+								return;
+							}else{
+								if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionMeningitisVaccine) != null){
+									return;
+								}else{
+								nextPlayer.addPotionEffect(new PotionEffect(EpidemicCraft.potionMeningitis.id, player1.getActivePotionEffect(EpidemicCraft.potionMeningitis).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.poison.id, player1.getActivePotionEffect(EpidemicCraft.potionMeningitis).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.hunger.id, player1.getActivePotionEffect(EpidemicCraft.potionMeningitis).getDuration(), 0));
+							}
+					}
+				}
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void giveCPox(LivingUpdateEvent event){
+		
+		if(event.entityLiving instanceof EntityPlayer){
+			
+			EntityPlayer player1 = (EntityPlayer)event.entityLiving;				
+			if(player1.getActivePotionEffect(EpidemicCraft.potionCPox)  != null){
+				
+				List<EntityPlayer> list = player1.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox(player1.posX - 2, player1.posY - 2, player1.posZ - 2, player1.posX + 2, player1.posY + 2, player1.posZ + 2));						
+				if(list != null){
+					
+					Iterator<EntityPlayer> iterator = list.listIterator();
+					while(iterator.hasNext()){
+						
+						EntityPlayer nextPlayer = iterator.next();
+							if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionCPoxVaccine) != null){
+								return;
+							}else{
+								nextPlayer.addPotionEffect(new PotionEffect(EpidemicCraft.potionCPox.id, player1.getActivePotionEffect(EpidemicCraft.potionCPox).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.confusion.id, player1.getActivePotionEffect(EpidemicCraft.potionCPox).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.hunger.id, player1.getActivePotionEffect(EpidemicCraft.potionCPox).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.digSlowdown.id, player1.getActivePotionEffect(EpidemicCraft.potionCPox).getDuration(), 0));
+							}
+					}
+				}
+			}
+		}
+	}
+
+	@SubscribeEvent
+	public void givePolio(LivingUpdateEvent event){
+		
+		if(event.entityLiving instanceof EntityPlayer){
+			
+			EntityPlayer player1 = (EntityPlayer)event.entityLiving;				
+			if(player1.getActivePotionEffect(EpidemicCraft.potionPolio)  != null){
+				
+				List<EntityPlayer> list = player1.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox(player1.posX - 2, player1.posY - 2, player1.posZ - 2, player1.posX + 2, player1.posY + 2, player1.posZ + 2));						
+				if(list != null){
+					
+					Iterator<EntityPlayer> iterator = list.listIterator();
+					while(iterator.hasNext()){
+						
+						EntityPlayer nextPlayer = iterator.next();
+							if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionPolioVaccine) != null){
+								return;
+							}else{
+								nextPlayer.addPotionEffect(new PotionEffect(EpidemicCraft.potionPolio.id, player1.getActivePotionEffect(EpidemicCraft.potionPolio).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.confusion.id, player1.getActivePotionEffect(EpidemicCraft.potionPolio).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.hunger.id, player1.getActivePotionEffect(EpidemicCraft.potionPolio).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.digSlowdown.id, player1.getActivePotionEffect(EpidemicCraft.potionPolio).getDuration(), 0));
+							}
+					}
+				}
+			}
+		}
+	}
+
+	@SubscribeEvent
+	public void giveFoodPois(LivingUpdateEvent event){
+		
+		if(event.entityLiving instanceof EntityPlayer){
+			
+			EntityPlayer player1 = (EntityPlayer)event.entityLiving;				
+			if(player1.getActivePotionEffect(EpidemicCraft.potionFoodPois)  != null){
+				
+				List<EntityPlayer> list = player1.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox(player1.posX - 2, player1.posY - 2, player1.posZ - 2, player1.posX + 2, player1.posY + 2, player1.posZ + 2));						
+				if(list != null){
+					
+					Iterator<EntityPlayer> iterator = list.listIterator();
+					while(iterator.hasNext()){
+						
+						EntityPlayer nextPlayer = iterator.next();
+							if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionFoodPoisVaccine) != null){
+								return;
+							}else{
+								nextPlayer.addPotionEffect(new PotionEffect(EpidemicCraft.potionFoodPois.id, player1.getActivePotionEffect(EpidemicCraft.potionFoodPois).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.confusion.id, player1.getActivePotionEffect(EpidemicCraft.potionFoodPois).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.poison.id, player1.getActivePotionEffect(EpidemicCraft.potionFoodPois).getDuration(), 0));
+							}
+					}
+				}
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void giveEColi(LivingUpdateEvent event){
+		
+		if(event.entityLiving instanceof EntityPlayer){
+			
+			EntityPlayer player1 = (EntityPlayer)event.entityLiving;				
+			if(player1.getActivePotionEffect(EpidemicCraft.potionEColi)  != null){
+				
+				List<EntityPlayer> list = player1.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox(player1.posX - 2, player1.posY - 2, player1.posZ - 2, player1.posX + 2, player1.posY + 2, player1.posZ + 2));						
+				if(list != null){
+					
+					Iterator<EntityPlayer> iterator = list.listIterator();
+					while(iterator.hasNext()){
+						
+						EntityPlayer nextPlayer = iterator.next();
+							if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionEColiVaccine) != null){
+								return;
+							}else{
+								nextPlayer.addPotionEffect(new PotionEffect(EpidemicCraft.potionEColi.id, player1.getActivePotionEffect(EpidemicCraft.potionEColi).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.confusion.id, player1.getActivePotionEffect(EpidemicCraft.potionEColi).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.poison.id, player1.getActivePotionEffect(EpidemicCraft.potionEColi).getDuration(), 0));
+							}
+					}
+				}
+			}
+		}
+	}
+
+	public void giveGiardia(LivingUpdateEvent event){
+		
+		if(event.entityLiving instanceof EntityPlayer){
+			
+			EntityPlayer player1 = (EntityPlayer)event.entityLiving;				
+			if(player1.getActivePotionEffect(EpidemicCraft.potionGiardia)  != null){
+				
+				List<EntityPlayer> list = player1.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox(player1.posX - 2, player1.posY - 2, player1.posZ - 2, player1.posX + 2, player1.posY + 2, player1.posZ + 2));						
+				if(list != null){
+					
+					Iterator<EntityPlayer> iterator = list.listIterator();
+					while(iterator.hasNext()){
+						
+						EntityPlayer nextPlayer = iterator.next();
+							if(nextPlayer.getActivePotionEffect(EpidemicCraft.potionGiardiaVaccine) != null){
+								return;
+							}else{
+								nextPlayer.addPotionEffect(new PotionEffect(EpidemicCraft.potionGiardia.id, player1.getActivePotionEffect(EpidemicCraft.potionGiardia).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.confusion.id, player1.getActivePotionEffect(EpidemicCraft.potionGiardia).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.hunger.id, player1.getActivePotionEffect(EpidemicCraft.potionGiardia).getDuration(), 0));
+								nextPlayer.addPotionEffect(new PotionEffect(Potion.digSlowdown.id, player1.getActivePotionEffect(EpidemicCraft.potionGiardia).getDuration(), 0));
+							}
+					}
+				}
+			}
+		}
+	}
+		
+}

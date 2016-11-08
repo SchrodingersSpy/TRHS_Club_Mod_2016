@@ -1,0 +1,9 @@
+package epidemiccraft.c;
+
+import net.minecraft.util.DamageSource;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+
+public class EpidemicCraftEventHooks {
+
+
+}

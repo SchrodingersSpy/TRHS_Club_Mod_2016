@@ -1,0 +1,47 @@
+package epidemiccraft.c;
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.DamageSource;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class EpidemicCraftEventHooks {
+
+	public class DiseaseHooks
+	{
+	@SubscribeEvent
+	public void onEntityAttack(LivingAttackEvent event)
+	{
+	if (event.source.getSourceOfDamage() != null)
+	{
+	if(event.source.getSourceOfDamage() instanceof EntityLivingBase)
+	{
+	EntityLivingBase player = (EntityLivingBase)event.source.getSourceOfDamage();
+	if(player.isPotionActive(EpidemicCraft.potionAnthraxEffect.id))
+	{
+	    PotionMeta poMeta = po.getItemMeta();
+	    poMeta.setDisplayName(ChatColor.GOLD + "Swag" + ChatColor.DARK_PURPLE + "Potion");
+	    poMeta.addCustomEffect(PotionEffectType.SPEED, false);
+	    po.setItemMeta(poMeta);
+	    inv.addItem(po);
+		
+		//((EntityLivingBase)player).addPotionEffect(new PotionEffect(Potion.poison.id, 0, 1));
+	}
+	if(player.isPotionActive(EpidemicCraft.potionBubPlagueEffect.id))
+	{
+		//Add info here later
+	}
+	if(player.isPotionActive(EpidemicCraft.potionCholEffect.id)){
+		
+	}
+	}
+	}
+	}
+	}
+	}
+		
+	
+

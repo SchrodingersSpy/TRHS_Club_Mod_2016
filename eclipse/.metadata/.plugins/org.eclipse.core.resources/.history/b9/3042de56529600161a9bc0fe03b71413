@@ -1,0 +1,246 @@
+package epidemiccraft.com;
+
+import net.minecraft.potion.Potion;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class EventPotionZero {
+
+	//CUSTOM EFFECTS
+	
+	@SubscribeEvent
+	public void removeFlu(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionFlu)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionFlu).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionFlu.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeFluVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionFluVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionFluVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionFluVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeMeningitis(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionMeningitis)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionMeningitis).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionMeningitis.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeMeningitisVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionMeningitisVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionMeningitisVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionMeningitisVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeCPox(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionCPox)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionCPox).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionCPox.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeCPoxVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionCPoxVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionCPoxVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionCPoxVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeRabies(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionRabies)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionRabies).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionRabies.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeRabiesVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionRabiesVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionRabiesVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionRabiesVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removePolio(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionPolio)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionPolio).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionPolio.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removePolioVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionPolioVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionPolioVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionPolioVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeFoodPois(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionFoodPois)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionFoodPois).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionFoodPois.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeFoodPoisVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionFoodPoisVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionFoodPoisVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionFoodPoisVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeEColi(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionEColi)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionEColi).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionEColi.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeEColiVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionEColiVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionEColiVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionEColiVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeGiardia(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionGiardia)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionGiardia).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionGiardia.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeGiardiaVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionGiardiaVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionGiardiaVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionGiardiaVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+	//NORMAL EFFECTS
+	
+	
+	///////
+	
+	@SubscribeEvent
+	public void removemoveSlowdown(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(Potion.moveSlowdown)) {
+			if (event.entityLiving.getActivePotionEffect(Potion.moveSlowdown).getDuration()==0) {
+				event.entityLiving.removePotionEffect(Potion.moveSlowdown.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removedigSpeed(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(Potion.digSpeed)) {
+			if (event.entityLiving.getActivePotionEffect(Potion.digSpeed).getDuration()==0) {
+				event.entityLiving.removePotionEffect(Potion.digSpeed.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removedigSlowdown(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(Potion.digSlowdown)) {
+			if (event.entityLiving.getActivePotionEffect(Potion.digSlowdown).getDuration()==0) {
+				event.entityLiving.removePotionEffect(Potion.digSlowdown.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removedamageBoost(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(Potion.damageBoost)) {
+			if (event.entityLiving.getActivePotionEffect(Potion.damageBoost).getDuration()==0) {
+				event.entityLiving.removePotionEffect(Potion.damageBoost.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removejump(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(Potion.jump)) {
+			if (event.entityLiving.getActivePotionEffect(Potion.jump).getDuration()==0) {
+				event.entityLiving.removePotionEffect(Potion.jump.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeconfusion(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(Potion.confusion)) {
+			if (event.entityLiving.getActivePotionEffect(Potion.confusion).getDuration()==0) {
+				event.entityLiving.removePotionEffect(Potion.confusion.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeregeneration(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(Potion.regeneration)) {
+			if (event.entityLiving.getActivePotionEffect(Potion.regeneration).getDuration()==0) {
+				event.entityLiving.removePotionEffect(Potion.regeneration.id);
+				return;	
+			}
+		}
+	}
+	
+}

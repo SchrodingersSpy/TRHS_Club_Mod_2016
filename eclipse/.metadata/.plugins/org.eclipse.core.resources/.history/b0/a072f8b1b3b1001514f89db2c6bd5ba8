@@ -1,0 +1,55 @@
+package epidemiccraft.proxy;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import epidemiccraft.mobs.ModelBubPlagueRat;
+import epidemiccraft.mobs.RenderBubPlagueRat;
+import epidemiccraft.mobs.ModelCPoxVillager;
+import epidemiccraft.mobs.RenderCPoxVillager;
+import epidemiccraft.mobs.ModelCholSquid;
+import epidemiccraft.mobs.RenderCholSquid;
+import epidemiccraft.mobs.ModelEColiVillager;
+import epidemiccraft.mobs.RenderEColiVillager;
+import epidemiccraft.mobs.EntityBubPlagueRatMob;
+import epidemiccraft.mobs.EntityCPoxVillagerMob;
+import epidemiccraft.mobs.EntityCholSquidMob;
+import epidemiccraft.mobs.EntityEColiVillagerMob;
+import epidemiccraft.mobs.EntityFluVillagerMob;
+import epidemiccraft.mobs.EntityPolioVillagerMob;
+import epidemiccraft.mobs.EntityRabiesWolfMob;
+import epidemiccraft.mobs.ModelFluVillager;
+import epidemiccraft.mobs.RenderFluVillager;
+import epidemiccraft.mobs.GiardiaCowModel;
+import epidemiccraft.mobs.GiardiaCowRender;
+import epidemiccraft.mobs.EntityGiardiaCowMob;
+import epidemiccraft.mobs.ModelPolioVillager;
+import epidemiccraft.mobs.RenderPolioVillager;
+import epidemiccraft.mobs.ModelRabiesWolf;
+import epidemiccraft.mobs.RenderRabiesWolf;
+
+public class ClientProxy  extends CommonProxy{
+
+	@SideOnly(Side.CLIENT)
+	public void preInit(){
+		RenderingRegistry.addNewArmourRendererPrefix("5");
+	}
+	
+	public void init(){
+		this.registerRenders();
+	}
+	
+	
+	public void registerRenders(){
+		RenderingRegistry.registerEntityRenderingHandler(EntityGiardiaCowMob.class, new GiardiaCowRender(new GiardiaCowModel(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityBubPlagueRatMob.class, new RenderBubPlagueRat(new ModelBubPlagueRat(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityCholSquidMob.class, new RenderCholSquid(new ModelCholSquid(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityCPoxVillagerMob.class, new RenderCPoxVillager(new ModelCPoxVillager(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEColiVillagerMob.class, new RenderEColiVillager(new ModelEColiVillager(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityFluVillagerMob.class, new RenderFluVillager(new ModelFluVillager(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityPolioVillagerMob.class, new RenderPolioVillager(new ModelPolioVillager(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityRabiesWolfMob.class, new RenderRabiesWolf(new ModelRabiesWolf(), 0));
+
+	}
+	
+}

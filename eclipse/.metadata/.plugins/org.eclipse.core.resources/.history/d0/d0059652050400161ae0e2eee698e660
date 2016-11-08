@@ -1,0 +1,51 @@
+package epidemiccraft.com;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import net.minecraft.item.ItemStack;
+
+public class AutoclaveRecipes {
+
+	private static final AutoclaveRecipes SMELTING_BASE = new AutoclaveRecipes();
+	private Map smeltingList = new HashMap();
+	private Map experienceList = new HashMap();
+	
+	public static AutoclaveRecipes smelting(){
+		return SMELTING_BASE;
+	}
+	
+	public ItemStack getSmeltingResult(ItemStack itemstack){
+		Iterator iterator = this.smeltingList.entrySet().iterator();
+		Entry entry;
+		do{
+			if(!iterator.hasNext()){
+				return null;
+			}
+			entry = (Entry) iterator.next();
+		}
+		while(!canBeSmelted(itemstack, (ItemStack)entry.getKey()));
+		return (ItemStack)entry.getValue();
+	}
+
+	private boolean canBeSmelted(ItemStack itemstack, ItemStack itemstack2) {
+		return itemstack2.getItem() == itemstack.getItem() && itemstack2.getItemDamage() == 32767 || itemstack2.getItemDamage() == itemstack.getItemDamage();
+	}
+	
+	public float giveExperience(ItemStack stack){
+		Iterator iterator = this.experienceList.entrySet().iterator();
+		Entry entry;
+		
+		do{
+			if(!iterator.hasNext()){
+				return 0.0f;
+			}
+			
+			entry = iterator.next();
+		}
+		while(!canBeSmelted(stack, (ItemStack)entry.getKey()));
+	}
+
+}

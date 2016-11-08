@@ -1,0 +1,271 @@
+package epidemiccraft.com;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.InputEvent;
+import cpw.mods.fml.common.gameevent.PlayerEvent;
+import epidemiccraft.blocks.ModBlocks;
+import epidemiccraft.items.ModItems;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.stats.AchievementList;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.MathHelper;
+import net.minecraft.util.Vec3;
+import net.minecraftforge.event.entity.living.LivingEvent;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+import net.minecraftforge.event.entity.player.EntityInteractEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.entity.player.PlayerUseItemEvent;
+
+public class EventMilk {
+
+		@SubscribeEvent
+		public void eatMilk(PlayerUseItemEvent.Stop event){
+			Item item = event.item.getItem();
+			if(item == Items.milk_bucket){
+				event.setCanceled(true);
+				event.entityPlayer.addStat(EpidemicCraft.achievementMilk, 1);
+			}
+		}
+		
+		@SubscribeEvent
+		public void eatInfected(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.SyringeUsed){
+			
+			event.entityLiving.attackEntityFrom(DamageSource.generic, 2F);
+			
+		}
+		}
+		
+		@SubscribeEvent
+		public void eatSpinal(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.SpinalTapSyringe){
+			
+			event.entityLiving.attackEntityFrom(DamageSource.generic, 7F);
+			
+		}
+		}
+		
+		@SubscribeEvent
+		public void eatSpinalUsed(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.SpinalTapSyringeUsed){
+			
+			event.entityLiving.attackEntityFrom(DamageSource.generic, 2F);
+			
+		}
+		}
+
+		@SubscribeEvent
+		public void onEntityUpdate(LivingUpdateEvent event) {
+			if (event.entityLiving.isPotionActive(EpidemicCraft.potionFlu)) {
+				if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionFlu).getDuration()==0) {
+					event.entityLiving.removePotionEffect(EpidemicCraft.potionFlu.id);
+					return;}
+				
+		}
+		
+		//ANTIVIRAL
+		
+		@SubscribeEvent
+		public void eatAntiFlu(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.Antiviral){
+			if (event.entityLiving.isPotionActive(Potion.moveSlowdown)){
+		        if (event.entityLiving.isPotionActive(Potion.confusion)){
+		        	if (event.entityLiving.isPotionActive(Potion.digSlowdown)){
+		        		if (event.entityLiving.isPotionActive(EpidemicCraft.potionFlu))
+		        		
+		        			event.entityLiving.removePotionEffect(EpidemicCraft.potionFlu.id);
+		        			event.entityLiving.removePotionEffect(Potion.moveSlowdown.id);
+		        			event.entityLiving.removePotionEffect(Potion.digSlowdown.id);
+		        		
+		            	}
+		            }     
+		        }
+		    }
+		}
+		
+		@SubscribeEvent
+		public void eatAntiCPox(PlayerUseItemEvent.Finish event){
+			Item item = event.item.getItem();
+			if(item == ModItems.Antiviral){
+				if(event.entityLiving.isPotionActive(Potion.digSlowdown)){
+					if(event.entityLiving.isPotionActive(Potion.confusion)){
+						if(event.entityLiving.isPotionActive(Potion.hunger)){
+							if(event.entityLiving.isPotionActive(EpidemicCraft.potionCPox)){
+								
+								event.entityLiving.removePotionEffect(EpidemicCraft.potionCPox.id);
+								event.entityLiving.removePotionEffect(Potion.digSlowdown.id);
+								event.entityLiving.removePotionEffect(Potion.hunger.id);
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		@SubscribeEvent
+		public void eatAntiPolio(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.Antiviral){
+			if (event.entityLiving.isPotionActive(EpidemicCraft.potionPolio)){
+		        if (event.entityLiving.isPotionActive(Potion.confusion)){
+		        	if (event.entityLiving.isPotionActive(Potion.hunger)){
+		        		if (event.entityLiving.isPotionActive(Potion.digSlowdown))
+		        		
+		        			event.entityLiving.removePotionEffect(EpidemicCraft.potionPolio.id);
+		        			event.entityLiving.removePotionEffect(Potion.hunger.id);
+		        			event.entityLiving.removePotionEffect(Potion.digSlowdown.id);
+		        		
+		            	}
+		            }     
+		        }
+		    }
+		}
+		
+		@SubscribeEvent
+		public void eatAntiRabies(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.Antiviral){
+			if (event.entityLiving.isPotionActive(EpidemicCraft.potionRabies)){
+		        if (event.entityLiving.isPotionActive(Potion.confusion)){
+		        	if (event.entityLiving.isPotionActive(Potion.blindness)){
+		        		if (event.entityLiving.isPotionActive(Potion.moveSpeed)){
+		        			if (event.entityLiving.isPotionActive(Potion.damageBoost))
+		        				
+		        				event.entityLiving.removePotionEffect(EpidemicCraft.potionRabies.id);
+		        				event.entityLiving.removePotionEffect(Potion.blindness.id);
+		        				event.entityLiving.removePotionEffect(Potion.moveSpeed.id);
+		        				event.entityLiving.removePotionEffect(Potion.damageBoost.id);
+		        			
+		        			}
+		            	}
+		            }     
+		        }
+		    }
+		}
+		
+		//ANTIBIOTIC
+		
+		@SubscribeEvent
+		public void eatAntiMeningitis(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.Antibiotic){
+			if (event.entityLiving.isPotionActive(EpidemicCraft.potionMeningitis)){
+		        if (event.entityLiving.isPotionActive(Potion.poison)){
+		        	if (event.entityLiving.isPotionActive(Potion.hunger))
+		        		
+		        		event.entityLiving.removePotionEffect(EpidemicCraft.potionMeningitis.id);
+		        		event.entityLiving.removePotionEffect(Potion.poison.id);
+		        	
+		            }     
+		        }
+		    }
+		}
+		
+		@SubscribeEvent
+		public void eatAntiFood(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.Antibiotic){
+			if (event.entityLiving.isPotionActive(EpidemicCraft.potionFoodPois)){
+		        if (event.entityLiving.isPotionActive(Potion.confusion)){
+		        	if (event.entityLiving.isPotionActive(Potion.poison)){
+		        		
+		        			event.entityLiving.removePotionEffect(EpidemicCraft.potionFoodPois.id);
+		        			event.entityLiving.removePotionEffect(Potion.poison.id);
+		        		
+		            	}
+		            }     
+		        }
+		    }
+		}
+		
+		@SubscribeEvent
+		public void eatAntiEColi(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.Antibiotic){
+			if (event.entityLiving.isPotionActive(EpidemicCraft.potionEColi)){
+		        if (event.entityLiving.isPotionActive(Potion.confusion)){
+		        	if (event.entityLiving.isPotionActive(Potion.poison)){
+		        		
+		        			event.entityLiving.removePotionEffect(EpidemicCraft.potionEColi.id);
+	        				event.entityLiving.removePotionEffect(Potion.poison.id);
+		        		
+		            	}
+		            }     
+		        }
+		    }
+		}
+		
+		@SubscribeEvent
+		public void eatAntiGiardia(PlayerUseItemEvent.Finish event){
+		Item item = event.item.getItem();
+		if (item == ModItems.Antibiotic){
+			if (event.entityLiving.isPotionActive(EpidemicCraft.potionGiardia)){
+		        if (event.entityLiving.isPotionActive(Potion.confusion)){
+		        	if (event.entityLiving.isPotionActive(Potion.digSlowdown)){
+		        		if (event.entityLiving.isPotionActive(Potion.hunger))
+		        		
+		        			event.entityLiving.removePotionEffect(EpidemicCraft.potionGiardia.id);
+		        			event.entityLiving.removePotionEffect(Potion.digSlowdown.id);
+		        			event.entityLiving.removePotionEffect(Potion.hunger.id);
+		        		
+		            	}
+		            }     
+		        }
+		    }
+		}
+		
+		//EAT FOR FOODPOIS
+
+		@SubscribeEvent
+		public void eatChicken(PlayerUseItemEvent.Stop event){
+		Item item = event.item.getItem();
+		if(item == Items.chicken){
+			event.entityLiving.addPotionEffect(new PotionEffect(Potion.poison.id, 24000, 0));
+			event.entityLiving.addPotionEffect(new PotionEffect(Potion.confusion.id, 24000, 0));
+			event.entityLiving.addPotionEffect(new PotionEffect(EpidemicCraft.potionFoodPois.id, 24000, 0));
+		}
+		}
+		
+		@SubscribeEvent
+		public void eatBeef(PlayerUseItemEvent.Stop event){
+		Item item = event.item.getItem();
+		if(item == Items.beef){
+			event.entityLiving.addPotionEffect(new PotionEffect(Potion.poison.id, 24000, 0));
+			event.entityLiving.addPotionEffect(new PotionEffect(Potion.confusion.id, 24000, 0));
+			event.entityLiving.addPotionEffect(new PotionEffect(EpidemicCraft.potionFoodPois.id, 24000, 0));
+		}
+		}
+		
+		@SubscribeEvent
+		public void eatPork(PlayerUseItemEvent.Stop event){
+		Item item = event.item.getItem();
+		if(item == Items.porkchop){
+			event.entityLiving.addPotionEffect(new PotionEffect(Potion.poison.id, 24000, 0));
+			event.entityLiving.addPotionEffect(new PotionEffect(Potion.confusion.id, 24000, 0));
+			event.entityLiving.addPotionEffect(new PotionEffect(EpidemicCraft.potionFoodPois.id, 24000, 0));
+		}
+		}
+				
+}
+		
+		
+
+
+
+

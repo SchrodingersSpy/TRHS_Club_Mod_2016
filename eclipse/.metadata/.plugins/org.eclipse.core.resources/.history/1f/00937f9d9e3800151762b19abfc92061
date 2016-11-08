@@ -1,0 +1,19 @@
+package epidemiccraft.c;
+
+import net.minecraft.util.DamageSource;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+
+public class EpidemicCraftEventHooks {
+
+	
+	@ForgeSubscribe
+	public void onEntityUpdate(LivingUpdateEvent event) {
+	if (event.entityLiving.isPotionActive(EpidemicCraft.potionBiosuit)) {
+	if (event.entityLiving.worldObj.rand.nextInt(20) == 0) {
+	event.entityLiving.attackEntityFrom(DamageSource.generic, 2);
+	}
+	}
+	}
+
+
+}

@@ -1,0 +1,124 @@
+package epidemiccraft.inventory;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import epidemiccraft.tileentity.TileEntityAutoclave;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.ICrafting;
+import net.minecraft.inventory.Slot;
+import net.minecraft.inventory.SlotFurnace;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.FurnaceRecipes;
+
+public class ContainerAutoclave extends Container{
+
+	private TileEntityAutoclave tileAutoclave;
+	private int lastCookTime;
+	private int lastBurnTime;
+	private int lastItemBurnTime;
+	
+	public ContainerAutoclave(InventoryPlayer player, TileEntityAutoclave tileEntityAutoclave){
+		this.tileAutoclave = tileEntityAutoclave;
+		this.addSlotToContainer(new Slot(tileEntityAutoclave, 0, 56, 17));
+		this.addSlotToContainer(new Slot(tileEntityAutoclave, 0, 56, 53));
+		this.addSlotToContainer(new SlotFurnace(player.player, tileEntityAutoclave, 2, 116, 35));
+		int i;
+		
+		for(i = 0; i < 3; ++i){
+			for(int j = 0; j < 9; ++j){
+				this.addSlotToContainer(new Slot(player, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
+			}
+		}
+		
+		for(i = 0; i < 9; ++i){
+			this.addSlotToContainer(new Slot(player, i, 8 + i * 18, 142));
+		}
+		
+	}
+	
+	public void addCraftingToCrafters(ICrafting craft){
+		super.addCraftingToCrafters(craft);
+		craft.sendProgressBarUpdate(this, 0, this.tileAutoclave.furnaceCookTime);
+		craft.sendProgressBarUpdate(this, 1, this.tileAutoclave.furnaceBurnTime);
+		craft.sendProgressBarUpdate(this, 2, this.tileAutoclave.currentBurnTime);
+	}
+	
+	public void detectAndSendChanges(){
+		super.detectAndSendChanges();
+		for(int i = 0; i < this.crafters.size(); ++i){
+			ICrafting craft = (ICrafting) this.crafters.get(i);
+			
+			if(this.lastCookTime != this.tileAutoclave.furnaceCookTime){
+				craft.sendProgressBarUpdate(this, 0, this.tileAutoclave.furnaceCookTime);
+			}
+			
+			if(this.lastBurnTime != this.tileAutoclave.furnaceBurnTime){
+				craft.sendProgressBarUpdate(this, 0, this.tileAutoclave.furnaceBurnTime);
+			}
+			
+			if(this.lastItemBurnTime != this.tileAutoclave.currentBurnTime){
+				craft.sendProgressBarUpdate(this, 0, this.tileAutoclave.currentBurnTime);
+			}
+		}
+		
+		this.lastBurnTime = this.tileAutoclave.furnaceBurnTime;
+		this.lastCookTime = this.tileAutoclave.furnaceCookTime;
+		this.lastItemBurnTime = this.tileAutoclave.currentBurnTime;
+				
+	}
+	
+	@SideOnly(Side.CLIENT)
+	public void updateProgressBar(int par1, int par2){
+		if(par1 == 0){
+			this.tileAutoclave.furnaceCookTime = par2;
+		}
+		if(par1 == 1){
+			this.tileAutoclave.furnaceBurnTime = par2;
+		}
+		if(par1 == 2){
+			this.tileAutoclave.currentBurnTime = par2;
+		}
+	}
+	
+	
+	@Override
+	public boolean canInteractWith(EntityPlayer player) {
+		return this.tileAutoclave.isUseableByPlayer(player);
+	}
+	
+	public ItemStack transferStackInSlot(EntityPlayer player, int par2){
+		ItemStack itemstack = null;
+		Slot slot = (Slot) this.inventorySlots.get(par2);
+		
+		if(slot != null && slot.getStack()){
+			ItemStack itemstack1 = slot.getStack();
+			itemstack = itemstack1.copy();
+			
+			if(par2 == 2){
+				if(!this.mergeItemStack(itemstack1, 3, 39, true)){
+					return null;
+				}
+				slot.onSlotChange(itemstack1, itemstack);
+				
+			}else if(par2 != 1 && par2 != 0){
+				if(FurnaceRecipes.smelting().getSmeltingResult(itemstack1) != null){
+					if(!this.mergeItemStack(itemstack1, 0, 1, false)){
+						return null;
+					}
+				} else if(TileEntityAutoclave.isItemFuel(itemstack1)){
+					if(this.mergeItemStack(itemstack1, 0, 2, false)){
+						return null;
+					}
+				} else if(par2 >= 3 && par2 < 30){
+					if(this.mergeItemStack(itemstack1, 30, 39, false)){
+						return null;
+					}
+				} else if(par2 >= 30 && par2 < 39 && !this.mergeItemStack(itemstack1, 3, 30, false)){
+					return null;
+				}
+			}
+		}
+	}
+}

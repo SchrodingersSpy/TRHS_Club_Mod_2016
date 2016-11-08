@@ -1,0 +1,16 @@
+[
+{
+  "modid": "epidemiccraft",
+  "name": "EpidemicCraft",
+  "description": "Welcome Patient Zero. Try to not become infected... Test your survival skills to a new level with EpidemicCraft. Simulates vaccines and common diseases in Minecraft!",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["SchrodingersSpy"],
+  "credits": "Thanks to all the people at MinecraftForums for helping with all of the problems I had!",
+  "logoFile": "assets/LogoFile.png",
+  "screenshots": [],
+  "dependencies": ["mod_MinecraftForge"]
+}
+]

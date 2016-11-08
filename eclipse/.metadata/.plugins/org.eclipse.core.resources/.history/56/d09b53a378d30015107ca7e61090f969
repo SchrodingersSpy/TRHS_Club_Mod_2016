@@ -1,0 +1,31 @@
+package epidemiccraft.blocks.gui;
+
+import org.lwjgl.opengl.GL11;
+
+import epidemiccraft.blocks.gui.container.AutoclaveContainer;
+import epidemiccraft.blocks.tileentity.AutoclaveTileEntity;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.util.ResourceLocation;
+
+public class AutoclaveTileEntityGUI extends GuiContainer{
+
+	public static final ResourceLocation texture = new ResourceLocation("EpidemicCraft:/textures/gui/autoclavegui.png");
+	
+	public AutoclaveTileEntityGUI(InventoryPlayer playerinv, AutoclaveTileEntity tileentity) {
+		super(new AutoclaveContainer(playerinv, tileentity));
+	}
+
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float p_146976_1_, int p_146976_2_, int p_146976_3_) {
+		GL11.glColor4f(1F, 1F, 1F, 1F);
+		try{
+			Minecraft.getMinecraft().getResourceManager().getResource(texture);
+		} catch (IOException e){
+			System.out.println("Texture didn't work");
+		}
+	}
+
+}

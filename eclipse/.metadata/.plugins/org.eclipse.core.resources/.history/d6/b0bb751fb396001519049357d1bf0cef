@@ -1,0 +1,29 @@
+package epidemiccraft.proxy;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import epidemiccraft.mobs.AnthraxCowModel;
+import epidemiccraft.mobs.AnthraxCowRender;
+import epidemiccraft.mobs.EntityAnthraxCowMob;
+
+
+public class CommonProxy {
+	
+	public void preInit(){
+		
+	}
+	
+	public void init(){
+		
+	}
+	
+	public void postInit(){
+		
+	}
+
+	public void registerRenders(){
+		
+	}
+	
+}

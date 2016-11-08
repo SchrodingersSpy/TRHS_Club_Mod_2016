@@ -1,0 +1,12 @@
+package epidemiccraft.blocks;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import epidemiccraft.com.EpidemicCraft;
+import epidemiccraft.lib.Constants;
+import net.minecraft.block.BlockContainer;
+import net.minecraft.item.Item;
+
+public class Autoclave extends BlockContainer {
+
+	
+}

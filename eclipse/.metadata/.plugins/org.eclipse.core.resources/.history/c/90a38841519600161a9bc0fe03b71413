@@ -1,0 +1,28 @@
+package epidemiccraft.com;
+
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class EventPotionZero {
+
+	@SubscribeEvent
+	public void removeFlu(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionFlu)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionFlu).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionFlu.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeFluVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionFlu)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionFlu).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionFlu.id);
+				return;	
+			}
+		}
+	}
+	
+}

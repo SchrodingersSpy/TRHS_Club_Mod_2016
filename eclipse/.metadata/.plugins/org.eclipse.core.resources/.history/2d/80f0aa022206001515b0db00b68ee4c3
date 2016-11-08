@@ -1,0 +1,52 @@
+package epidemiccraft.c;
+
+import epidemiccraft.items.ModItems;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.ITextureObject;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ResourceLocation;
+
+public class PotionAnthraxEffect extends Potion {
+	
+	public PotionAnthraxEffect(int par1, boolean par2, int par3){
+	
+		super(par1, par2, par3);
+	}
+	
+	@Override
+	public boolean isBadEffect()
+	{
+	return true;
+	}
+	
+	public Potion setIconIndex(int par1, int par2)
+	{
+	super.setIconIndex(par1,par2);
+	return (Potion)this;
+	}
+
+	@Override
+	public int getStatusIconIndex()
+	{
+	ResourceLocation r = new ResourceLocation("epidemiccraft","textures/gui/inventory.png");
+
+	ITextureObject texture = Minecraft.getMinecraft().renderEngine.getTexture(r);
+	Minecraft.getMinecraft().renderEngine.bindTexture(r);
+
+	return super.getStatusIconIndex();
+	}
+	
+	public void performEffect(EntityLivingBase attacker, int strength){
+
+	super.performEffect(attacker, strength);
+	
+	attacker.addPotionEffect(new PotionEffect(Potion.poison.id, attacker.getActivePotionEffect(EpidemicCraft.potionAnthraxEffect).getDuration(), 10));
+
+	}
+}
+	EpidemicCraft.potionAnthraxEffect.addCurativeItem
+	
+}

@@ -1,0 +1,16 @@
+package epidemiccraft.c;
+
+public class EpidemicCraftEventHooks {
+
+	
+	@ForgeSubscribe
+	public void onEntityUpdate(LivingUpdateEvent event) {
+	if (event.entityLiving.isPotionActive(Yourmod.customPotion)) {
+	if (event.entityLiving.worldObj.rand.nextInt(20) == 0) {
+	event.entityLiving.attackEntityFrom(DamageSource.generic, 2);
+	}
+	}
+	}
+
+
+}

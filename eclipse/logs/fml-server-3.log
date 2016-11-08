@@ -1,0 +1,541 @@
+[15:29:01] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[15:29:01] [main/INFO] [FML/]: Forge Mod Loader version 7.99.16.1448 for Minecraft 1.7.10 loading
+[15:29:01] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.7.0_67, running on Windows 8.1:amd64:6.3, installed at C:\Program Files\Java\jre7
+[15:29:01] [main/DEBUG] [FML/]: Java classpath at launch is C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\bin;C:\Users\1DAP\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1448-1.7.10\forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.11\9c0592c6e1e9ea296a70948081bd4cc84dda1289\launchwrapper-1.11.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.0.3\f9e364ae2a66ce2a543012a4668856e84e5dab74\asm-debug-all-5.0.3.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-xml_2.11\1.0.2\7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0\scala-xml_2.11-1.0.2.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\4.5\6065cc95c661255349c1d0756657be17c29a4fd3\jopt-simple-4.5.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.3.5\807ae355ee63583becd7ea60e76aab1532bb42e\realms-1.3.5.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.3.1\a0ae4f51da409fa0c20fa0ca59e6bbc9413ae71d\vecmath-1.3.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.0.10.Final\9e50bd52ffe257a0e2cd8d971688d6ce7d174325\netty-all-4.0.10.Final.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\17.0\9c6ef172e8de35fd8d4d8783e4821e57cdef7445\guava-17.0.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.3.2\90a3822c38ec8c996e84c16a3477ef632cbc87a3\commons-lang3-3.3.2.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.4\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.9\9ce04e34240f674bc72680f8b843b1457383161a\commons-codec-1.9.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.16\ef1582b11fd0943d069cdcb72e99008ac209a283\authlib-1.5.16.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.0-beta9\1dd66e68cccd907880229f9e2de1314bd13ff785\log4j-api-2.0-beta9.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.0-beta9\678861ba1b2e1fccb594bb0ca03114bb05da9695\log4j-core-2.0-beta9.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.1\f58c5aabcef0e41718a564be9f8e412fff8db847\lwjgl-2.9.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.1\290d7ba8a1bd9566f5ddf16ad06f09af5ec9b20e\lwjgl_util-2.9.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch\5.16\1f55f009c61637c10c0acfb8b5ffc600f30044b4\twitch-5.16.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-platform\5.16\7c6affe439099806a4f552da14c42f9d643d8b23\twitch-platform-5.16-natives-windows-32.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-platform\5.16\39d0c3d363735b4785598e0e7fbf8297c706a9f9\twitch-platform-5.16-natives-windows-64.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-platform\5.16\62503ee712766cf77f97252e5902786fd834b8c5\twitch-platform-5.16-natives-osx.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-external-platform\4.5\18215140f010c05b9f86ef6f0f8871954d2ccebf\twitch-external-platform-4.5-natives-windows-32.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-external-platform\4.5\c3cde57891b935d41b6680a9c5e1502eeab76d86\twitch-external-platform-4.5-natives-windows-64.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.1\4c517eca808522457dd95ee8fc1fbcdbb602efbe\lwjgl-platform-2.9.1-natives-windows.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.1\aa9aae879af8eb378e22cfc64db56ec2ca9a44d1\lwjgl-platform-2.9.1-natives-linux.jar;C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.1\2d12c83fdfbc04ecabf02c7bc8cc54d034f0daac\lwjgl-platform-2.9.1-natives-osx.jar;C:\Users\1DAP\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1448-1.7.10\start
+[15:29:01] [main/DEBUG] [FML/]: Java library path at launch is C:\Program Files\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Live\Shared;GRADLE_HOME/bin;C:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Skype\Phone\;.
+[15:29:01] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[15:29:01] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[15:29:01] [main/DEBUG] [FML/]: Added access transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[15:29:01] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[15:29:01] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[15:29:01] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.transformers.ForgeAccessTransformer to enqueued access transformers
+[15:29:01] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[15:29:01] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[15:29:01] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.
+[15:29:01] [main/DEBUG] [FML/]: Discovering coremods
+[15:29:01] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[15:29:01] [main/INFO] [GradleStart/]: Injecting location in coremod cpw.mods.fml.relauncher.FMLCorePlugin
+[15:29:01] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[15:29:01] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:29:01] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[15:29:01] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[15:29:01] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:29:01] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:29:01] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:29:01] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin} class transformers
+[15:29:01] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
+[15:29:01] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
+[15:29:01] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
+[15:29:01] [main/DEBUG] [FML/]: Injection complete
+[15:29:01] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin}
+[15:29:01] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[15:29:01] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[15:29:06] [main/ERROR] [FML/]: FML appears to be missing any signature data. This is not a good thing
+[15:29:06] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[15:29:06] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:29:06] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[15:29:06] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.classloading.FluidIdTransformer
+[15:29:06] [main/DEBUG] [FML/]: Injection complete
+[15:29:06] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[15:29:06] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[15:29:06] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[15:29:06] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[15:29:06] [main/DEBUG] [FML/]: Loaded 57 rules from AccessTransformer config file fml_at.cfg
+[15:29:06] [main/DEBUG] [FML/]: Loaded 89 rules from AccessTransformer config file forge_at.cfg
+[15:29:06] [main/DEBUG] [FML/]: Validating minecraft
+[15:29:08] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[15:29:08] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[15:29:08] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[15:29:08] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[15:29:11] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[15:29:18] [main/WARN] [FML/]: =============================================================
+[15:29:18] [main/WARN] [FML/]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[15:29:18] [main/WARN] [FML/]: Offendor: net/minecraft/server/gui/MinecraftServerGui$1.windowClosing(Ljava/awt/event/WindowEvent;)V
+[15:29:18] [main/WARN] [FML/]: Use FMLCommonHandler.exitJava instead
+[15:29:18] [main/WARN] [FML/]: =============================================================
+[15:29:19] [Server thread/INFO] [MinecraftForge/]: Attempting early MinecraftForge initialization
+[15:29:19] [Server thread/INFO] [FML/]: MinecraftForge v10.13.4.1448 Initialized
+[15:29:19] [Server thread/INFO] [FML/]: Replaced 183 ore recipies
+[15:29:20] [Server thread/INFO] [MinecraftForge/]: Completed early MinecraftForge initialization
+[15:29:20] [Server thread/DEBUG] [FML/]: File C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\config\injectedDependencies.json not found. No dependencies injected
+[15:29:20] [Server thread/DEBUG] [FML/]: Building injected Mod Containers [cpw.mods.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[15:29:21] [Server thread/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related directory at C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\bin, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1448-1.7.10\forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.11\9c0592c6e1e9ea296a70948081bd4cc84dda1289\launchwrapper-1.11.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.0.3\f9e364ae2a66ce2a543012a4668856e84e5dab74\asm-debug-all-5.0.3.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-xml_2.11\1.0.2\7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0\scala-xml_2.11-1.0.2.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\4.5\6065cc95c661255349c1d0756657be17c29a4fd3\jopt-simple-4.5.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.3.5\807ae355ee63583becd7ea60e76aab1532bb42e\realms-1.3.5.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.3.1\a0ae4f51da409fa0c20fa0ca59e6bbc9413ae71d\vecmath-1.3.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.0.10.Final\9e50bd52ffe257a0e2cd8d971688d6ce7d174325\netty-all-4.0.10.Final.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\17.0\9c6ef172e8de35fd8d4d8783e4821e57cdef7445\guava-17.0.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.3.2\90a3822c38ec8c996e84c16a3477ef632cbc87a3\commons-lang3-3.3.2.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.4\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.9\9ce04e34240f674bc72680f8b843b1457383161a\commons-codec-1.9.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.16\ef1582b11fd0943d069cdcb72e99008ac209a283\authlib-1.5.16.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.0-beta9\1dd66e68cccd907880229f9e2de1314bd13ff785\log4j-api-2.0-beta9.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.0-beta9\678861ba1b2e1fccb594bb0ca03114bb05da9695\log4j-core-2.0-beta9.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.1\f58c5aabcef0e41718a564be9f8e412fff8db847\lwjgl-2.9.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.1\290d7ba8a1bd9566f5ddf16ad06f09af5ec9b20e\lwjgl_util-2.9.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch\5.16\1f55f009c61637c10c0acfb8b5ffc600f30044b4\twitch-5.16.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-platform\5.16\7c6affe439099806a4f552da14c42f9d643d8b23\twitch-platform-5.16-natives-windows-32.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-platform\5.16\39d0c3d363735b4785598e0e7fbf8297c706a9f9\twitch-platform-5.16-natives-windows-64.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-platform\5.16\62503ee712766cf77f97252e5902786fd834b8c5\twitch-platform-5.16-natives-osx.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-external-platform\4.5\18215140f010c05b9f86ef6f0f8871954d2ccebf\twitch-external-platform-4.5-natives-windows-32.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\tv.twitch\twitch-external-platform\4.5\c3cde57891b935d41b6680a9c5e1502eeab76d86\twitch-external-platform-4.5-natives-windows-64.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.1\4c517eca808522457dd95ee8fc1fbcdbb602efbe\lwjgl-platform-2.9.1-natives-windows.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.1\aa9aae879af8eb378e22cfc64db56ec2ca9a44d1\lwjgl-platform-2.9.1-natives-linux.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\1DAP\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.1\2d12c83fdfbc04ecabf02c7bc8cc54d034f0daac\lwjgl-platform-2.9.1-natives-osx.jar, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Found a minecraft related directory at C:\Users\1DAP\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1448-1.7.10\start, examining for mod candidates
+[15:29:21] [Server thread/DEBUG] [FML/]: Minecraft jar mods loaded successfully
+[15:29:21] [Server thread/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
+[15:29:21] [Server thread/INFO] [FML/]: Searching C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\mods for mods
+[15:29:21] [Server thread/DEBUG] [FML/]: Examining directory bin for potential mods
+[15:29:21] [Server thread/DEBUG] [FML/]: No mcmod.info file found in directory bin
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft.lang
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft.sound
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft.textures
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft.textures.armor
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft.textures.blocks
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft.textures.gui
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft.textures.items
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package assets.epidemiccraft.textures.mobs
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.blocks
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.com
+[15:29:21] [Server thread/DEBUG] [FML/]: Identified a mod of type Lcpw/mods/fml/common/Mod; (epidemiccraft.com.EpidemicCraft) - loading
+[15:29:21] [Server thread/TRACE] [epidemiccraft/]: Parsed dependency info : [] [] []
+[15:29:21] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.gui
+[15:29:22] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.inventory
+[15:29:22] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.items
+[15:29:22] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.lib
+[15:29:22] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.mobs
+[15:29:22] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.proxy
+[15:29:22] [Server thread/TRACE] [FML/]: Recursing into package epidemiccraft.tileentity
+[15:29:22] [Server thread/DEBUG] [FML/]: Examining file forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar for potential mods
+[15:29:22] [Server thread/DEBUG] [FML/]: The mod container forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar appears to be missing an mcmod.info file
+[15:29:25] [Server thread/DEBUG] [FML/]: Examining file launchwrapper-1.11.jar for potential mods
+[15:29:25] [Server thread/DEBUG] [FML/]: The mod container launchwrapper-1.11.jar appears to be missing an mcmod.info file
+[15:29:26] [Server thread/DEBUG] [FML/]: Examining file jsr305-1.3.9.jar for potential mods
+[15:29:26] [Server thread/DEBUG] [FML/]: The mod container jsr305-1.3.9.jar appears to be missing an mcmod.info file
+[15:29:26] [Server thread/DEBUG] [FML/]: Examining file asm-debug-all-5.0.3.jar for potential mods
+[15:29:26] [Server thread/DEBUG] [FML/]: The mod container asm-debug-all-5.0.3.jar appears to be missing an mcmod.info file
+[15:29:26] [Server thread/DEBUG] [FML/]: Examining file akka-actor_2.11-2.3.3.jar for potential mods
+[15:29:26] [Server thread/DEBUG] [FML/]: The mod container akka-actor_2.11-2.3.3.jar appears to be missing an mcmod.info file
+[15:29:26] [Server thread/DEBUG] [FML/]: Examining file config-1.2.1.jar for potential mods
+[15:29:26] [Server thread/DEBUG] [FML/]: The mod container config-1.2.1.jar appears to be missing an mcmod.info file
+[15:29:26] [Server thread/DEBUG] [FML/]: Examining file scala-actors-migration_2.11-1.1.0.jar for potential mods
+[15:29:26] [Server thread/DEBUG] [FML/]: The mod container scala-actors-migration_2.11-1.1.0.jar appears to be missing an mcmod.info file
+[15:29:26] [Server thread/DEBUG] [FML/]: Examining file scala-compiler-2.11.1.jar for potential mods
+[15:29:26] [Server thread/DEBUG] [FML/]: The mod container scala-compiler-2.11.1.jar appears to be missing an mcmod.info file
+[15:29:27] [Server thread/DEBUG] [FML/]: Examining file scala-continuations-library_2.11-1.0.2.jar for potential mods
+[15:29:27] [Server thread/DEBUG] [FML/]: The mod container scala-continuations-library_2.11-1.0.2.jar appears to be missing an mcmod.info file
+[15:29:27] [Server thread/DEBUG] [FML/]: Examining file scala-continuations-plugin_2.11.1-1.0.2.jar for potential mods
+[15:29:27] [Server thread/DEBUG] [FML/]: The mod container scala-continuations-plugin_2.11.1-1.0.2.jar appears to be missing an mcmod.info file
+[15:29:27] [Server thread/DEBUG] [FML/]: Examining file scala-library-2.11.1.jar for potential mods
+[15:29:27] [Server thread/DEBUG] [FML/]: The mod container scala-library-2.11.1.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file scala-parser-combinators_2.11-1.0.1.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container scala-parser-combinators_2.11-1.0.1.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file scala-reflect-2.11.1.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container scala-reflect-2.11.1.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file scala-swing_2.11-1.0.1.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container scala-swing_2.11-1.0.1.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file scala-xml_2.11-1.0.2.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container scala-xml_2.11-1.0.2.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file jopt-simple-4.5.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container jopt-simple-4.5.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file lzma-0.0.1.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container lzma-0.0.1.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file realms-1.3.5.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container realms-1.3.5.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file commons-compress-1.8.1.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container commons-compress-1.8.1.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file httpclient-4.3.3.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container httpclient-4.3.3.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file commons-logging-1.1.3.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container commons-logging-1.1.3.jar appears to be missing an mcmod.info file
+[15:29:28] [Server thread/DEBUG] [FML/]: Examining file httpcore-4.3.2.jar for potential mods
+[15:29:28] [Server thread/DEBUG] [FML/]: The mod container httpcore-4.3.2.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file vecmath-1.3.1.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container vecmath-1.3.1.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file trove4j-3.0.3.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container trove4j-3.0.3.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file icu4j-core-mojang-51.2.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container icu4j-core-mojang-51.2.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file codecjorbis-20101023.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container codecjorbis-20101023.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file codecwav-20101023.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container codecwav-20101023.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file libraryjavasound-20101123.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container libraryjavasound-20101123.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file librarylwjglopenal-20100824.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container librarylwjglopenal-20100824.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file soundsystem-20120107.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container soundsystem-20120107.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file netty-all-4.0.10.Final.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container netty-all-4.0.10.Final.jar appears to be missing an mcmod.info file
+[15:29:29] [Server thread/DEBUG] [FML/]: Examining file guava-17.0.jar for potential mods
+[15:29:29] [Server thread/DEBUG] [FML/]: The mod container guava-17.0.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file commons-lang3-3.3.2.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container commons-lang3-3.3.2.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file commons-io-2.4.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container commons-io-2.4.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file commons-codec-1.9.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container commons-codec-1.9.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file jinput-2.0.5.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container jinput-2.0.5.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file jutils-1.0.0.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container jutils-1.0.0.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file gson-2.2.4.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container gson-2.2.4.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file authlib-1.5.16.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container authlib-1.5.16.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file log4j-api-2.0-beta9.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container log4j-api-2.0-beta9.jar appears to be missing an mcmod.info file
+[15:29:30] [Server thread/DEBUG] [FML/]: Examining file log4j-core-2.0-beta9.jar for potential mods
+[15:29:30] [Server thread/DEBUG] [FML/]: The mod container log4j-core-2.0-beta9.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file lwjgl-2.9.1.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container lwjgl-2.9.1.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file lwjgl_util-2.9.1.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container lwjgl_util-2.9.1.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file twitch-5.16.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container twitch-5.16.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file scala-actors-2.11.0.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container scala-actors-2.11.0.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file scala-xml_2.11-1.0.2.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container scala-xml_2.11-1.0.2.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file scala-parser-combinators_2.11-1.0.1.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container scala-parser-combinators_2.11-1.0.1.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file jinput-platform-2.0.5-natives-linux.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container jinput-platform-2.0.5-natives-linux.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file jinput-platform-2.0.5-natives-windows.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container jinput-platform-2.0.5-natives-windows.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file jinput-platform-2.0.5-natives-osx.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container jinput-platform-2.0.5-natives-osx.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file twitch-platform-5.16-natives-windows-32.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container twitch-platform-5.16-natives-windows-32.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file twitch-platform-5.16-natives-windows-64.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container twitch-platform-5.16-natives-windows-64.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file twitch-platform-5.16-natives-osx.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container twitch-platform-5.16-natives-osx.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file twitch-external-platform-4.5-natives-windows-32.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container twitch-external-platform-4.5-natives-windows-32.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file twitch-external-platform-4.5-natives-windows-64.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container twitch-external-platform-4.5-natives-windows-64.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file lwjgl-platform-2.9.1-natives-windows.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container lwjgl-platform-2.9.1-natives-windows.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file lwjgl-platform-2.9.1-natives-linux.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container lwjgl-platform-2.9.1-natives-linux.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining file lwjgl-platform-2.9.1-natives-osx.jar for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: The mod container lwjgl-platform-2.9.1-natives-osx.jar appears to be missing an mcmod.info file
+[15:29:31] [Server thread/DEBUG] [FML/]: Examining directory start for potential mods
+[15:29:31] [Server thread/DEBUG] [FML/]: No mcmod.info file found in directory start
+[15:29:31] [Server thread/TRACE] [FML/]: Recursing into package net
+[15:29:31] [Server thread/TRACE] [FML/]: Recursing into package net.minecraftforge
+[15:29:31] [Server thread/TRACE] [FML/]: Recursing into package net.minecraftforge.gradle
+[15:29:31] [Server thread/TRACE] [FML/]: Recursing into package net.minecraftforge.gradle.tweakers
+[15:29:32] [Server thread/INFO] [FML/]: Forge Mod Loader has identified 4 mods to load
+[15:29:32] [Server thread/TRACE] [FML/]: Received a system property request ''
+[15:29:32] [Server thread/TRACE] [FML/]: System property request managing the state of 0 mods
+[15:29:32] [Server thread/DEBUG] [FML/]: After merging, found state information for 0 mods
+[15:29:32] [Server thread/DEBUG] [FML/]: Found translations in forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar [en_US, af_ZA, ar_SA, br_FR, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_US, es_ES, fa_IR, fi_FI, fr_FR, he_IL, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nb_NO, nl_NL, nn_NO, no_NO, pl_PL, pt_BR, pt_PT, ro_RO, ru_RU, sl_SI, sr_SP, sv_SE, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW, en_US]
+[15:29:32] [Server thread/DEBUG] [FML/]: Found translations in forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar [en_US, af_ZA, ar_SA, br_FR, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_US, es_ES, fa_IR, fi_FI, fr_FR, he_IL, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nb_NO, nl_NL, nn_NO, no_NO, pl_PL, pt_BR, pt_PT, ro_RO, ru_RU, sl_SI, sr_SP, sv_SE, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW, en_US]
+[15:29:32] [Server thread/DEBUG] [epidemiccraft/]: Enabling mod epidemiccraft
+[15:29:32] [Server thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/epidemiccraft/lang/en_US.lang into language system
+[15:29:32] [Server thread/TRACE] [FML/]: Verifying mod requirements are satisfied
+[15:29:32] [Server thread/TRACE] [FML/]: All mod requirements are satisfied
+[15:29:32] [Server thread/TRACE] [FML/]: Sorting mods into an ordered list
+[15:29:32] [Server thread/TRACE] [FML/]: Mod sorting completed successfully
+[15:29:32] [Server thread/DEBUG] [FML/]: Mod sorting data
+[15:29:32] [Server thread/DEBUG] [FML/]: 	epidemiccraft(EpidemicCraft:Alpha 1.0.0): bin ()
+[15:29:32] [Server thread/TRACE] [mcp/mcp]: Sending event FMLConstructionEvent to mod mcp
+[15:29:32] [Server thread/TRACE] [mcp/mcp]: Sent event FMLConstructionEvent to mod mcp
+[15:29:32] [Server thread/TRACE] [FML/FML]: Sending event FMLConstructionEvent to mod FML
+[15:29:33] [Server thread/TRACE] [FML/FML]: Mod FML is using network checker : Invoking method checkModLists
+[15:29:33] [Server thread/TRACE] [FML/FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[15:29:33] [Server thread/TRACE] [FML/FML]: The mod FML accepts its own version (7.10.99.99)
+[15:29:33] [Server thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge, epidemiccraft] at CLIENT
+[15:29:33] [Server thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge, epidemiccraft] at SERVER
+[15:29:34] [Server thread/TRACE] [FML/FML]: Sent event FMLConstructionEvent to mod FML
+[15:29:34] [Server thread/TRACE] [Forge/Forge]: Sending event FMLConstructionEvent to mod Forge
+[15:29:34] [Server thread/TRACE] [FML/Forge]: Mod Forge is using network checker : No network checking performed
+[15:29:34] [Server thread/TRACE] [FML/Forge]: Testing mod Forge to verify it accepts its own version in a remote connection
+[15:29:34] [Server thread/TRACE] [FML/Forge]: The mod Forge accepts its own version (10.13.4.1448)
+[15:29:34] [Server thread/TRACE] [Forge/Forge]: Sent event FMLConstructionEvent to mod Forge
+[15:29:34] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLConstructionEvent to mod epidemiccraft
+[15:29:34] [Server thread/TRACE] [FML/epidemiccraft]: Mod epidemiccraft is using network checker : Accepting version Alpha 1.0.0
+[15:29:34] [Server thread/TRACE] [FML/epidemiccraft]: Testing mod epidemiccraft to verify it accepts its own version in a remote connection
+[15:29:34] [Server thread/TRACE] [FML/epidemiccraft]: The mod epidemiccraft accepts its own version (Alpha 1.0.0)
+[15:29:34] [Server thread/DEBUG] [FML/epidemiccraft]: Attempting to inject @SidedProxy classes into epidemiccraft
+[15:29:35] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLConstructionEvent to mod epidemiccraft
+[15:29:35] [Server thread/DEBUG] [FML/]: Mod signature data
+[15:29:35] [Server thread/DEBUG] [FML/]:  	Valid Signatures:
+[15:29:35] [Server thread/DEBUG] [FML/]:  	Missing Signatures:
+[15:29:35] [Server thread/DEBUG] [FML/]: 		mcp	(Minecraft Coder Pack	9.05)	minecraft.jar
+[15:29:35] [Server thread/DEBUG] [FML/]: 		FML	(Forge Mod Loader	7.10.99.99)	forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar
+[15:29:35] [Server thread/DEBUG] [FML/]: 		Forge	(Minecraft Forge	10.13.4.1448)	forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar
+[15:29:35] [Server thread/DEBUG] [FML/]: 		epidemiccraft	(EpidemicCraft	Alpha 1.0.0)	bin
+[15:29:35] [Server thread/INFO] [FML/]: Processing ObjectHolder annotations
+[15:29:35] [Server thread/INFO] [FML/]: Found 341 ObjectHolder annotations
+[15:29:35] [Server thread/INFO] [FML/]: Identifying ItemStackHolder annotations
+[15:29:35] [Server thread/INFO] [FML/]: Found 0 ItemStackHolder annotations
+[15:29:35] [Server thread/TRACE] [mcp/mcp]: Sending event FMLPreInitializationEvent to mod mcp
+[15:29:35] [Server thread/TRACE] [mcp/mcp]: Sent event FMLPreInitializationEvent to mod mcp
+[15:29:35] [Server thread/TRACE] [FML/FML]: Sending event FMLPreInitializationEvent to mod FML
+[15:29:35] [Server thread/TRACE] [FML/FML]: Sent event FMLPreInitializationEvent to mod FML
+[15:29:35] [Server thread/TRACE] [Forge/Forge]: Sending event FMLPreInitializationEvent to mod Forge
+[15:29:35] [Server thread/INFO] [FML/Forge]: Configured a dormant chunk cache size of 0
+[15:29:35] [Server thread/TRACE] [Forge/Forge]: Sent event FMLPreInitializationEvent to mod Forge
+[15:29:35] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLPreInitializationEvent to mod epidemiccraft
+[15:29:37] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLPreInitializationEvent to mod epidemiccraft
+[15:29:37] [Server thread/INFO] [FML/]: Applying holder lookups
+[15:29:37] [Server thread/INFO] [FML/]: Holder lookups applied
+[15:29:37] [Server thread/INFO] [FML/]: Injecting itemstacks
+[15:29:37] [Server thread/INFO] [FML/]: Itemstack injection complete
+[15:29:39] [Server thread/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
+[15:29:39] [Server thread/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
+[15:29:39] [Server thread/TRACE] [FML/FML]: Sending event FMLInitializationEvent to mod FML
+[15:29:39] [Server thread/TRACE] [FML/FML]: Sent event FMLInitializationEvent to mod FML
+[15:29:39] [Server thread/TRACE] [Forge/Forge]: Sending event FMLInitializationEvent to mod Forge
+[15:29:39] [Server thread/TRACE] [Forge/Forge]: Sent event FMLInitializationEvent to mod Forge
+[15:29:39] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLInitializationEvent to mod epidemiccraft
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLInitializationEvent to mod epidemiccraft
+[15:29:40] [Server thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod mcp
+[15:29:40] [Server thread/TRACE] [mcp/mcp]: Sending event IMCEvent to mod mcp
+[15:29:40] [Server thread/TRACE] [mcp/mcp]: Sent event IMCEvent to mod mcp
+[15:29:40] [Server thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod FML
+[15:29:40] [Server thread/TRACE] [FML/FML]: Sending event IMCEvent to mod FML
+[15:29:40] [Server thread/TRACE] [FML/FML]: Sent event IMCEvent to mod FML
+[15:29:40] [Server thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod Forge
+[15:29:40] [Server thread/TRACE] [Forge/Forge]: Sending event IMCEvent to mod Forge
+[15:29:40] [Server thread/TRACE] [Forge/Forge]: Sent event IMCEvent to mod Forge
+[15:29:40] [Server thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod epidemiccraft
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event IMCEvent to mod epidemiccraft
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event IMCEvent to mod epidemiccraft
+[15:29:40] [Server thread/INFO] [FML/]: Injecting itemstacks
+[15:29:40] [Server thread/INFO] [FML/]: Itemstack injection complete
+[15:29:40] [Server thread/TRACE] [mcp/mcp]: Sending event FMLPostInitializationEvent to mod mcp
+[15:29:40] [Server thread/TRACE] [mcp/mcp]: Sent event FMLPostInitializationEvent to mod mcp
+[15:29:40] [Server thread/TRACE] [FML/FML]: Sending event FMLPostInitializationEvent to mod FML
+[15:29:40] [Server thread/TRACE] [FML/FML]: Sent event FMLPostInitializationEvent to mod FML
+[15:29:40] [Server thread/TRACE] [Forge/Forge]: Sending event FMLPostInitializationEvent to mod Forge
+[15:29:40] [Server thread/TRACE] [Forge/Forge]: Sent event FMLPostInitializationEvent to mod Forge
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLPostInitializationEvent to mod epidemiccraft
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLPostInitializationEvent to mod epidemiccraft
+[15:29:40] [Server thread/TRACE] [mcp/mcp]: Sending event FMLLoadCompleteEvent to mod mcp
+[15:29:40] [Server thread/TRACE] [mcp/mcp]: Sent event FMLLoadCompleteEvent to mod mcp
+[15:29:40] [Server thread/TRACE] [FML/FML]: Sending event FMLLoadCompleteEvent to mod FML
+[15:29:40] [Server thread/TRACE] [FML/FML]: Sent event FMLLoadCompleteEvent to mod FML
+[15:29:40] [Server thread/TRACE] [Forge/Forge]: Sending event FMLLoadCompleteEvent to mod Forge
+[15:29:40] [Server thread/DEBUG] [FML/Forge]: Forge RecipeSorter Baking:
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   11: RecipeEntry("Before", UNKNOWN, )
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   10: RecipeEntry("minecraft:shaped", SHAPED, net.minecraft.item.crafting.ShapedRecipes) Before: minecraft:shapeless
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   9: RecipeEntry("minecraft:mapextending", SHAPED, net.minecraft.item.crafting.RecipesMapExtending) Before: minecraft:shapeless After: minecraft:shaped
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   8: RecipeEntry("forge:shapedore", SHAPED, net.minecraftforge.oredict.ShapedOreRecipe) Before: minecraft:shapeless After: minecraft:shaped
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   7: RecipeEntry("minecraft:shapeless", SHAPELESS, net.minecraft.item.crafting.ShapelessRecipes) After: minecraft:shaped
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   6: RecipeEntry("forge:shapelessore", SHAPELESS, net.minecraftforge.oredict.ShapelessOreRecipe) After: minecraft:shapeless
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   5: RecipeEntry("minecraft:armordyes", SHAPELESS, net.minecraft.item.crafting.RecipesArmorDyes) After: minecraft:shapeless
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   4: RecipeEntry("minecraft:bookcloning", SHAPELESS, net.minecraft.item.crafting.RecipeBookCloning) After: minecraft:shapeless
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   3: RecipeEntry("minecraft:mapcloning", SHAPELESS, net.minecraft.item.crafting.RecipesMapCloning) After: minecraft:shapeless
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   2: RecipeEntry("minecraft:fireworks", SHAPELESS, net.minecraft.item.crafting.RecipeFireworks) After: minecraft:shapeless
+[15:29:40] [Server thread/DEBUG] [FML/Forge]:   1: RecipeEntry("After", UNKNOWN, )
+[15:29:40] [Server thread/DEBUG] [FML/Forge]: Sorting recipies
+[15:29:40] [Server thread/TRACE] [Forge/Forge]: Sent event FMLLoadCompleteEvent to mod Forge
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLLoadCompleteEvent to mod epidemiccraft
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLLoadCompleteEvent to mod epidemiccraft
+[15:29:40] [Server thread/DEBUG] [FML/]: Freezing block and item id maps
+[15:29:40] [Server thread/DEBUG] [FML/]: Registry consistency check successful
+[15:29:40] [Server thread/DEBUG] [FML/]: Registry consistency check successful
+[15:29:40] [Server thread/INFO] [FML/]: Forge Mod Loader has successfully loaded 4 mods
+[15:29:40] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerAboutToStartEvent to mod mcp
+[15:29:40] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerAboutToStartEvent to mod mcp
+[15:29:40] [Server thread/TRACE] [FML/FML]: Sending event FMLServerAboutToStartEvent to mod FML
+[15:29:40] [Server thread/TRACE] [FML/FML]: Sent event FMLServerAboutToStartEvent to mod FML
+[15:29:40] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerAboutToStartEvent to mod Forge
+[15:29:40] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerAboutToStartEvent to mod Forge
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLServerAboutToStartEvent to mod epidemiccraft
+[15:29:40] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLServerAboutToStartEvent to mod epidemiccraft
+[15:29:41] [Server thread/INFO] [FML/]: Injecting existing block and item data into this server instance
+[15:29:41] [Server thread/DEBUG] [FML/]: Registry consistency check successful
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Mercury: 4179 (init) -> 4166 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:CPoxFluid: 4144 (init) -> 4173 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubeUsed: 4128 (init) -> 4124 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubeFoodPois: 4134 (init) -> 4130 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:PetriDishMeningitisRaw: 4107 (init) -> 4205 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:UsedNeedle: 4151 (init) -> 4144 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:PetriDishGiardiaRaw: 4106 (init) -> 4195 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Purifier: 4175 (init) -> 4161 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubeMeningitis: 4130 (init) -> 4202 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubeFlu: 4129 (init) -> 4125 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Syringe: 4158 (init) -> 4149 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:PetriDishEColi: 4101 (init) -> 4103 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeRabies: 4167 (init) -> 4155 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:IronRodUsed: 4157 (init) -> 4148 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubeGiardia: 4136 (init) -> 4204 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:PetriDishMeningitis: 4103 (init) -> 4192 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJar: 4116 (init) -> 4110 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Rubber: 4178 (init) -> 4164 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EColiFluid: 4148 (init) -> 4170 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarRabies: 4123 (init) -> 4117 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeSampleRabies: 4174 (init) -> 4181 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:PetriDishFoodPoisRaw: 4104 (init) -> 4200 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EggPolio: 4110 (init) -> 4108 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:RabiesFluid: 4146 (init) -> 4174 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarPolio: 4122 (init) -> 4116 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:helmetBioSuit: 4182 (init) -> 4184 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EggFluRaw: 4112 (init) -> 4199 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeFoodPois: 4168 (init) -> 4156 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubeCPox: 4131 (init) -> 4127 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarCPox: 4121 (init) -> 4115 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeFlu: 4163 (init) -> 4151 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeCPox: 4165 (init) -> 4153 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarGiardia: 4126 (init) -> 4194 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SpinalTapSyringe: 4160 (init) -> 4210 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EggPolioRaw: 4114 (init) -> 4191 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringePlungerUsed: 4156 (init) -> 4147 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Preservative: 4176 (init) -> 4162 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeGiardia: 4170 (init) -> 4189 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TissueFlu: 4137 (init) -> 4135 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TissuePolio: 4139 (init) -> 4138 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Opium: 4181 (init) -> 4190 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TissueRabies: 4140 (init) -> 4139 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarFoodPois: 4124 (init) -> 4118 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubeRabies: 4133 (init) -> 4129 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:PetriDishGiardia: 4102 (init) -> 4197 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SpinalTapSyringeUsed: 4161 (init) -> 4207 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarUsed: 4117 (init) -> 4111 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarFlu: 4119 (init) -> 4113 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:NeedleLong: 4152 (init) -> 4188 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Needle: 4150 (init) -> 4143 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeSamplePolio: 4173 (init) -> 4175 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:FluFluid: 4143 (init) -> 4167 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EggCPoxRaw: 4113 (init) -> 4203 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarEColi: 4125 (init) -> 4121 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Adjuvant: 4177 (init) -> 4163 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubePolio: 4132 (init) -> 4128 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:FoodPoisBacteria: 4147 (init) -> 4177 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EggRabies: 4111 (init) -> 4109 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:GiardiaSpore: 4149 (init) -> 4196 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTube: 4127 (init) -> 4123 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SpinalTapSyringeFull: 4162 (init) -> 4206 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeTube: 4154 (init) -> 4145 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TissueCPox: 4138 (init) -> 4137 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:Scalpel: 4180 (init) -> 4182 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringePolio: 4166 (init) -> 4154 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TissueGiardia: 4142 (init) -> 4211 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeTubeUsed: 4155 (init) -> 4146 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:PolioFluid: 4145 (init) -> 4168 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:TestTubeEColi: 4135 (init) -> 4133 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EggFlu: 4108 (init) -> 4105 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeSampleEColi: 4171 (init) -> 4180 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:legsBioSuit: 4184 (init) -> 4186 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeUsed: 4159 (init) -> 4150 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:chestplateBioSuit: 4183 (init) -> 4185 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarMeningitis: 4120 (init) -> 4201 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeMeningitis: 4164 (init) -> 4198 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeSampleFlu: 4172 (init) -> 4179 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:PetriDishEColiRaw: 4105 (init) -> 4208 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:UsedNeedleLong: 4153 (init) -> 4193 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:bootsBioSuit: 4185 (init) -> 4187 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:SyringeEColi: 4169 (init) -> 4159 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EggCPox: 4109 (init) -> 4107 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:EggRabiesRaw: 4115 (init) -> 4209 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Fixed item id mismatch epidemiccraft:VaccineJarRuined: 4118 (init) -> 4112 (map).
+[15:29:41] [Server thread/DEBUG] [FML/]: Registry consistency check successful
+[15:29:41] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
+[15:29:41] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
+[15:29:41] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
+[15:29:41] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
+[15:29:41] [Server thread/TRACE] [Forge/Forge]: Sending event FMLModIdMappingEvent to mod Forge
+[15:29:41] [Server thread/TRACE] [Forge/Forge]: Sent event FMLModIdMappingEvent to mod Forge
+[15:29:41] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLModIdMappingEvent to mod epidemiccraft
+[15:29:41] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLModIdMappingEvent to mod epidemiccraft
+[15:29:41] [Server thread/INFO] [FML/]: Applying holder lookups
+[15:29:41] [Server thread/INFO] [FML/]: Holder lookups applied
+[15:29:41] [Server thread/DEBUG] [FML/]: Loading persistent fluid defaults from world
+[15:29:41] [Server thread/DEBUG] [FML/]: The fluid Forge:lava has been selected as the default fluid for lava
+[15:29:41] [Server thread/DEBUG] [FML/]: The fluid Forge:water has been selected as the default fluid for water
+[15:29:42] [Server thread/INFO] [FML/]: Loading dimension 0 (world) (net.minecraft.server.dedicated.DedicatedServer@374c260a)
+[15:29:42] [Server thread/INFO] [FML/]: Loading dimension 1 (world) (net.minecraft.server.dedicated.DedicatedServer@374c260a)
+[15:29:42] [Server thread/INFO] [FML/]: Loading dimension -1 (world) (net.minecraft.server.dedicated.DedicatedServer@374c260a)
+[15:29:47] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartingEvent to mod mcp
+[15:29:47] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartingEvent to mod mcp
+[15:29:47] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartingEvent to mod FML
+[15:29:47] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartingEvent to mod FML
+[15:29:47] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStartingEvent to mod Forge
+[15:29:47] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStartingEvent to mod Forge
+[15:29:47] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLServerStartingEvent to mod epidemiccraft
+[15:29:47] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLServerStartingEvent to mod epidemiccraft
+[15:29:47] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartedEvent to mod mcp
+[15:29:47] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartedEvent to mod mcp
+[15:29:47] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartedEvent to mod FML
+[15:29:47] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartedEvent to mod FML
+[15:29:47] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStartedEvent to mod Forge
+[15:29:47] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStartedEvent to mod Forge
+[15:29:47] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLServerStartedEvent to mod epidemiccraft
+[15:29:47] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLServerStartedEvent to mod epidemiccraft
+[15:30:02] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppingEvent to mod mcp
+[15:30:02] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppingEvent to mod mcp
+[15:30:02] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppingEvent to mod FML
+[15:30:02] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppingEvent to mod FML
+[15:30:02] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStoppingEvent to mod Forge
+[15:30:02] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStoppingEvent to mod Forge
+[15:30:02] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLServerStoppingEvent to mod epidemiccraft
+[15:30:02] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLServerStoppingEvent to mod epidemiccraft
+[15:30:02] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save world
+[15:30:03] [Server thread/INFO] [FML/]: Unloading dimension 0
+[15:30:03] [Server thread/INFO] [FML/]: Unloading dimension -1
+[15:30:03] [Server thread/INFO] [FML/]: Unloading dimension 1
+[15:30:03] [Server thread/DEBUG] [FML/]: Reverting to frozen data state.
+[15:30:03] [Server thread/INFO] [FML/]: Applying holder lookups
+[15:30:03] [Server thread/INFO] [FML/]: Holder lookups applied
+[15:30:03] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppedEvent to mod mcp
+[15:30:03] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppedEvent to mod mcp
+[15:30:03] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppedEvent to mod FML
+[15:30:03] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppedEvent to mod FML
+[15:30:03] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStoppedEvent to mod Forge
+[15:30:03] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStoppedEvent to mod Forge
+[15:30:03] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sending event FMLServerStoppedEvent to mod epidemiccraft
+[15:30:03] [Server thread/TRACE] [epidemiccraft/epidemiccraft]: Sent event FMLServerStoppedEvent to mod epidemiccraft
+[15:30:03] [AWT-EventQueue-0/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: cpw.mods.fml.relauncher.FMLSecurityManager$ExitTrappedException
+[15:30:03] [AWT-EventQueue-0/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at cpw.mods.fml.common.asm.transformers.TerminalTransformer$ExitVisitor.checkAccess(TerminalTransformer.java:138)
+[15:30:03] [AWT-EventQueue-0/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at cpw.mods.fml.common.asm.transformers.TerminalTransformer$ExitVisitor.systemExitCalled(TerminalTransformer.java:109)
+[15:30:03] [AWT-EventQueue-0/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.server.gui.MinecraftServerGui$1.windowClosing(MinecraftServerGui.java:83)
+[15:30:03] [AWT-EventQueue-0/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.awt.Window.processWindowEvent(Unknown Source)
+[15:30:03] [AWT-EventQueue-0/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at javax.swing.JFrame.processWindowEvent(Unknown Source)
+[15:30:03] [AWT-EventQueue-0/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.awt.Window.processEvent(Unknown Source)

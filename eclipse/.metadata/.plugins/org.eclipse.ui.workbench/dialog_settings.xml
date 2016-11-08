@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item value="0" key="sort"/>
+		<item value="false" key="allPersp"/>
+		<list key="bounds">
+			<item value="284"/>
+			<item value="16"/>
+			<item value="798"/>
+			<item value="553"/>
+		</list>
+		<list key="columns">
+			<item value="252"/>
+			<item value="504"/>
+		</list>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="22" key="DIALOG_Y_ORIGIN"/>
+		<item value="374" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="FileExtensionDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="107" key="DIALOG_Y_ORIGIN"/>
+		<item value="281" key="DIALOG_HEIGHT"/>
+		<item value="55" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item value="false" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
+	</section>
+</section>

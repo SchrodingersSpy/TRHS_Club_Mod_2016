@@ -1,0 +1,8 @@
+package epidemiccraft.items;
+
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.IItemRenderer;
+
+public class ItemRenderer {
+
+}

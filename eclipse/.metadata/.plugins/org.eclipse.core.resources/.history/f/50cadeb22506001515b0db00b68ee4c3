@@ -1,0 +1,40 @@
+package epidemiccraft.c;
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.DamageSource;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class EpidemicCraftEventHooks {
+
+	public class DiseaseHooks
+	{
+	@SubscribeEvent
+	public void onEntityAttack(LivingAttackEvent event)
+	{
+	if (event.source.getSourceOfDamage() != null)
+	{
+	if(event.source.getSourceOfDamage() instanceof EntityLivingBase)
+	{
+	EntityLivingBase attacker = (EntityLivingBase)event.source.getSourceOfDamage();
+	if(attacker.isPotionActive(EpidemicCraft.potionAnthraxEffect.id))
+	{
+		
+	}
+	if(attacker.isPotionActive(EpidemicCraft.potionBubPlagueEffect.id))
+	{
+		//Add info here later
+	}
+	if(attacker.isPotionActive(EpidemicCraft.potionCholEffect.id)){
+		
+	}
+	}
+	}
+	}
+	}
+	}
+		
+	
+

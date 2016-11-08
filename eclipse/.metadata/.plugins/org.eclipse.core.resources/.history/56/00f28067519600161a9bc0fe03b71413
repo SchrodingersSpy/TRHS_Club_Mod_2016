@@ -1,0 +1,30 @@
+package epidemiccraft.com;
+
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class EventPotionZero {
+
+	///////
+	
+	@SubscribeEvent
+	public void removeMeningitis(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionMeningitis)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionMeningitis).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionMeningitis.id);
+				return;	
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void removeMeningitisVac(LivingUpdateEvent event) {
+		if (event.entityLiving.isPotionActive(EpidemicCraft.potionMeningitisVaccine)) {
+			if (event.entityLiving.getActivePotionEffect(EpidemicCraft.potionMeningitisVaccine).getDuration()==0) {
+				event.entityLiving.removePotionEffect(EpidemicCraft.potionMeningitisVaccine.id);
+				return;	
+			}
+		}
+	}
+	
+}
