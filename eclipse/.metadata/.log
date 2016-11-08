@@ -7938,3 +7938,23 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2016-11-07 16:11:48.429
 !MESSAGE Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+
+!ENTRY org.eclipse.core.resources 4 273 2016-11-07 17:34:31.938
+!MESSAGE Problems cleaning up history store.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:303)
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:274)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:98)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:109)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:109)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:109)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:109)
+	at org.eclipse.core.internal.localstore.BucketTree.accept(BucketTree.java:73)
+	at org.eclipse.core.internal.localstore.HistoryStore2.clean(HistoryStore2.java:157)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1156)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-11-07 17:34:31.938
+!MESSAGE Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
