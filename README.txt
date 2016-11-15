@@ -1,39 +1,26 @@
-PLEASE SEE THIS
 
--------------------------------------------
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+REMEMBER TO USE YOUR OWN BRANCH CODE. IT SHOULD BE YOUR INITIALS.
+IF YOU DON’T IT WILL BREAK THE CODE AND THAT WILL MAKE ME UNHAPPY.
+THE BRANCH CODE KEEPS YOU FROM OVERWRITING EVERYONE ELSES STUFF.
+IF YOU DON’T USE IT, IT DELETES EVERYONE ELSES WORK.
+KEEP YOUR OWN CODE BACKED UP AFTER YOU COMMIT SO THAT IT DOESN’T GET DELETED IF SOMEONE MESSES UP.
 
-Note also that the patches are built against "unrenamed" MCP source code (aka
-srgnames) - this means that you will not be able to read them directly against
-normal code.
+OPEN TERMINAL. DO:
 
-Source pack installation information:
+cd Desktop
 
-Standalone source installation
-==============================
+git init
 
-To install this source code for development purposes, extract this zip file.
-It ships with a demonstration mod. Run 'gradlew setupDevWorkspace' to create
-a gradle environment primed with FML. Run 'gradlew eclipse' or 'gradlew idea' to
-create an IDE workspace of your choice.
-Refer to ForgeGradle for more information about the gradle environment
-Note: On macs or linux you run the './gradlew.sh' instead of 'gradlew'
+git clone <URL> --branch <BranchCode>
 
-Forge source installation
-=========================
-MinecraftForge ships with this code and installs it as part of the forge
-installation process, no further action is required on your part.
+WORK ON YOUR CODE AND DO WHATEVER YOU NEED TO DO TO IT. WHEN FINISHED, LEAVE THE FOLDER ON YOUR DESKTOP. BACK IT UP TO YOUR SERVER IN CASE SOMETHING HAPPENS. WHEN READY TO SEND IT UP, DO:
 
-For reference this is version @MAJOR@.@MINOR@.@REV@.@BUILD@ of FML
-for Minecraft version @MCVERSION@.
+cd Desktop
 
-LexManos' Install Video
-=======================
-https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
+cd TRHS_Club_Mod_2016
 
-For more details update more often refer to the Forge Forums:
-http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+git add .
+
+git commit -m “CommitName”
+
+git push origin <BranchName>
