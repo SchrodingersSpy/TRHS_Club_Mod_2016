@@ -1,4 +1,6 @@
-# EpidemicCraft
+# TRHS Club Mod
 
-This is the code and documentation for the mod EpidemicCraft.
-If you downloaded this mod from anywhere other than Minecraft Forums, you are potentially at risk since I only run my own Dropbox link.
+THIS FILE WILL EVENTUALLY HAVE HTE CORRECT INSTRUCTIONS ON HOW TO PULL AND SUBMIT CODE,
+BUT I NEED TO ACTUALLY FIGURE OUT HOW TO DO THAT. 
+
+IT'LL BE UP SOON.
