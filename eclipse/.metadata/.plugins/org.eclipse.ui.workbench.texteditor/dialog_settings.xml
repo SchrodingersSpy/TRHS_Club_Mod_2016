@@ -13,6 +13,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
+<<<<<<< HEAD
 		<item value="healthBoost" key="selection"/>
 		<list key="findhistory">
 			<item value="moveSpeed"/>
@@ -33,6 +34,28 @@
 			<item value="nightVision"/>
 			<item value="blindness"/>
 			<item value="invisibility"/>
+=======
+		<item value="FoodPoisVaccine" key="selection"/>
+		<list key="findhistory">
+			<item value="Giardia"/>
+			<item value="p_77849_3_"/>
+			<item value="onEaten"/>
+			<item value="p_77849_2_"/>
+			<item value="p_77849_1_"/>
+			<item value="Plastic"/>
+			<item value="SyringeMeningitis"/>
+			<item value="200"/>
+		</list>
+		<list key="replacehistory">
+			<item value="FoodPoisVaccine"/>
+			<item value="RabiesVaccine"/>
+			<item value="PolioVaccine"/>
+			<item value="MeningitisVaccine"/>
+			<item value="FluVaccine"/>
+			<item value="CPoxVaccine"/>
+			<item value="EColiVaccine"/>
+			<item value="GiradiaVaccine"/>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 		</list>
 	</section>
 </section>

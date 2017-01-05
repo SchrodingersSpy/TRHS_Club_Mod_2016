@@ -1,0 +1,59 @@
+#X-Generator: crowdin.com
+commands.forge.usage=Použijte /forge <podpříkaz>. Podpříkazy jsou tps, track
+commands.forge.usage.tracking=Použijte /forge track <typ> <trvání>. Platné typy jsou te (Tile Entity). Trvání je < 60.
+commands.forge.tps.summary=%s \: Průměrná délka ticku\: %d ms. Průměrný počet ticků za vteřinu (TPS)\: %d
+
+commands.forge.tracking.te.enabled=Sledování Tile Entit zapnuto na %d sekund.
+forge.texture.preload.warning=Upozornění\: Textura %s nebyla načtena, to může způsobit chyby v grafice\!
+forge.client.shutdown.internal=Vypínám interní server...
+forge.update.newversion=Je k dispozici nová verze Forge\: %s
+forge.update.beta.1=%sVarování\: %sForge Beta
+forge.update.beta.2=Mohou se vyskytnout vážné problémy, prosím hlaste pouze reprodukovatelné chyby.
+
+forge.configgui.forgeConfigTitle=Nastavení Minecraft Forge
+forge.configgui.ctgy.forgeGeneralConfig.tooltip=Zde můžete upravovat nastavení uložená ve forge.cfg.
+forge.configgui.ctgy.forgeGeneralConfig=Obecná nastavení
+forge.configgui.ctgy.forgeChunkLoadingConfig.tooltip=Zde můžete upravovat nastavení uložená ve forgeChunkLoading.cfg.
+forge.configgui.ctgy.forgeChunkLoadingConfig=Výchozí nastavení Forge Chunk Loaderu
+forge.configgui.ctgy.forgeChunkLoadingModConfig.tooltip=Zde můžete nastavit volby pro každou modifikaci (mod), tyto volby se použijí místo výchozích.
+forge.configgui.ctgy.forgeChunkLoadingModConfig=Mod Overrides
+forge.configgui.ctgy.forgeChunkLoadingAddModConfig.tooltip=Umožňují změnit nastavení pro každou modifikaci (mod) zvlášť, tato nastavení přepíší výchozí. Hodnota nula v jakékoliv položce způsobí zakázání načítání chunků pro danou modifikaci.
+forge.configgui.ctgy.forgeChunkLoadingAddModConfig=+ Add New Mod Override
+
+forge.configgui.biomeSkyBlendRange.tooltip=Ovládá rozsah prolínání barev oblohy u biomů.
+forge.configgui.biomeSkyBlendRange=Rozsah prolínání barev oblohy
+forge.configgui.clumpingThreshold.tooltip=Controls the number threshold at which Packet51 is preferred over Packet52.
+forge.configgui.clumpingThreshold=Packet Clumping Threshold
+forge.configgui.disableVersionCheck.tooltip=Set to true to disable Forge's version check mechanics. Forge queries a small json file on our server for version information. For more details see the ForgeVersion class in our github.
+forge.configgui.disableVersionCheck=Vypnout kontrolu verze Forge
+forge.configgui.enableGlobalConfig=Povolit globální nastavení
+forge.configgui.forceDuplicateFluidBlockCrash.tooltip=Nastavte tuto položku na true, pokud chcete vynutit spadnutí v případě pokusu o propojení více než jednoho bloku ke stejné tekutině.
+forge.configgui.forceDuplicateFluidBlockCrash=Vynutit spadnutí při duplikaci bloku tekutiny
+forge.configgui.fullBoundingBoxLadders.tooltip=Set this to true to check the entire entity's collision bounding box for ladders instead of just the block they are in. Causes noticeable differences in mechanics so default is vanilla behavior.
+forge.configgui.fullBoundingBoxLadders=Full Bounding Box Ladders
+forge.configgui.removeErroringEntities.tooltip=Set this to true to remove any Entity that throws an error in its update method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
+forge.configgui.removeErroringEntities=Odstranit entity způsobující chyby
+forge.configgui.removeErroringTileEntities.tooltip=Set this to true to remove any TileEntity that throws an error in its update method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
+forge.configgui.removeErroringTileEntities=Odstranit blokové entity způsobující chyby
+forge.configgui.sortRecipies.tooltip=Set to true to enable the post initialization sorting of crafting recipes using Forge's sorter. May cause desyncing on conflicting recipies. MUST RESTART MINECRAFT IF CHANGED FROM THE CONFIG GUI.
+forge.configgui.sortRecipies=Řazení receptů
+forge.configgui.zombieBabyChance.tooltip=Chance that a zombie (or subclass) is a baby. Allows changing the zombie spawning mechanic.
+forge.configgui.zombieBabyChance=Šance na zombie dítě
+forge.configgui.zombieBaseSummonChance.tooltip=Base zombie summoning spawn chance. Allows changing the bonus zombie summoning mechanic.
+forge.configgui.zombieBaseSummonChance=Šance vyvolání zombie
+forge.configgui.stencilbits=Povolit GL Stencil bity
+forge.configgui.spawnfuzz=Rozptyl průměru oživení
+
+forge.configgui.modID.tooltip=ID modu pro který chcete přidat přepisovací volby.
+forge.configgui.modID=ID modu
+forge.configgui.dormantChunkCacheSize.tooltip=Unloaded chunks can first be kept in a dormant cache for quicker loading times. Specify the size (in chunks) of that cache here.
+forge.configgui.dormantChunkCacheSize=Dormant Chunk Cache Size
+forge.configgui.enableModOverrides.tooltip=Enable this setting to allow custom per-mod settings to be defined.
+forge.configgui.enableModOverrides=Povolit přepisovací pravidla modifikací
+forge.configgui.maximumChunksPerTicket.tooltip=This is the maximum number of chunks a single ticket can force.
+forge.configgui.maximumChunksPerTicket=Chunks Per Ticket Limit
+forge.configgui.maximumTicketCount.tooltip=This is the number of chunk loading requests a mod is allowed to make.
+forge.configgui.maximumTicketCount=Mod Ticket Limit
+forge.configgui.playerTicketCount.tooltip=The number of tickets a player can be assigned instead of a mod. This is shared across all mods and it is up to the mods to use it.
+forge.configgui.playerTicketCount=Player Ticket Limit
+

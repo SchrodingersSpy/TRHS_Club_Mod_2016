@@ -17,7 +17,11 @@ buildscript {
 
 apply plugin: 'forge'
 
+<<<<<<< HEAD
 version = "1.1"
+=======
+version = "1.0"
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 group= "epidemiccraft.c" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "epidemiccraft"
 

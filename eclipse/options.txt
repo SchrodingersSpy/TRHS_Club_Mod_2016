@@ -11,7 +11,11 @@ anaglyph3d:false
 advancedOpengl:false
 maxFps:120
 fboEnable:true
+<<<<<<< HEAD
 difficulty:0
+=======
+difficulty:1
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 fancyGraphics:false
 ao:2
 clouds:false
@@ -88,7 +92,11 @@ key_key.hotbar.9:10
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
+<<<<<<< HEAD
 soundCategory_weather:0.0
+=======
+soundCategory_weather:1.0
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0

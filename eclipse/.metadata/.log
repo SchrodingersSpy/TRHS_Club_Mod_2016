@@ -6873,6 +6873,7 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2016-08-08 16:42:04.962
 !MESSAGE Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.core.resources 4 273 2016-08-08 16:58:01.693
 !MESSAGE Problems cleaning up history store.
@@ -7683,11 +7684,15 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2016-10-19 18:41:23.442
 !MESSAGE Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
 !SESSION 2016-10-22 16:43:20.756 -----------------------------------------------
+=======
+!SESSION 2016-08-08 17:06:18.557 -----------------------------------------------
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 eclipse.buildId=M20120208-0800
 java.version=1.7.0_67
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.javascript.product
+<<<<<<< HEAD
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.javascript.product
 
 !ENTRY org.eclipse.jface 2 0 2016-10-22 16:43:44.162
@@ -7741,6 +7746,16 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !ENTRY org.eclipse.jface 2 0 2016-11-06 18:40:03.221
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2016-11-06 18:40:03.221
+=======
+Command-line arguments:  -data E:\EpidemicCraft\forgesrc\eclipse -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.javascript.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-08-08 17:06:28.010
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2016-08-08 17:06:41.772
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-08-08 17:06:41.772
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 !MESSAGE A conflict occurred for CTRL+SHIFT+I:
 Binding(CTRL+SHIFT+I,
 	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Inspect,Inspect,
@@ -7759,6 +7774,7 @@ Binding(CTRL+SHIFT+I,
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.dialogAndWindow,,,system)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.resources 4 568 2016-11-06 19:44:43.618
 !MESSAGE Internal error in history store
 !STACK 1
@@ -7835,6 +7851,12 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 !MESSAGE Internal error in history store
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+=======
+!ENTRY org.eclipse.core.resources 4 568 2016-08-08 17:07:09.194
+!MESSAGE Internal error in history store
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'E:\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:303)
 	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:274)
 	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:98)
@@ -7847,11 +7869,25 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:308)
 	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:542)
 	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:379)
+<<<<<<< HEAD
 	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:687)
 	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
 	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
 	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
 	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+=======
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:222)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:191)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:119)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:46)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:254)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:173)
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
 	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
@@ -7864,6 +7900,7 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2016-11-07 16:03:57.433
 !MESSAGE Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
 
@@ -7888,6 +7925,41 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
 	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
 	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-08-08 17:07:09.196
+!MESSAGE Could not read metadata for 'E:\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+
+!ENTRY org.eclipse.core.resources 4 568 2016-08-08 17:07:17.370
+!MESSAGE Internal error in history store
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'E:\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:303)
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:274)
+	at org.eclipse.core.internal.localstore.BucketTree.loadBucketFor(BucketTree.java:115)
+	at org.eclipse.core.internal.localstore.HistoryStore2$HistoryCopyVisitor.saveChanges(HistoryStore2.java:46)
+	at org.eclipse.core.internal.localstore.HistoryStore2$HistoryCopyVisitor.afterSaving(HistoryStore2.java:36)
+	at org.eclipse.core.internal.localstore.Bucket.accept(Bucket.java:207)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:99)
+	at org.eclipse.core.internal.localstore.BucketTree.accept(BucketTree.java:76)
+	at org.eclipse.core.internal.localstore.HistoryStore2.copyHistory(HistoryStore2.java:249)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:308)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:542)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:379)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:222)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:191)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:119)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:46)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:254)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:173)
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
 	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
@@ -7900,6 +7972,7 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2016-11-07 16:07:58.871
 !MESSAGE Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
 
@@ -7907,6 +7980,15 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 !MESSAGE Internal error in history store
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-08-08 17:07:17.371
+!MESSAGE Could not read metadata for 'E:\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+
+!ENTRY org.eclipse.core.resources 4 568 2016-08-08 17:07:25.211
+!MESSAGE Internal error in history store
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'E:\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:303)
 	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:274)
 	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:98)
@@ -7919,11 +8001,25 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:308)
 	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:542)
 	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:379)
+<<<<<<< HEAD
 	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:687)
 	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
 	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
 	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
 	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+=======
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:222)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:191)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:119)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:46)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:254)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:173)
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
 	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
@@ -7936,6 +8032,7 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2016-11-07 16:11:48.429
 !MESSAGE Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
 
@@ -7943,6 +8040,15 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 !MESSAGE Problems cleaning up history store.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-08-08 17:07:25.212
+!MESSAGE Could not read metadata for 'E:\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+
+!ENTRY org.eclipse.core.resources 4 273 2016-08-08 17:10:33.816
+!MESSAGE Problems cleaning up history store.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'E:\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:303)
 	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:274)
 	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:98)
@@ -7956,5 +8062,10 @@ org.eclipse.core.internal.resources.ResourceException: Could not read metadata f
 	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
 	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2016-11-07 17:34:31.938
 !MESSAGE Could not read metadata for 'C:\Users\1DAP\Desktop\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-08-08 17:10:33.817
+!MESSAGE Could not read metadata for 'E:\EpidemicCraft\forgesrc\eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\Minecraft\.indexes\7\7d\58\ee\history.index'. Unexpected version: 0.
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b

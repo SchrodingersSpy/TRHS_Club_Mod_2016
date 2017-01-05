@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
 <window height="772" maximized="true" width="697" x="533" y="16">
+=======
+<workbench progressCount="30" version="2.0">
+<workbenchAdvisor/>
+<window height="772" maximized="true" width="697" x="529" y="10">
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -34,11 +40,15 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<<<<<<< HEAD
 <part id="1"/>
+=======
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 </presentation>
 </folder>
 </info>
 </editorArea>
+<<<<<<< HEAD
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EpidemicCraft.java" partName="EpidemicCraft.java" path="C:/Users/1DAP/Desktop/EpidemicCraft/forgesrc/src/main/java/epidemiccraft/com/EpidemicCraft.java" title="EpidemicCraft.java" tooltip="Minecraft/src/main/java/epidemiccraft/com/EpidemicCraft.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/main/java/epidemiccraft/com/EpidemicCraft.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2186" selectionTopPixel="760"/>
@@ -46,6 +56,11 @@
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ModEntities.java" partName="ModEntities.java" path="C:/Users/1DAP/Desktop/EpidemicCraft/forgesrc/src/main/java/epidemiccraft/mobs/ModEntities.java" title="ModEntities.java" tooltip="Minecraft/src/main/java/epidemiccraft/mobs/ModEntities.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/main/java/epidemiccraft/mobs/ModEntities.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="404" selectionTopPixel="56"/>
+=======
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EpidemicCraft.java" partName="EpidemicCraft.java" path="C:/Users/1DAP/Desktop/EpidemicCraft/forgesrc/src/main/java/epidemiccraft/com/EpidemicCraft.java" title="EpidemicCraft.java" tooltip="Minecraft/src/main/java/epidemiccraft/com/EpidemicCraft.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Minecraft/src/main/java/epidemiccraft/com/EpidemicCraft.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="19614" selectionTopPixel="3680"/>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 </editor>
 </editors>
 <views>
@@ -55,10 +70,13 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<<<<<<< HEAD
 <expanded>
 <category IMemento.internal.id="Errors (4 items)"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
+=======
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -317,7 +335,11 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
+<<<<<<< HEAD
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@27f767dc" ratio="0.7936267" ratioLeft="523" ratioRight="136" relationship="4" relative="org.eclipse.ui.editorss">
+=======
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@27f767dc" ratio="0.73748106" ratioLeft="486" ratioRight="173" relationship="4" relative="org.eclipse.ui.editorss">
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -341,6 +363,7 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/com/EpidemicCraft.java"/>
+<<<<<<< HEAD
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/com/EventMilk.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/com/EventTransmission.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/com/EventAchievements.java"/>
@@ -458,15 +481,181 @@
 <item active="true" historyLabel="ModEntities.java" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
+=======
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringeMeningitis.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringeGiardia.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringeFoodPois.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringeFlu.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringeEColi.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringeCPox.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringeRabies.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringePolio.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Minecraft/src/main/resources/assets/epidemiccraft/lang/en_US.lang"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Minecraft/C:\/Users\/1DAP\/.gradle\/caches\/minecraft\/net\/minecraftforge\/forge\/1.7.10-10.13.4.1448-1.7.10\/forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar&lt;net.minecraft.item(ItemDoor.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/items/SyringePlungerUsed.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/com/EventMilk.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Minecraft/src/main/java/epidemiccraft/com/EpidemicCraft.java"/>
+</editors>
+<item historyLabel="en_US.lang" index="9">
+<position info="not_deleted" x="5935" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeFlu.java" index="4">
+<position/>
+</item>
+<item historyLabel="SyringeEColi.java" index="5">
+<position/>
+</item>
+<item historyLabel="SyringeCPox.java" index="6">
+<position/>
+</item>
+<item historyLabel="SyringeFoodPois.java" index="3">
+<position/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="SyringeMeningitis.java" index="1">
+<position/>
+</item>
+<item historyLabel="SyringePolio.java" index="8">
+<position/>
+</item>
+<item historyLabel="SyringeRabies.java" index="7">
+<position/>
+</item>
+<item historyLabel="SyringePolio.java" index="8">
+<position/>
+</item>
+<item historyLabel="SyringeMeningitis.java" index="1">
+<position/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="SyringeFoodPois.java" index="3">
+<position/>
+</item>
+<item historyLabel="SyringeCPox.java" index="6">
+<position/>
+</item>
+<item historyLabel="SyringeEColi.java" index="5">
+<position/>
+</item>
+<item historyLabel="SyringeFlu.java" index="4">
+<position/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="ItemDoor.class" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="ItemDoor.class" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeCPox.java" index="6">
+<position info="not_deleted" x="925" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeEColi.java" index="5">
+<position info="not_deleted" x="929" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeFlu.java" index="4">
+<position info="not_deleted" x="921" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeFoodPois.java" index="3">
+<position info="not_deleted" x="941" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeGiardia.java" index="2">
+<position info="not_deleted" x="975" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeMeningitis.java" index="1">
+<position info="not_deleted" x="992" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringePlungerUsed.java" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringePolio.java" index="8">
+<position info="not_deleted" x="929" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="SyringeRabies.java" index="7">
+<position info="not_deleted" x="933" y="0"/>
+</item>
+<item historyLabel="EpidemicCraft.java" index="0">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+<item historyLabel="EventMilk.java" index="12">
+<position info="not_deleted" x="7637" y="0"/>
+</item>
+<item active="true" historyLabel="EpidemicCraft.java" index="13">
+<position info="not_deleted" x="19614" y="0"/>
+</item>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<<<<<<< HEAD
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="left"/>
 </trimArea>
+=======
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -479,6 +668,7 @@
 </trimLayout>
 </window>
 <mruList>
+<<<<<<< HEAD
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ModEntities.java" tooltip="Minecraft/src/main/java/epidemiccraft/mobs/ModEntities.java">
 <persistable path="/Minecraft/src/main/java/epidemiccraft/mobs/ModEntities.java"/>
 </file>
@@ -487,10 +677,15 @@
 </file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ChatComponentStyle.class" tooltip="net.minecraft.util.ChatComponentStyle">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Minecraft/C:\/Users\/1DAP\/.gradle\/caches\/minecraft\/net\/minecraftforge\/forge\/1.7.10-10.13.4.1448-1.7.10\/forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar&lt;net.minecraft.util(ChatComponentStyle.class"/>
+=======
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="Adjuvant.png" tooltip="Minecraft/src/main/resources/assets/epidemiccraft/textures/items/Adjuvant.png">
+<persistable path="/Minecraft/src/main/resources/assets/epidemiccraft/textures/items/Adjuvant.png"/>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventMilk.java" tooltip="Minecraft/src/main/java/epidemiccraft/com/EventMilk.java">
 <persistable path="/Minecraft/src/main/java/epidemiccraft/com/EventMilk.java"/>
 </file>
+<<<<<<< HEAD
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventTransmission.java" tooltip="Minecraft/src/main/java/epidemiccraft/com/EventTransmission.java">
 <persistable path="/Minecraft/src/main/java/epidemiccraft/com/EventTransmission.java"/>
 </file>
@@ -523,6 +718,43 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityRabiesWolfMob.java" tooltip="Minecraft/src/main/java/epidemiccraft/mobs/EntityRabiesWolfMob.java">
 <persistable path="/Minecraft/src/main/java/epidemiccraft/mobs/EntityRabiesWolfMob.java"/>
+=======
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringeRabies.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringeRabies.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringeRabies.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringePolio.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringePolio.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringePolio.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringePlungerUsed.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringePlungerUsed.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringePlungerUsed.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringeMeningitis.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringeMeningitis.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringeMeningitis.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringeGiardia.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringeGiardia.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringeGiardia.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringeFoodPois.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringeFoodPois.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringeFoodPois.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringeFlu.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringeFlu.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringeFlu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringeEColi.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringeEColi.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringeEColi.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SyringeCPox.java" tooltip="Minecraft/src/main/java/epidemiccraft/items/SyringeCPox.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/items/SyringeCPox.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ItemDoor.class" tooltip="net.minecraft.item.ItemDoor">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Minecraft/C:\/Users\/1DAP\/.gradle\/caches\/minecraft\/net\/minecraftforge\/forge\/1.7.10-10.13.4.1448-1.7.10\/forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar&lt;net.minecraft.item(ItemDoor.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="en_US.lang" tooltip="Minecraft/src/main/resources/assets/epidemiccraft/lang/en_US.lang">
+<persistable path="/Minecraft/src/main/resources/assets/epidemiccraft/lang/en_US.lang"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ModEntities.java" tooltip="Minecraft/src/main/java/epidemiccraft/mobs/ModEntities.java">
+<persistable path="/Minecraft/src/main/java/epidemiccraft/mobs/ModEntities.java"/>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 </file>
 </mruList>
 </workbench>

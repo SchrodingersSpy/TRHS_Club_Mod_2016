@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
+=======
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1050" key="dialogWidth"/>
+		<item value="657" key="dialogHeight"/>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="textEntries">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 	<section name="ImportExportAction">
 	</section>
 </section>

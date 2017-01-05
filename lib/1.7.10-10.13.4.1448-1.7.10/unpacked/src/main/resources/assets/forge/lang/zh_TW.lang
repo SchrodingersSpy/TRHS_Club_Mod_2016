@@ -1,0 +1,59 @@
+#X-Generator: crowdin.com
+commands.forge.usage=使用 /forge <subcommand>。subcommand 為 tps 和 track
+commands.forge.usage.tracking=使用 /forge track <type> <duration>。有效的 type 為 te (實體附加值)。duration 小於 60。 
+commands.forge.tps.summary=%s：平均一刻時間：%d ms。平均每秒刻數：%d
+
+commands.forge.tracking.te.enabled=已開啟實體附加值追蹤 %d 秒。
+forge.texture.preload.warning=警告：材質 %s 未被預載，可能會導致畫面異常！
+forge.client.shutdown.internal=正在停止內部伺服器…
+forge.update.newversion=已有新的Forge版本：%s
+forge.update.beta.1=%s警告：%sForge為Beta版
+forge.update.beta.2=可能會出現重要問題，請在報告前進行確認。
+
+forge.configgui.forgeConfigTitle=Minecraft Forge 設定
+forge.configgui.ctgy.forgeGeneralConfig.tooltip=你可以在此編輯forge.cfg內的設定
+forge.configgui.ctgy.forgeGeneralConfig=通用設定
+forge.configgui.ctgy.forgeChunkLoadingConfig.tooltip=你可以在此編輯forgeChunkLoading.cfg內的設定。
+forge.configgui.ctgy.forgeChunkLoadingConfig=Forge資料塊載入器預設設定
+forge.configgui.ctgy.forgeChunkLoadingModConfig.tooltip=在此你可以針對個別Mod定義覆蓋預設值的設定。
+forge.configgui.ctgy.forgeChunkLoadingModConfig=Mod設定覆蓋
+forge.configgui.ctgy.forgeChunkLoadingAddModConfig.tooltip=允許你定義可覆蓋Mod預設值的設定。任何值為零的設定將禁止該mod載入資料塊。
+forge.configgui.ctgy.forgeChunkLoadingAddModConfig=+ Add New Mod Override
+
+forge.configgui.biomeSkyBlendRange.tooltip=Control the range of sky blending for colored skies in biomes.
+forge.configgui.biomeSkyBlendRange=Biome Sky Blend Range
+forge.configgui.clumpingThreshold.tooltip=Controls the number threshold at which Packet51 is preferred over Packet52.
+forge.configgui.clumpingThreshold=Packet Clumping Threshold
+forge.configgui.disableVersionCheck.tooltip=Set to true to disable Forge's version check mechanics. Forge queries a small json file on our server for version information. For more details see the ForgeVersion class in our github.
+forge.configgui.disableVersionCheck=Disable Forge Version Check
+forge.configgui.enableGlobalConfig=Enable Global Config
+forge.configgui.forceDuplicateFluidBlockCrash.tooltip=Set this to true to force a crash if more than one block attempts to link back to the same Fluid.
+forge.configgui.forceDuplicateFluidBlockCrash=Force Dupe Fluid Block Crash
+forge.configgui.fullBoundingBoxLadders.tooltip=Set this to true to check the entire entity's collision bounding box for ladders instead of just the block they are in. Causes noticeable differences in mechanics so default is vanilla behavior.
+forge.configgui.fullBoundingBoxLadders=Full Bounding Box Ladders
+forge.configgui.removeErroringEntities.tooltip=Set this to true to remove any Entity that throws an error in its update method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
+forge.configgui.removeErroringEntities=Remove Erroring Entities
+forge.configgui.removeErroringTileEntities.tooltip=Set this to true to remove any TileEntity that throws an error in its update method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
+forge.configgui.removeErroringTileEntities=Remove Erroring Tile Entities
+forge.configgui.sortRecipies.tooltip=Set to true to enable the post initialization sorting of crafting recipes using Forge's sorter. May cause desyncing on conflicting recipies. MUST RESTART MINECRAFT IF CHANGED FROM THE CONFIG GUI.
+forge.configgui.sortRecipies=排序合成公式
+forge.configgui.zombieBabyChance.tooltip=殭屍(與衍生怪)是小殭屍的機率。 能更改殭屍出現的機制。
+forge.configgui.zombieBabyChance=招喚小殭屍機率
+forge.configgui.zombieBaseSummonChance.tooltip=Base zombie summoning spawn chance. Allows changing the bonus zombie summoning mechanic.
+forge.configgui.zombieBaseSummonChance=招喚殭屍機率
+forge.configgui.stencilbits=Enable GL Stencil Bits
+forge.configgui.spawnfuzz=Respawn Fuzz Diameter
+
+forge.configgui.modID.tooltip=The mod ID that you want to define override settings for.
+forge.configgui.modID=Mod ID
+forge.configgui.dormantChunkCacheSize.tooltip=Unloaded chunks can first be kept in a dormant cache for quicker loading times. Specify the size (in chunks) of that cache here.
+forge.configgui.dormantChunkCacheSize=Dormant Chunk Cache Size
+forge.configgui.enableModOverrides.tooltip=啟用這個選項能讓你定義個別mod的設定。
+forge.configgui.enableModOverrides=啟用Mod設定覆蓋
+forge.configgui.maximumChunksPerTicket.tooltip=This is the maximum number of chunks a single ticket can force.
+forge.configgui.maximumChunksPerTicket=每刻資料塊數上限
+forge.configgui.maximumTicketCount.tooltip=這是每個 mod 每刻最多可以要求多少個資料塊載入。
+forge.configgui.maximumTicketCount=Mod Ticket Limit
+forge.configgui.playerTicketCount.tooltip=The number of tickets a player can be assigned instead of a mod. This is shared across all mods and it is up to the mods to use it.
+forge.configgui.playerTicketCount=Player Ticket Limit
+

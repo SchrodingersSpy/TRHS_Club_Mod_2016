@@ -1,5 +1,9 @@
 breadcrumb.org.eclipse.jdt.ui.JavaPerspective=true
+<<<<<<< HEAD
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="net.minecraft.entity.EnumCreatureType"/><rhs name\="net.minecraft.util.EnumChatFormatting"/></lhs><lhs name\="net.minecraft.util.DamageSource"><rhs name\="net.minecraft.util.DamageSource"/></lhs></history>
+=======
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="net.minecraft.entity.EnumCreatureType"/></lhs><lhs name\="net.minecraft.util.DamageSource"><rhs name\="net.minecraft.util.DamageSource"/></lhs></history>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 content_assist_number_of_computers=13
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0

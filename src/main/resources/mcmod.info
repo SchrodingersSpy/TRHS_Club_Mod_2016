@@ -1,5 +1,6 @@
 [
 {
+<<<<<<< HEAD
   "modid": "epidemiccraft",
   "name": "EpidemicCraft",
   "description": "Welcome Patient Zero. Try to not become infected... Test your survival skills to a new level with EpidemicCraft. Simulates vaccines and common diseases in Minecraft!",
@@ -12,5 +13,19 @@
   "logoFile": "assets/LogoFile.png",
   "screenshots": [],
   "dependencies": ["mod_MinecraftForge"]
+=======
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 }
 ]

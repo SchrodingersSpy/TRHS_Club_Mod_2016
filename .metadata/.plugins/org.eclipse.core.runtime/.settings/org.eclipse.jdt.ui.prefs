@@ -5,7 +5,11 @@ fontPropagated=true
 org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=12
 org.eclipse.jdt.ui.javadoclocations.migrated=true
+<<<<<<< HEAD
 org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+=======
+org.eclipse.jface.textfont=1|Monaco|11.0|0|COCOA|1|;
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 proposalOrderMigrated=true
 spelling_locale_initialized=true
 tabWidthPropagated=true

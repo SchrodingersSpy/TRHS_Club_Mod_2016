@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+=======
+<fullyQualifiedTypeName name="net.minecraft.inventory.ISidedInventory"/>
+<fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
+<fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagList"/>
+<fullyQualifiedTypeName name="epidemiccraft.blocks.Autoclave"/>
+<fullyQualifiedTypeName name="net.minecraft.util.WeightedRandom.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemBlock"/>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 <fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
 <fullyQualifiedTypeName name="net.minecraft.inventory.SlotFurnace"/>
 <fullyQualifiedTypeName name="net.minecraft.inventory.ICrafting"/>
@@ -42,6 +52,10 @@
 <fullyQualifiedTypeName name="epidemiccraft.items.ItemRenderer"/>
 <fullyQualifiedTypeName name="epidemiccraft.blocks.RenderIncubator"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.network.IGuiHandler"/>
+<<<<<<< HEAD
+=======
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
 <fullyQualifiedTypeName name="epidemiccraft.tileentity.TileEntityIncubator"/>
 <fullyQualifiedTypeName name="epidemiccraft.tileentity.TileEntityAutoclave"/>
@@ -52,6 +66,7 @@
 <fullyQualifiedTypeName name="net.minecraft.client.model.ModelRenderer"/>
 <fullyQualifiedTypeName name="net.minecraft.client.model.ModelBase"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
@@ -60,4 +75,6 @@
 <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
 <fullyQualifiedTypeName name="net.minecraft.util.ChatComponentText"/>
 <fullyQualifiedTypeName name="net.minecraft.util.EnumChatFormatting"/>
+=======
+>>>>>>> b47f5b87cd4967e98659a6a87fa1ca6f6be1b71b
 </qualifiedTypeNameHistroy>

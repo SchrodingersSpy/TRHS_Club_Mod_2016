@@ -1,0 +1,67 @@
+[15:52:51] [main/INFO]: Setting user: Player0
+[15:52:54] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:53:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:EpidemicCraft
+[15:53:09] [Sound Library Loader/INFO]: Sound engine started
+[15:53:15] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:53:16] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:53:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:EpidemicCraft
+[15:53:17] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[15:53:17] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:53:19] [Sound Library Loader/INFO]: Sound engine started
+[15:53:27] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:53:27] [Server thread/INFO]: Generating keypair
+[15:53:28] [Server thread/INFO]: Preparing start region for level 0
+[15:53:29] [Server thread/INFO]: Preparing spawn area: 1%
+[15:53:30] [Server thread/INFO]: Preparing spawn area: 35%
+[15:53:32] [Server thread/INFO]: Changing view distance to 5, from 10
+[15:53:32] [Server thread/INFO]: Player0[local:E:811cdcd0] logged in with entity id 327 at (63.75129780534433, 68.0, 27.90445981251503)
+[15:53:32] [Server thread/INFO]: Player0 joined the game
+[15:53:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2095ms behind, skipping 41 tick(s)
+[15:53:35] [Server thread/INFO]: Saving and pausing game...
+[15:53:35] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:53:35] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:53:35] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:54:17] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-08-08_15.54.16.png
+[15:54:39] [Server thread/INFO]: Player0 fell out of the world
+[15:54:39] [Client thread/INFO]: [CHAT] Player0 fell out of the world
+[15:54:39] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[15:55:12] [Server thread/INFO]: [@: Set the time to 6000]
+[15:55:12] [Server thread/INFO]: [@: Changing to clear weather]
+[15:55:12] [Client thread/INFO]: [CHAT] [@: Set the time to 6000]
+[15:55:12] [Client thread/INFO]: [CHAT] [@: Changing to clear weather]
+[15:55:13] [Server thread/INFO]: [Player0: Set own game mode to Creative Mode]
+[15:55:13] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[15:55:17] [Server thread/INFO]: [Player0: Set own game mode to Survival Mode]
+[15:55:17] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[15:55:19] [Server thread/INFO]: [Player0: Set own game mode to Creative Mode]
+[15:55:19] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[15:55:27] [Server thread/INFO]: [Player0: Set own game mode to Survival Mode]
+[15:55:27] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[15:55:36] [Server thread/INFO]: Saving and pausing game...
+[15:55:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:55:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:55:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:56:35] [Server thread/INFO]: [Player0: Set own game mode to Creative Mode]
+[15:56:35] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[15:56:38] [Server thread/INFO]: Player0 fell out of the world
+[15:56:38] [Client thread/INFO]: [CHAT] Player0 fell out of the world
+[15:56:38] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[15:57:05] [Server thread/INFO]: [@: Cleared the inventory of Player0, removing 3 items]
+[15:57:05] [Client thread/INFO]: [CHAT] [@: Cleared the inventory of Player0, removing 3 items]
+[15:57:17] [Server thread/INFO]: [Player0: Set own game mode to Survival Mode]
+[15:57:17] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[15:57:19] [Server thread/INFO]: [Player0: Set own game mode to Creative Mode]
+[15:57:19] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[15:57:29] [Server thread/INFO]: [Player0: Set own game mode to Survival Mode]
+[15:57:29] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[15:57:38] [Server thread/INFO]: Saving and pausing game...
+[15:57:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:57:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:57:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:57:41] [Client thread/INFO]: Stopping!
+[15:57:41] [Server thread/INFO]: Stopping server
+[15:57:41] [Server thread/INFO]: Saving players
+[15:57:41] [Server thread/INFO]: Saving worlds
+[15:57:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:57:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:57:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
